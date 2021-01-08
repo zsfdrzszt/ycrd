@@ -5,7 +5,7 @@
 		}">
 		<scroll-view scroll-x class="u-scroll-view" :scroll-left="scrollLeft" scroll-with-animation :style="{ zIndex: zIndex + 1 }">
 			<view class="u-tabs-scroll-box" :class="{'u-tabs-scorll-flex': !isScroll}">
-				<view class="u-tabs-item" :style="[tabItemStyle(index)]"
+				<view class="u-tabs-item" :style="[tabItemStyle(index)]" 
 				 v-for="(item, index) in getTabs" :key="index" :class="[preId + index]" @tap="emit(index)">
 					<u-badge :count="item[count] || item['count'] || 0" :offset="offset" size="mini"></u-badge>
 					{{ item[name] || item['name']}}
@@ -193,7 +193,8 @@
 				const current = Number(this.current);
 				// 判断是否超出边界
 				if (current > this.getTabs.length - 1) {
-					return this.getTabs.length - 1;
+					this.current -= 4
+					return current - 4;
 				}
 				if (current < 0) return 0;
 				return current;
@@ -212,21 +213,40 @@
 			// tab的样式
 			tabItemStyle() {
 				return (index) => {
-					let style = {
-						height: this.height + 'rpx',
-						lineHeight: this.height + 'rpx',
-						padding: `0 ${this.gutter / 2}rpx`,
-						color: this.tabsInfo.length > 0 ? (this.tabsInfo[index] ? this.tabsInfo[index].color : this.activeColor) : this.inactiveColor,
-						fontSize: this.fontSize + 'rpx',
-						zIndex: this.zIndex + 2,
-						fontWeight: (index == this.getCurrent && this.bold) ? 'bold' : 'normal'
-					};
-					if(index == this.getCurrent) {
-						// 给选中的tab item添加外部自定义的样式
-						style = Object.assign(style, this.activeItemStyle);
+					if(this.showBar){
+						let style = {
+								height: this.height + 'rpx',
+								lineHeight: this.height + 'rpx',
+								padding: `0 ${this.gutter / 2}rpx`,
+								color: this.tabsInfo.length > 0 ? (this.tabsInfo[index] ? this.tabsInfo[index].color : this.activeColor) : this.inactiveColor,
+								fontSize: this.fontSize + 'rpx',
+								zIndex: this.zIndex + 2,
+								fontWeight: (index == this.getCurrent && this.bold) ? 'bold' : 'normal'
+							};
+							if(index == this.getCurrent) {
+								// 给选中的tab item添加外部自定义的样式
+								style = Object.assign(style, this.activeItemStyle);
+							}
+							return style;
+						}
 					}
-					return style;
-				}
+					if(!this.showBar){
+						let style = {
+								height: this.height + 'rpx',
+								lineHeight: this.height + 'rpx',
+								padding: `0 ${this.gutter / 2}rpx`,
+								color:this.inactiveColor,
+								fontSize: this.fontSize + 'rpx',
+								zIndex: this.zIndex + 2,
+								fontWeight: 'normal'
+							};
+							if(index == this.getCurrent) {
+								// 给选中的tab item添加外部自定义的样式
+								style = Object.assign(style, this.activeItemStyle);
+							}
+							return style;
+					}
+					
 			},
 			// 底部滑块的样式
 			tabBarStyle() {
@@ -249,7 +269,7 @@
 				this.$nextTick(() => {
 					this.init();
 				})
-			}
+			},
 		},
 		mounted() {
 			this.init();

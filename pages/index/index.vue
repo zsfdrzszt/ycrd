@@ -7,9 +7,9 @@
 				<image mode="widthFix" v-for="(item,index) in images" class="wrapimg" @click="topage(index+1)" :src="item"></image>
 			</view>
 			<view class="wrapcon">
-				<image src="../../static/indeximg/county_common_index_seven.png" class="wrapconimg" ></image>
+				<image src="../../static/indeximg/county_common_index_seven.png" class="wrapconimg" @click="topro(1)"></image>
 				<image src="../../static/indeximg/county_common_index_eight.png" class="wrapconimg" @click="topro(2)"></image>
-				<image mode="widthFix" src="../../static/indeximg/county_common_index_ten.png" class="wrapconimg"></image>
+				<image src="../../static/indeximg/county_common_index_ten.png" class="wrapconimg" @click="topro(3)"></image>
 				<view class="wrapbuttom">
 					<view class="wrapback" v-show="showWarp" @click="tobuttom">
 						<image src="../../static/indeximg/county_common_index_close.png" style="position: absolute; left: 0; top: 0; width: 10%; height: 30%;"
@@ -52,6 +52,7 @@
 			},
 			topro(num){
 				let url = "/pages/pro"+num+ "/pro"+num
+				console.log(url)
 				uni.navigateTo({
 					url: url
 				})
@@ -72,6 +73,7 @@
 	  }
 	page {
 		height: 100%;
+		overflow: hidden;
 	}
 	.maincontent{
 		width: 100%;
@@ -80,6 +82,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		overflow: hidden;
 		}
 	.content {
 		width: 100%;

@@ -17,14 +17,7 @@
 				"scrollIndicator": "none"
 			}
 
-		}, {
-			"path": "pages/pro2/pro2",
-			"style": {
-				"navigationStyle": "custom",
-				"scrollIndicator": "none"
-			}
-
-		}, {
+		},{
 			"path": "pages/text2/text2",
 			"style": {
 				"navigationBarTitleText": "",
@@ -36,7 +29,6 @@
 			}
 
 		}
-
 	    ,{
             "path" : "pages/pro1/pro1",
             "style" :                                                                                    
@@ -45,7 +37,21 @@
                 "enablePullDownRefresh": false
             }
             
-        }
+        } ,{
+			"path": "pages/pro2/pro2",
+			"style": {
+				"navigationStyle": "custom",
+				"scrollIndicator": "none"
+			}
+
+		}, {
+			"path": "pages/pro3/pro3",
+			"style": {
+				"navigationStyle": "custom",
+				"scrollIndicator": "none"
+			}
+
+		}
         ,{
             "path" : "pages/pro5/pro5",
             "style" :                                                                                    
@@ -57,6 +63,15 @@
         }
         
             
+        ,{
+            "path" : "pages/text3/text3",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

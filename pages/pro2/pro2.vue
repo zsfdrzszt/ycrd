@@ -158,27 +158,19 @@
 <style>
 	page {
 		height: 100%;
-		background: url(../../static/contact/county_common_connection_bg.png);
 	}
-
+	  
 	.maincontent {
 		width: 100%;
 		height: 100%;
-
-	}
-
-	.status_bar {
-		height: var(--status-bar-height);
-		width: 100%;
+		
 	}
 
 	.content {
 		width: 100%;
 		height: 100%;
-
+		background: url(../../static/contact/county_common_connection_bg.png);
 	}
-
-	.contbox {}
 
 	.searchlist {
 		display: flex;

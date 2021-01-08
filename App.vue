@@ -18,4 +18,8 @@
 	.uni-page-body{
 		height: 100%;
 	}
+	.status_bar {
+	      height: var(--status-bar-height);
+	      width: 100%;
+	  }
 </style>
