@@ -122,7 +122,7 @@
 		methods: {
 			addRandomData() {
 				let num = this.list.length
-				console.log(num)
+				// console.log(num)
 				for (let i = 0; i < num; i++) {
 					let item = JSON.parse(JSON.stringify(this.list[i]))
 					item.id = this.$u.guid();
