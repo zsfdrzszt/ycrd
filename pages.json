@@ -1,32 +1,43 @@
 {
 	"easycom": {
-			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
-		},
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationStyle":"custom"
+				"navigationStyle": "custom",
+				"scrollIndicator": "none"
 			}
+		}, {
+			"path": "pages/text1/text1",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"scrollIndicator": "none"
+			}
+
+		}, {
+			"path": "pages/pro1/pro1",
+			"style": {
+				"navigationStyle": "custom",
+				"scrollIndicator": "none"
+			}
+
+		}, {
+			"path": "pages/text2/text2",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+
+			}
+
 		}
-	    ,{
-            "path" : "pages/text1/text1",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/pro1/pro1",
-            "style" :                                                                                    
-            {
-               "navigationStyle":"custom"
-            }
-            
-        }
-    ],
+
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
