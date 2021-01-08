@@ -7,8 +7,8 @@
 				<image v-for="(item,index) in images" class="wrapimg" @click="topage(index+1)" :src="item"></image>
 			</view>
 			<view class="wrapcon">
-				<image src="../../static/indeximg/county_common_index_seven.png" class="wrapconimg" @click="topro"></image>
-				<image src="../../static/indeximg/county_common_index_eight.png" class="wrapconimg"></image>
+				<image src="../../static/indeximg/county_common_index_seven.png" class="wrapconimg" ></image>
+				<image src="../../static/indeximg/county_common_index_eight.png" class="wrapconimg" @click="topro(2)"></image>
 				<image src="../../static/indeximg/county_common_index_ten.png" class="wrapconimg"></image>
 				<view class="wrapbuttom">
 					<view class="wrapback" v-show="showWarp" @click="tobuttom">
@@ -50,9 +50,10 @@
 			showwarp() {
 				this.showWarp = !this.showWarp
 			},
-			topro(){
+			topro(num){
+				let url = "/pages/pro"+num+ "/pro"+num
 				uni.navigateTo({
-					url: "/pages/pro1/pro1"
+					url: url
 				})
 			},
 			tobuttom(){
