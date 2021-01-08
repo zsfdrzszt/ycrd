@@ -1,14 +1,14 @@
 <template>
 	<view>
 		<view class="sticky">
-			
+
 			<!-- 顶部图片 -->
-			<image class="survey_top" src="../../static/surveyimg/banner-rdgk.png" mode=""></image>
+			<image class="survey_top" src="../../static/surveyimg/banner-rdgk.png" mode="widthFix"></image>
 
 			<!-- 选项卡 -->
-			<view >
+			<view>
 				<view>
-					<u-tabs-swiper ref="uTabs" class="tab-control" :list="list" :current="current" @change="tabsChange" :is-scroll="false" 
+					<u-tabs-swiper ref="uTabs" class="tab-control" :list="list" :current="current" @change="tabsChange" :is-scroll="false"
 					 active-color="#d71f07" bar-height="3" font-size="15" height="60" bar-width="150"></u-tabs-swiper>
 				</view>
 			</view>
@@ -17,9 +17,9 @@
 
 		</view>
 		<!-- <text>人大概述</text> -->
-		<swiper :current="swiperCurrent" style="height: 19990upx;width: 100%;" bar-width="70" @transition="transition">
+		<swiper :current="swiperCurrent" style="min-height:100vh;width: 100%;" bar-width="70" @transition="transition">
 			<swiper-item class="swiper-item" style="width: 100%;">
-				<scroll-view style="width: 100%;">
+				<scroll-view style="width: 100%;" :style="{height:swiperheight + 'px'}">
 					<text>榆次区人民代表大会简介</text>
 					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
 					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
@@ -72,21 +72,21 @@
 			<!--<text>常委会领导</text>  -->
 			<swiper-item class="swiper-item" style="width: 100%;">
 				<scroll-view style="width: 100%;">
-					<image class="jgsz" src="../../static/surveyimg/jgsz.png" mode=""></image>
+					<image class="jgsz" src="../../static/surveyimg/jgsz.png" mode="widthFix"></image>
 				</scroll-view>
 			</swiper-item>
 
 			<!--<text>机构设置</text>  -->
 			<swiper-item class="swiper-item" style="width: 100%;">
 				<scroll-view style="width: 100%;">
-					<image class="jgsz" src="../../static/surveyimg/jgsz.png" mode=""></image>
+					<image class="jgsz" src="../../static/surveyimg/jgsz.png" mode="widthFix"></image>
 				</scroll-view>
 			</swiper-item>
 
 			<!-- <text>常委会成员</text> -->
 			<swiper-item class="swiper-item" style="width: 100%;">
 				<scroll-view style="width: 100%;">
-					<image class="jgsz" src="../../static/surveyimg/jgsz.png" mode=""></image>
+					<image class="jgsz" src="../../static/surveyimg/jgsz.png" mode="widthFix"></image>
 				</scroll-view>
 			</swiper-item>
 		</swiper>
@@ -113,7 +113,8 @@
 				// 因为内部的滑动机制限制，请将tabs组件和swiper组件的current用不同变量赋值
 				current: 0, // tabs组件的current值，表示当前活动的tab选项
 				swiperCurrent: 0, // swiper组件的current值，表示当前那个swiper-item是活动的
-				message: []
+				message: [],
+				swiperheight: 0, //这里是动态赋值的高度
 			}
 		},
 		methods: {
@@ -145,6 +146,15 @@
 		},
 		onLoad() {
 			this.GetStatusBarHeight();
+			// 调用方法获取到设备的可用高度
+			uni.getSystemInfo({
+				success: (res) => {
+					// uni-app 提供了 upx2px 方法，将对应的 rpx 值转换成了 px
+					let height = res.windowHeight - uni.upx2px(100)
+					this.swiperheight = height; // 让data中定义的swiperheight高度等于计算过后的高度
+					console.log(this.swiperheight)
+				}
+			});
 		}
 	}
 </script>
@@ -156,12 +166,11 @@
 
 	.survey_top {
 		width: 100%;
-		height: 220rpx;
+		display: block;
 	}
 
 	.jgsz {
 		width: 100%;
-		height: 1000rpx;
 	}
 
 	.sticky {
