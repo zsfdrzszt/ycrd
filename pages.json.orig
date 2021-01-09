@@ -17,7 +17,7 @@
 				"scrollIndicator": "none"
 			}
 
-		},{
+		}, {
 			"path": "pages/text2/text2",
 			"style": {
 				"navigationBarTitleText": "",
@@ -28,8 +28,29 @@
 
 			}
 
+<<<<<<< HEAD
 		}
-		,{
+	    ,{
+            "path" : "pages/pro1/pro1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        } ,{
+=======
+		}, {
+
+
+			"path": "pages/pro1/pro1",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+>>>>>>> 527514d6c370496cdf3d22f00bf7101bc482353e
 			"path": "pages/pro2/pro2",
 			"style": {
 				"navigationStyle": "custom",
@@ -43,60 +64,61 @@
 				"scrollIndicator": "none"
 			}
 
+		}, {
+			"path": "pages/pro5/pro5",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
-        ,{
-            "path" : "pages/pro5/pro5",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        
-            
-        ,{
-            "path" : "pages/text3/text3",
-            "style" :                                                                                    
-            {
-                "navigationStyle": "custom",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "components/z-list/z-list",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/text5/text5",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-<<<<<<< HEAD
-            "path" : "pages/text6/text6",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "components/z-dropdown/z-dropdown",
-=======
-            "path" : "pages/text/text",
->>>>>>> 5c7af67fe45361193ae1bea0178b8854b814ad17
+
+
+		, {
+			"path": "pages/text3/text3",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "components/z-list/z-list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/text5/text5",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/text/text",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/text6/text6",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "components/z-dropdown/z-dropdown",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "components/z-dbzslist/z-dbzslist",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -109,9 +131,9 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8" ,
-		"app-plus":{
-						"titleNView":false
-					}
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"titleNView": false
+		}
 	}
 }
