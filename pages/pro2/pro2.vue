@@ -158,18 +158,17 @@
 <style>
 	page {
 		height: 100%;
-	}
-	  
+		background-image: url(../../static/contact/county_common_connection_bg.png) ;
+		background-size: 100% 100%;
+	}  
 	.maincontent {
 		width: 100%;
 		height: 100%;
-		
 	}
 
 	.content {
 		width: 100%;
 		height: 100%;
-		background: url(../../static/contact/county_common_connection_bg.png);
 	}
 
 	.searchlist {

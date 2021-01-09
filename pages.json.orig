@@ -29,8 +29,6 @@
 			}
 
 		}
-		,{
-
 	    ,{
             "path" : "pages/pro1/pro1",
             "style" :                                                                                    
@@ -69,7 +67,10 @@
             "path" : "pages/text3/text3",
             "style" :                                                                                    
             {
+<<<<<<< HEAD
                 "navigationStyle": "custom",
+=======
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
@@ -88,33 +89,7 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/text/text",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/text6/text6",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "components/z-dropdown/z-dropdown",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
+>>>>>>> bdb693995bbe0a4270f988b04684a00341c125de
                 "enablePullDownRefresh": false
             }
             
