@@ -20,64 +20,23 @@
 
 		</view>
 		<!-- <text>人大概述</text> -->
-		<swiper :current="swiperCurrent" style="height: 100px; width: 100%;" bar-width="70" @transition="transition">
+		<swiper :current="swiperCurrent" style="height: 1000px; width: 100%;" bar-width="70" @transition="transition">
 			<swiper-item class="swiper-item" style="width: 100%;">
-					<scroll-view  style="width: 100%;" :style="{height:swiperheight + 'px'}">
-						<view class="rdgs_box">
-							<view class="rdgs_box1">
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-								<text class="survey_h2">榆次区人民代表大会简介</text>
-							</view>
+				<scroll-view style="width: 100%;" :style="{height:swiperheight + 'px'}">
+					<view class="rdgs_box">
+						<view class="rdgs_box1">
+							<text class="survey_h2">榆次区人民代表大会简介</text>
 						</view>
-					</scroll-view>
-				
+					</view>
+				</scroll-view>
+
 			</swiper-item>
 			、
 
 			<!--<text>常委会领导</text>  -->
 			<swiper-item class="swiper-item" style="width: 100%;">
 				<scroll-view style="width: 100%;">
-					<image class="jgsz" src="../../static/surveyimg/jgsz.png" mode="widthFix"></image>
+					<wuserlist v-for="(item,index) in userslist" :key="index" :value="item" ></wuserlist>
 				</scroll-view>
 			</swiper-item>
 
@@ -100,10 +59,11 @@
 </template>
 
 <script>
+	import wuserlist from "../../components/w-userlist/w-userlist.vue"
 	export default {
-		// components: {
-		// 	sunTab
-		// },
+		components: {
+			wuserlist
+		},
 		data() {
 			return {
 				list: [{
@@ -119,7 +79,32 @@
 				current: 0, // tabs组件的current值，表示当前活动的tab选项
 				swiperCurrent: 0, // swiper组件的current值，表示当前那个swiper-item是活动的
 				message: [],
-				swiperheight: 0, //这里是动态赋值的高度
+				swiperheight: 0, //这里是动态赋值的高度，
+				userslist: [{
+					name: "张三",
+					url: "https://qiniu.jza2c.com/uploads/20200515/FgXTZ-_5sUQgwzLykuJ3A_BWU1aY.png",
+					classspace:"区代表",
+					job:"山西省有限责任公司",
+					space:"东乡镇"
+				}, {
+					name: "李四",
+					url: "https://qiniu.jza2c.com/uploads/20200515/FgXTZ-_5sUQgwzLykuJ3A_BWU1aY.png",
+					classspace:"县，区代表",
+					job:"山西省有限责任公司",
+					space:"东乡镇"
+				}, {
+					name: "王五",
+					url: "https://qiniu.jza2c.com/uploads/20200515/FgXTZ-_5sUQgwzLykuJ3A_BWU1aY.png",
+					classspace:"城，镇，区代表",
+					job:"山西省有限责任公司",
+					space:"东乡镇"
+				},{
+					name: "张三",
+					url: "https://qiniu.jza2c.com/uploads/20200515/FgXTZ-_5sUQgwzLykuJ3A_BWU1aY.png",
+					classspace:"区代表",
+					job:"山西省有限责任公司",
+					space:"东乡镇"
+				}]
 			}
 		},
 		methods: {
@@ -130,7 +115,7 @@
 			},
 			// swiper-item左右移动，通知tabs的滑块跟随移动
 			transition(e) {
-				console.log(e)
+				// console.log(e)
 			},
 			// 由于swiper的内部机制问题，快速切换swiper不会触发dx的连续变化，需要在结束时重置状态
 			// swiper滑动结束，分别设置tabs和swiper的状态
@@ -157,7 +142,7 @@
 					// uni-app 提供了 upx2px 方法，将对应的 rpx 值转换成了 px
 					let height = res.windowHeight - uni.upx2px(100)
 					this.swiperheight = height; // 让data中定义的swiperheight高度等于计算过后的高度
-					console.log(this.swiperheight)
+					// console.log(this.swiperheight)
 				}
 			});
 		}
@@ -168,6 +153,7 @@
 	.status_bar {
 		height: var(--status-bar-height);
 		width: 100%;
+		background-color: #FFFFFF;
 	}
 
 	.kong {
@@ -177,6 +163,10 @@
 	.survey_top {
 		width: 100%;
 		display: block;
+	}
+	
+	.swiper-item{
+		margin-top: 35px ;
 	}
 
 	.jgsz {
@@ -190,33 +180,38 @@
 		top: 0;
 		z-index: 99;
 	}
+
 	.survey_con {
 		margin: 0px 10px;
 		padding-bottom: 20px;
-		
-		
+
+
 	}
+
 	.survey_h2 {
 		text-align: center;
 		font-size: 20px;
 		font-weight: bold;
-		margin-top: 50px;
+		margin-top: 10px;
 	}
+
 	.rdgs_box {
 		display: flex;
 		height: 100%;
 		margin: 0;
 		flex-direction: column;
 	}
+
 	.rdgs_box1 {
 		flex: 1;
 		padding: 0;
 		height: 100%;
-		flex-direction: column;		
+		flex-direction: column;
 		display: flex;
 		overflow: hidden;
-		
+
 	}
+
 	uni-swiper {
 		height: 100%;
 	}

@@ -88,7 +88,7 @@
 			},
 			topage(num) {
 				let url = "/pages/text" + num + "/text" + num
-				console.log(url)
+				
 				uni.navigateTo({
 					url: url
 				})
