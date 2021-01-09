@@ -29,7 +29,15 @@
 			}
 
 		}
-		,{
+	    ,{
+            "path" : "pages/pro1/pro1",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        } ,{
 			"path": "pages/pro2/pro2",
 			"style": {
 				"navigationStyle": "custom",
@@ -59,7 +67,10 @@
             "path" : "pages/text3/text3",
             "style" :                                                                                    
             {
+<<<<<<< HEAD
                 "navigationStyle": "custom",
+=======
+                "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
@@ -78,15 +89,7 @@
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/text/text",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
+>>>>>>> bdb693995bbe0a4270f988b04684a00341c125de
                 "enablePullDownRefresh": false
             }
             
