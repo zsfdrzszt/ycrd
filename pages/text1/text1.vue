@@ -12,7 +12,7 @@
 			<view>
 				<view>
 					<u-tabs-swiper ref="uTabs" class="tab-control" :list="list" :current="current" @change="tabsChange" :is-scroll="false"
-					 active-color="#d71f07" bar-height="3" font-size="15" height="60" bar-width="150"></u-tabs-swiper>
+					 active-color="#d71f07" bar-height="3" font-size="30" height="60" bar-width="150"></u-tabs-swiper>
 				</view>
 			</view>
 		</view>
@@ -20,44 +20,57 @@
 
 		</view>
 		<!-- <text>人大概述</text> -->
-		<swiper :current="swiperCurrent" style="height: 1000px; width: 100%;" bar-width="70" @transition="transition">
+		<swiper :current="swiperCurrent" style="height: 100px; width: 100%;" bar-width="70" @transition="transition">
 			<swiper-item class="swiper-item" style="width: 100%;">
-				<scroll-view style="width: 100%;" :style="{height:swiperheight + 'px'}">
-					<text>榆次区人民代表大会简介</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-					<text>榆次区人民代表大会是榆次区的国家权力机关。</text>
-				</scroll-view>
+					<scroll-view  style="width: 100%;" :style="{height:swiperheight + 'px'}">
+						<view class="rdgs_box">
+							<view class="rdgs_box1">
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+								<text class="survey_h2">榆次区人民代表大会简介</text>
+							</view>
+						</view>
+					</scroll-view>
+				
 			</swiper-item>
 			、
 
@@ -151,7 +164,7 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
 	.status_bar {
 		height: var(--status-bar-height);
 		width: 100%;
@@ -176,5 +189,35 @@
 		right: 0;
 		top: 0;
 		z-index: 99;
+	}
+	.survey_con {
+		margin: 0px 10px;
+		padding-bottom: 20px;
+		
+		
+	}
+	.survey_h2 {
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: 50px;
+	}
+	.rdgs_box {
+		display: flex;
+		height: 100%;
+		margin: 0;
+		flex-direction: column;
+	}
+	.rdgs_box1 {
+		flex: 1;
+		padding: 0;
+		height: 100%;
+		flex-direction: column;		
+		display: flex;
+		overflow: hidden;
+		
+	}
+	uni-swiper {
+		height: 100%;
 	}
 </style>

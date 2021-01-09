@@ -4,7 +4,7 @@
 
 		</view>
 		<view class="kong">
-		
+
 		</view>
 		<!-- <image class="download_bg" src="../../static/pro5img/pro5-bg.jpg" mode="widthFix"></image> -->
 		<view class="page_body">
@@ -23,13 +23,13 @@
 				<image src="../../static/pro5img/county_common_double_one.png" mode="heightFix"></image>
 			</view>
 
-				<image class="double_con3" src="../../static/pro5img/county_common_double_two.png" mode="widthFix"></image>
-				<image class="double_con4" src="../../static/pro5img/county_common_double_three.png" mode="heightFix"></image>
-				<image class="double_con3" src="../../static/pro5img/county_common_double_four.png" mode="widthFix"></image>
+			<image class="double_con3" src="../../static/pro5img/county_common_double_two.png" mode="widthFix"></image>
+			<image class="double_con4" src="../../static/pro5img/county_common_double_three.png" mode="heightFix"></image>
+			<image class="double_con3" src="../../static/pro5img/county_common_double_four.png" mode="widthFix"></image>
 			<view class="double_con2">
 				<image src="../../static/pro5img/county_common_double_five.png" mode="heightFix"></image>
 			</view>
-			
+
 			<view class="double_con1">
 				<view class="">
 					<image src="../../static/pro5img/county_common_double_liasons.png" mode="widthFix"></image>
@@ -49,11 +49,11 @@
 	export default {
 		data() {
 			return {
-				
+
 			}
 		},
 		methods: {
-			
+
 		}
 	}
 </script>
@@ -63,16 +63,19 @@
 		height: var(--status-bar-height);
 		width: 100%;
 	}
+
 	.kong {
 		height: 70rpx;
 	}
-	.download_bg{
+
+	.download_bg {
 		position: fixed;
 		width: 100%;
 		// width: 100%;
-		
+
 	}
-	.page_body{
+
+	.page_body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -80,36 +83,42 @@
 		width: 100%;
 		height: 100%;
 	}
+
 	.double_con1 {
 		// z-index: 1001;
 		display: flex;
 		width: 60%;
 		justify-content: space-around;
 		padding: 15px 0px;
-		
+
 	}
+
 	.double_con1 image {
 		width: 45px;
 	}
-	.double_con2 image{
+
+	.double_con2 image {
 		height: 40px;
 	}
-	.double_con3{
+
+	.double_con3 {
 		width: 30%;
 		padding: 10px 0px;
 	}
+
 	.double_con4 {
 		height: 40px;
 		// padding: 10px 0px;
 	}
-	page{
+
+	page {
 		background: url('~@/static/pro5img/pro5-bg.jpg');
 		// background-image: url(image/yyiy_bg.jpg);
-		        background-repeat: no-repeat;
-		        background-position: center;
-		        background-size: cover;
-		        height: 100vh;
-		        margin: 0px;
-		        padding: 0px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 100vh;
+		margin: 0px;
+		padding: 0px;
 	}
 </style>

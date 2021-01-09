@@ -1,6 +1,6 @@
 <template>
 	<view class="page_body">
-		页面一
+		
 	</view>
 </template>
 
@@ -18,21 +18,13 @@
 </script>
 
 <style>
-	.download_bg{
-		width: 100%;
-		height: 100%;
-	}
-	.page_body{
-	        z-index: 1000;
-	        position:absolute;
-	        top:0;
-	        left:0;
-	        right: 0;
-	        bottom: 0;
-	        height:100%;
-	        width:100%;
-	        background-size: cover;
-	        background-position: center center;
-	
+	page {
+		background: url('~@/static/pro1img/download.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 100vh;
+		margin: 0px;
+		padding: 0px;
 	}
 </style>
