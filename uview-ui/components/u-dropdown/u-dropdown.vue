@@ -278,7 +278,7 @@
 			&__mask {
 				position: absolute;
 				z-index: 9;
-				background: rgba(0, 0, 0, .3);
+				// background: rgba(0, 0, 0, .3);
 				width: 100%;
 				left: 0;
 				top: 0;

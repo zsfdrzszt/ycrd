@@ -1,8 +1,11 @@
 <template>
 	<view>
-		<u-dropdown ref="uDropdown"  @open="open"> 
-			<u-dropdown-item :v-model="value.number" :title=valueData :options="value.options" @change="change"></u-dropdown-item>
+		<u-dropdown ref="uDropdown" @open="open">
+			<u-dropdown-item :v-model="value.number" :title=valueData :options="value.options" @change="change">
+			</u-dropdown-item>
+			
 		</u-dropdown>
+
 	</view>
 </template>
 
@@ -13,14 +16,14 @@
 		},
 		data() {
 			return {
-					valueData:this.value.name,
+				valueData: this.value.name,
 			}
 		},
 		methods: {
 			change(index) {
 				// 更多的细节，如有需要请自行根据业务逻辑进行处理
 				this.$refs.uDropdown.highlight(index);
-				this.valueData = this.value.options[index-1].label
+				this.valueData = this.value.options[index - 1].label
 				// console.log(this.value.name);
 				this.$emit("click")
 			},
@@ -34,7 +37,7 @@
 				// 当然，您也可以通过监听dropdown-item的@change事件进行处理
 				this.$refs.uDropdown.highlight(index);
 			}
-			
+
 		}
 	}
 </script>

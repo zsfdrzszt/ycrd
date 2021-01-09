@@ -17,7 +17,7 @@
 				"scrollIndicator": "none"
 			}
 
-		},{
+		}, {
 			"path": "pages/text2/text2",
 			"style": {
 				"navigationBarTitleText": "",
@@ -28,8 +28,15 @@
 
 			}
 
-		}
+		}, {
 	    ,{
+			"path": "pages/pro1/pro1",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
             "path" : "pages/pro1/pro1",
             "style" :                                                                                    
             {
@@ -51,65 +58,61 @@
 				"scrollIndicator": "none"
 			}
 
+		}, {
+			"path": "pages/pro5/pro5",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
-        ,{
-            "path" : "pages/pro5/pro5",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        
-            
-        ,{
-            "path" : "pages/text3/text3",
-            "style" :                                                                                    
-            {
-                "navigationStyle": "custom",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "components/z-list/z-list",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/text5/text5",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/text/text",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/text6/text6",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "components/z-dropdown/z-dropdown",
+
+
+		, {
+			"path": "pages/text3/text3",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "components/z-list/z-list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/text5/text5",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/text/text",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/text6/text6",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "components/z-dropdown/z-dropdown",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    ,{
+            "path" : "components/z-dbzslist/z-dbzslist",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -122,9 +125,9 @@
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8" ,
-		"app-plus":{
-						"titleNView":false
-					}
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"titleNView": false
+		}
 	}
 }
