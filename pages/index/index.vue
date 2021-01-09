@@ -1,6 +1,6 @@
 <template>
 	<view class="maincontent">
-		<view class="status_bar" ></view>
+		<view class="status_bar"></view>
 		<view class="content">
 			<view class="content-text">榆次区人大常委会<br>智慧人大平台</view>
 			<view class="wrap">
@@ -15,55 +15,177 @@
 						<image src="../../static/indeximg/county_common_index_close.png" style="position: absolute; left: 0; top: 0; width: 10%; height: 30%;"
 						 @click="showwarp"></image>
 					</view>
-					<image  mode="widthFix" src="../../static/indeximg/county_common_index_nine.png" class="myself"></image>
+					<image mode="widthFix" src="../../static/indeximg/county_common_index_nine.png" class="myself"></image>
 				</view>
 			</view>
 		</view>
 		<u-popup v-model="show" @click="show = false" mode="bottom" class="navmain">
-				<view class="navlists">
-					<view class="navself" :class="{navselfchange:index==isActive }"  v-for="(item,index) in navlist" @click="changenav(index)">{{item.name}}</view>
-				</view>	
-				<swiper :current="swiperCurrent" class="swiperlist">
-					<swiper-item class="swiper-item" >
-						<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
-							<zlist v-for="(item,index) in userlist" :key="index" :value="item" ></zlist>
-						</scroll-view>
-					</swiper-item>
-					<swiper-item class="swiper-item" >
-						<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
-							2222
-						</scroll-view>
-					</swiper-item>
-					<swiper-item class="swiper-item" >
-						<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
-							33333
-						</scroll-view>
-					</swiper-item>
-					<swiper-item class="swiper-item" >
-						<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
-							44444
-						</scroll-view>
-					</swiper-item>
-				</swiper>
+			<view class="navlists">
+				<view class="navself" :class="{navselfchange:index==isActive }" v-for="(item,index) in navlist" @click="changenav(index)">{{item.name}}</view>
+			</view>
+			<swiper :current="swiperCurrent" class="swiperlist" >
+				<swiper-item class="swiper-item" @touchmove.stop>
+					<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
+						<wjobnew v-for=" (item,index) in userlist " :newlist="item" @topage="tonext(index)"></wjobnew>
+					</scroll-view>
+				</swiper-item>
+				<swiper-item class="swiper-item" @touchmove.stop>
+					<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
+						<wnewtwo v-for="(item,index) in newlist22" :newlist="item" @topage="tonext(index)"></wnewtwo>
+					</scroll-view>
+				</swiper-item>
+				<swiper-item class="swiper-item" @touchmove.stop>
+				</swiper-item>
+				<swiper-item class="swiper-item" @touchmove.stop>
+					<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
+						<wnewthree v-for="(item,index) in newlist33" :list="item" @topage="tonext(index)"></wnewthree>
+					</scroll-view>
+				</swiper-item>
+			</swiper>
 		</u-popup>
 	</view>
-	
+
 </template>
 
 <script>
 	import zlist from "../../components/z-list/z-list.vue"
+	import wjobnew from "../../components/w-newone/w-newone.vue"
+	import wnewtwo from "../../components/w-newtwo/w-newtwo.vue"
+	import wnewthree from "../../components/w-newthree/w-newthree.vue"
 	export default {
-		components:{
-			zlist
+		components: {
+			zlist,
+			wjobnew,
+			wnewtwo,
+			wnewthree
 		},
 		data() {
 			return {
-				userlist:[{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"},{content:"啊大大的大好机会",region:"啊发发free",time:"adadasda"}	
-				],
-				isActive:false,
-				swiperCurrent:0,
-				navlist:[{name:"最新履职"},{name:"最新要闻"},{name:"三零创建"},{name:"经验交流"}],
-				show:false,
+				newlist33: [],
+				newlist22: [],
+				newlist2: [{
+					space: "榆次区人大常委会办公室",
+					class: "联络站建设",
+					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "20200109"
+				}, {
+					space: "榆次区人大常委办公室",
+					class: "履职经验",
+					state: "true",
+					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
+					content: "啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会",
+					title: "啊发发free九月一日有日日日有人突然一件代发行业应用土地规划的都有很好的活动如也有很多移动端任何的打电话",
+					time: "20200109"
+				}, {
+					space: "榆次区人大常委办公室",
+					class: "履职经验",
+					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "20200109"
+				}, {
+					space: "榆次区人大常委办公室",
+					class: "履职经验",
+					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "20200109"
+				}, {
+					space: "榆次区人大常委办公室",
+					class: "履职经验",
+					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "20200109"
+				}, {
+					space: "榆次区人大常委办公室",
+					class: "履职经验",
+					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "20200110"
+				}, {
+					space: "榆次区人大常委办公室",
+					class: "履职经验",
+					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adada455a"
+				}, {
+					space: "榆次区人大常委办公室",
+					class: "履职经验",
+					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}],
+				userlist: [{
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}, {
+					content: "啊大大的大好机会",
+					title: "啊发发free",
+					time: "adadasda"
+				}],
+				isActive: false,
+				swiperCurrent: 0,
+				navlist: [{
+					name: "最新履职"
+				}, {
+					name: "最新要闻"
+				}, {
+					name: "三零创建"
+				}, {
+					name: "经验交流"
+				}],
+				show: false,
 				number: "4",
 				showWarp: true,
 				images: ["../../static/indeximg/county_common_index_one.png", "../../static/indeximg/county_common_index_two.png",
@@ -73,18 +195,39 @@
 			}
 		},
 		onLoad() {
-
+			this.topnew()
 		},
 		methods: {
-			changenav(n){
-				if(n==2){
+			tonext(index){
+				uni.navigateTo({
+					url: "/pages/pro1/pro1"+"?ind="+index
+				})
+			},
+			topnew() {
+				this.newlist2.filter((item) => {
+					if (item.state) {
+						this.newlist33.unshift(item)
+					} else {
+						this.newlist33.push(item)
+					}
+				})
+				this.newlist2.filter((item) => {
+					if (item.state) {
+						this.newlist22.unshift(item)
+					} else {
+						this.newlist22.push(item)
+					}
+				})
+			},
+			changenav(n) {
+				if (n == 2) {
 					uni.navigateTo({
 						url: "/pages/text1/text1"
 					})
-				}else{
+				} else {
 					this.swiperCurrent = n
-					this.isActive =n
-				}	
+					this.isActive = n
+				}
 			},
 			topage(num) {
 				let url = "/pages/text" + num + "/text" + num
@@ -96,35 +239,39 @@
 			showwarp() {
 				this.showWarp = !this.showWarp
 			},
-			topro(num){
-				let url = "/pages/pro"+num+ "/pro"+num
+			topro(num) {
+				let url = "/pages/pro" + num + "/pro" + num
 				console.log(url)
 				uni.navigateTo({
 					url: url
 				})
 			},
-			tobuttom(){
+			tobuttom() {
 				uni.navigateTo({
-					
+
 				})
 			},
 			onreachBottom() {
-							
-						}
+			    let val = this.newlist2.concat(this.newlist2)
+				this.newlist2 = val
+				this.topnew()
+			}
 		}
 	}
 </script>
 
 <style>
 	.status_bar {
-	      height: var(--status-bar-height);
-	      width: 100%;
-	  }
+		height: var(--status-bar-height);
+		width: 100%;
+	}
+
 	page {
 		height: 100%;
 		overflow: hidden;
 	}
-	.maincontent{
+
+	.maincontent {
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -132,7 +279,8 @@
 		align-items: center;
 		justify-content: center;
 		overflow: hidden;
-		}
+	}
+
 	.content {
 		width: 100%;
 		height: 100%;
@@ -208,13 +356,14 @@
 		width: 20%;
 		height: 100%;
 	}
-	
-	.navlists{
+
+	.navlists {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	.navself{
+
+	.navself {
 		flex: 1;
 		text-align: center;
 		font-weight: bold;
@@ -225,7 +374,8 @@
 		border: 1px solid white;
 		font-size: 15px;
 	}
-	.navselfchange{
+
+	.navselfchange {
 		flex: 1;
 		text-align: center;
 		font-weight: bold;
@@ -236,16 +386,17 @@
 		border: 1px solid white;
 		font-size: 15px;
 	}
-	uni-swiper{
+
+	uni-swiper {
 		width: 100%;
 		display: flex;
 		flex: 1;
 	}
-	.swiperlist{
-		 height: 400px;
-		 margin: 10px auto;
+
+	.swiperlist {
+		height: 400px;
+		margin: 0 auto 5px;
 	}
-	.navmain{
-	
-	}
+
+	.navmain {}
 </style>

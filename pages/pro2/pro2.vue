@@ -1,11 +1,11 @@
 <template>
 	<view class="maincontent">
 		<view class="status_bar"></view>
-		<view class="content">
-			<view style="background-image: url(../../static/contact/county_common_connection_title.png);background-size:contain;background-repeat: no-repeat; width: 100%; height: 20%;">
-			</view>
-			<wsearch @changenav="changenav" @searchusers="searchusers"></wsearch>
-			<scroll-view>
+		<view class="contentindex">
+			<image src="../../static/contact/county_common_connection_title.png"style="width: 100%; margin-bottom: 5px;"  mode="widthFix">
+			</image>
+			<wsearch @changenav="changenav" @searchusers="searchusers" placeholder="请输入代表姓名"></wsearch>
+			<scroll-view >
 				<u-waterfall v-model="flowList" v-show="warterfall">
 					<template v-slot:left="{leftList}">
 						<view v-for="(item, index) in leftList" :key="index" class="contbox">
@@ -24,7 +24,7 @@
 				</view>
 			</scroll-view>
 		</view>
-	</view>
+		</view>
 </template>
 
 <script>
@@ -157,18 +157,19 @@
 
 <style>
 	page {
-		height: 100%;
-		background-image: url(../../static/contact/county_common_connection_bg.png) ;
-		background-size: 100% 100%;
-	}  
+		/* height: 100%; */
+	} 
 	.maincontent {
 		width: 100%;
 		height: 100%;
 	}
 
-	.content {
+	.contentindex {
 		width: 100%;
 		height: 100%;
+		background-image: url(../../static/contact/county_common_connection_bg.png) ;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.searchlist {

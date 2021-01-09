@@ -22,7 +22,7 @@
 <style lang="scss" scoped>
 	.contact {
 		width: 80%;
-		height: 200px;
+		height: 180px;
 		padding: 2px;
 		border: 4px solid red;
 		border-radius: 6px;

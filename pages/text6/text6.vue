@@ -50,7 +50,9 @@
 		methods: {
 			title(index) {
 				this.dazslist[0].name = this.dazslist[0].options[index].label
-			}
+			},
+			searchusers(){
+				}
 		}
 	}
 </script>

@@ -1,6 +1,6 @@
 <template>
 	<view class="search">
-		<input type="text" @focus="changeurl" @change="searchuser" @placeholder="请输入代表姓名" v-model= "inputval" />
+		<input type="text" @focus="changeurl" @change="searchuser" :placeholder="placeholder" v-model= "inputval" />
 		<view class=" inputsearch">
 		<image :src="imgurl" class="searchimg" @click="changeback"></image>
 	</view>
@@ -9,6 +9,9 @@
 
 <script>
 	export default {
+		props:{
+			placeholder:String
+		},
 		data() {
 			return {
 				imgurl: "../../static/contact/liasons_common_listpage_search.png",
