@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^5.0.0",
-    "uview-ui": "^1.8.3"
+    "uview-ui": "file:uview-ui"
   }
 }

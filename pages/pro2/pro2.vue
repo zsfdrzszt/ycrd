@@ -5,26 +5,17 @@
 			<image src="../../static/contact/county_common_connection_title.png"style="width: 100%; margin-bottom: 5px;"  mode="widthFix">
 			</image>
 			<wsearch @changenav="changenav" @searchusers="searchusers" placeholder="请输入代表姓名"></wsearch>
-			<scroll-view >
-				<u-waterfall v-model="flowList" v-show="warterfall">
-					<template v-slot:left="{leftList}">
-						<view v-for="(item, index) in leftList" :key="index" class="contbox">
-							<wcontacts :context="item.name"></wcontacts>
-						</view>
-					</template>
-					<template v-slot:right="{rightList}">
-						<view v-for="(item, index) in rightList" :key="index">
-							<wcontacts :context="item.name"></wcontacts>
-						</view>
-					</template>
-				</u-waterfall>
+			<view class="probuttoncont">
+				<view v-show="warterfall" class="wcontent">
+					<wcontacts class="wcontacts" :context="item.name" v-for="(item, index) in flowList" ></wcontacts>
+				</view>
 				<view v-show="!warterfall" class="searchlist" >
 					{{massage}}
-					<wuserlist v-for=" (item,index) in userlist " :key="index" :value="item"> </wuserlist>
+					<wuserlist v-for=" (item,index) in userlist " :key="index" :value="item" > </wuserlist>
 				</view>
-			</scroll-view>
+			</view>
 		</view>
-		</view>
+	</view>
 </template>
 
 <script>
@@ -157,19 +148,21 @@
 
 <style>
 	page {
-		/* height: 100%; */
+		height: 100%;
+		background-image: url(../../static/contact/county_common_connection_bg.png) ;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 	} 
 	.maincontent {
 		width: 100%;
 		height: 100%;
+		
 	}
 
 	.contentindex {
 		width: 100%;
 		height: 100%;
-		background-image: url(../../static/contact/county_common_connection_bg.png) ;
-		background-size: cover;
-		background-repeat: no-repeat;
 	}
 
 	.searchlist {
@@ -181,5 +174,18 @@
 		background-color: #f6f8fa;
 		border-radius: 10px;
 		text-align: center;
+	}
+	.probuttoncont{
+		width: 100%;
+		flex: 1;
+		}
+	.wcontent{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		width: 100%;
+	}
+	.wcontacts{
+		width: 40%;
 	}
 </style>

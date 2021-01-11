@@ -3,9 +3,11 @@
 		<view class="status_bar"></view>
 		<view class="content">
 			<view class="content-text">榆次区人大常委会<br>智慧人大平台</view>
+			<!-- //人大概述 。。。。-->
 			<view class="wrap">
 				<image mode="widthFix" v-for="(item,index) in images" class="wrapimg" @click="topage(index+1)" :src="item"></image>
 			</view>
+			<!-- 履历上传 -->
 			<view class="wrapcon">
 				<image src="../../static/indeximg/county_common_index_seven.png" class="wrapconimg" @click="topro(1)"></image>
 				<image src="../../static/indeximg/county_common_index_eight.png" class="wrapconimg" @click="topro(2)"></image>
@@ -19,10 +21,13 @@
 				</view>
 			</view>
 		</view>
+		<!-- 模态框部分 -->
 		<u-popup v-model="show" @click="show = false" mode="bottom" class="navmain">
+			<!-- 导航栏 -->
 			<view class="navlists">
 				<view class="navself" :class="{navselfchange:index==isActive }" v-for="(item,index) in navlist" @click="changenav(index)">{{item.name}}</view>
 			</view>
+			<!-- 底部轮播 -->
 			<swiper :current="swiperCurrent" class="swiperlist" >
 				<swiper-item class="swiper-item" @touchmove.stop>
 					<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
@@ -224,7 +229,7 @@
 					uni.navigateTo({
 						url: "/pages/text1/text1"
 					})
-				} else {
+				}else {
 					this.swiperCurrent = n
 					this.isActive = n
 				}
