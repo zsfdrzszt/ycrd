@@ -2,58 +2,11 @@
 	<view>
 		<view class="sticky">
 			<view class="status_bar">
-
 			</view>
-
+			
 			<!-- 顶部图片 -->
 			<image class="survey_top" src="../../static/surveyimg/banner-rdgk.png" mode="widthFix"></image>
-
-			<!-- 选项卡 -->
-			<view>
-				<view>
-					<u-tabs-swiper ref="uTabs" class="tab-control" :list="list" :current="current" @change="tabsChange" :is-scroll="false"
-					 active-color="#d71f07" bar-height="3" font-size="30" height="60" bar-width="150"></u-tabs-swiper>
-				</view>
-			</view>
 		</view>
-		<view class="kong">
-
-		</view>
-		<!-- <text>人大概述</text> -->
-		<swiper :current="swiperCurrent" style="height: 1000px; width: 100%;" bar-width="70" @transition="transition">
-			<swiper-item class="swiper-item" style="width: 100%;">
-				<scroll-view style="width: 100%;" :style="{height:swiperheight + 'px'}">
-					<view class="rdgs_box">
-						<view class="rdgs_box1">
-							<text class="survey_h2">榆次区人民代表大会简介</text>
-						</view>
-					</view>
-				</scroll-view>
-
-			</swiper-item>
-			、
-
-			<!--<text>常委会领导</text>  -->
-			<swiper-item class="swiper-item" style="width: 100%;">
-				<scroll-view style="width: 100%;">
-					<wuserlist v-for="(item,index) in userslist" :key="index" :value="item" ></wuserlist>
-				</scroll-view>
-			</swiper-item>
-
-			<!--<text>机构设置</text>  -->
-			<swiper-item class="swiper-item" style="width: 100%;">
-				<scroll-view style="width: 100%;">
-					<image class="jgsz" src="../../static/surveyimg/jgsz.png" mode="widthFix"></image>
-				</scroll-view>
-			</swiper-item>
-
-			<!-- <text>常委会成员</text> -->
-			<swiper-item class="swiper-item" style="width: 100%;">
-				<scroll-view style="width: 100%;">
-					<image class="jgsz" src="../../static/surveyimg/jgsz.png" mode="widthFix"></image>
-				</scroll-view>
-			</swiper-item>
-		</swiper>
 
 	</view>
 </template>

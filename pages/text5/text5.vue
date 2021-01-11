@@ -9,20 +9,19 @@
 		<!-- <image class="download_bg" src="../../static/pro5img/pro5-bg.jpg" mode="widthFix"></image> -->
 		<view class="page_body">
 			<view class="double_con1">
-				<view class="">
+				<navigator url="contactWay/contactWay">
 					<image src="../../static/pro5img/county_common_double_way.png" mode="widthFix"></image>
-				</view>
-				<view class="">
+				</navigator>
+				<navigator url="contactCntent/contactCntent">
 					<image src="../../static/pro5img/county_common_double_con.png" mode="widthFix"></image>
-				</view>
-				<view class="">
+				</navigator>
+				<navigator url="../pro2/pro2">
 					<image src="../../static/pro5img/county_common_double_object.png" mode="widthFix"></image>
-				</view>
+				</navigator>
 			</view>
 			<view class="double_con2">
 				<image src="../../static/pro5img/county_common_double_one.png" mode="heightFix"></image>
 			</view>
-
 			<image class="double_con3" src="../../static/pro5img/county_common_double_two.png" mode="widthFix"></image>
 			<image class="double_con4" src="../../static/pro5img/county_common_double_three.png" mode="heightFix"></image>
 			<image class="double_con3" src="../../static/pro5img/county_common_double_four.png" mode="widthFix"></image>
@@ -31,15 +30,20 @@
 			</view>
 
 			<view class="double_con1">
-				<view class="">
+				<navigator url="../pro3/pro3">
 					<image src="../../static/pro5img/county_common_double_liasons.png" mode="widthFix"></image>
-				</view>
-				<view class="">
+				</navigator>
+
+				<navigator url="../text1/text1">
 					<image src="../../static/pro5img/county_common_double_activity.png" mode="widthFix"></image>
-				</view>
-				<view class="">
+				</navigator>
+
+
+				<navigator url="../text2/text2">
 					<image src="../../static/pro5img/county_common_double_service.png" mode="widthFix"></image>
-				</view>
+				</navigator>
+
+
 			</view>
 		</view>
 	</view>
