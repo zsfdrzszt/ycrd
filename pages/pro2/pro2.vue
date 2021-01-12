@@ -15,15 +15,18 @@
 				</view>
 			</view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "../../components/w-navall/w-navall.vue"
 	import wsearch from "../../components/w-search/w-search"
 	import wcontacts from "../../components/w-contacts/w-contacts"
 	import wuserlist from "../../components/w-userlist/w-userlist.vue"
 	export default {
 		components: {
+			wnavall,
 			wsearch,
 			wcontacts,
 			wuserlist
