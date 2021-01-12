@@ -53,7 +53,6 @@
 	min-width: 25%;
 	padding: 10px;
 	text-align: center;
-	font-weight: 400;
 	
 }
 .navselfchange{
