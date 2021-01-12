@@ -72,14 +72,17 @@
 				</swiper-item>
 			</swiper>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "../../components/w-navall/w-navall.vue"
 	import wnewscard from "../../components/w-newscard/w-newscard.vue"
 	import wtabnav from "../../components/w-tabnav/w-tabnav.vue"
 	export default {
 		components:{
+			wnavall,
 			wnewscard,
 			wtabnav
 		},

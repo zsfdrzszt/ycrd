@@ -7,15 +7,18 @@
 		<dropdown v-for="(item,index) in dazslist" :key="index" :value="item" @click="title(index)">
 		</dropdown>
 		<zdbzslist v-for="(item,index) in pull_downlist" :key="index+1" :value="item"></zdbzslist>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "../../components/w-navall/w-navall.vue"
 	import wsearch from "../../components/w-search/w-search.vue"
 	import dropdown from "../../components/z-dropdown/z-dropdown"
 	import zdbzslist from "../../components/z-dbzslist/z-dbzslist"
 	export default {
 		components: {
+			wnavall,
 			wsearch,
 			dropdown,
 			zdbzslist

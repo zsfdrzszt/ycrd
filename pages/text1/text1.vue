@@ -6,19 +6,28 @@
 			
 			<!-- 顶部图片 -->
 			<image class="survey_top" src="../../static/surveyimg/banner-rdgk.png" mode="widthFix"></image>
+			<view class="stickycontact">
+				<text :style="{fontSize:textsize}">文化违法和环境和佛教文化</text>
+			</view>
+			<wtextsize @click="changetextsize"></wtextsize>
 		</view>
-
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wtextsize from "../../components/w-textsize/w-textsize.vue"
+	import wnavall from "../../components/w-navall/w-navall.vue"
 	import wuserlist from "../../components/w-userlist/w-userlist.vue"
 	export default {
 		components: {
+			wtextsize,
+			wnavall,
 			wuserlist
 		},
 		data() {
 			return {
+				textsize:"16px",
 				list: [{
 					name: '人大概述'
 				}, {
@@ -61,6 +70,23 @@
 			}
 		},
 		methods: {
+			//改变字体大小
+			changetextsize(e){
+				let num = parseInt(this.textsize)
+				if(e==1){
+					num ++
+					if(num >40){
+						num =40
+					}
+				}else if(e == 0){
+					num --
+					if(num < 14){
+						 num = 14
+					}
+				} 	
+				this.textsize = num +'px'
+				console.log(num)
+			},
 			// tabs通知swiper切换
 			tabsChange(index) {
 				this.current = index;
