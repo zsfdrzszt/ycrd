@@ -42,15 +42,19 @@
 				<navigator url="../text2/text2">
 					<image src="../../static/pro5img/county_common_double_service.png" mode="widthFix"></image>
 				</navigator>
-
-
 			</view>
+			<wnavall></wnavall>
 		</view>
+		
 	</view>
 </template>
 
 <script>
+	import wnavall from "../../components/w-navall/w-navall.vue"
 	export default {
+		components:{
+			wnavall
+		},
 		data() {
 			return {
 

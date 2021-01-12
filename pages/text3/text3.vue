@@ -3,25 +3,31 @@
 		<view class="status_bar">
 		</view>
 		<image src="../../static/bulidimg/county_common_build_title.png" mode="widthFix" style="width: 100%"></image>
-		<wsearch class="search" @searchusers="searchusers"></wsearch>
+		<wsearch class="search" @changenav="changenav" @searchusers="searchusers"></wsearch>
 		<!-- <wuserlist v-for=" (item,index) in userlist " :key="index" :value="item"> </wuserlist> -->
-		<zlist v-for=" (item,index) in zlist " :key="index" :value="item" ></zlist>
+		<zlist v-for=" (item,index) in zlist "  :value="item"  v-show="zliststate"></zlist>
+		<zlist v-for=" (item,index) in zlistseach " :key="index" :value="item" v-show="!zliststate"></zlist>
 		<view class="end">
 			<text>以到达最底部</text>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "../../components/w-navall/w-navall.vue"
 	import wsearch from "../../components/w-search/w-search.vue"
 	import zlist from "../../components/z-list/z-list.vue"
 	export default {
 		components:{
+			wnavall,
 			wsearch,
 			zlist
 		},
 		data() {
 			return {
+				zliststate:true,
+				zlistseach:[],
 				zlist:[{
 					content:"依宪治国、依宪执政，习近平法治思想领航中国",
 					region:"榆次区",
@@ -55,17 +61,21 @@
 			}
 		},
 		methods: {
-			// changenav() {
-			// 	this.warterfall = !this.warterfall
-			// 	if(this.userlist.length == 0){
-			// 		this.massage ="请输入内容"
-			// 	}else{
-			// 		this.massage = ""
-			// 	}
-			// 	this.userlist=[]
-			// },
-			searchusers(){
-				
+			changenav(){
+				this.zliststate = !this.zliststate
+				this.zlistseach=[]
+			},
+			searchusers(e){
+				if(e){
+					this.zlistseach=[]
+					this.zlist.filter((item)=>{
+						if(item.content.match(e)){
+						   this.zlistseach.push(item)
+						}
+					})
+				}else{
+					this.zlistseach=[]
+				}
 			}
 		}
 	}
