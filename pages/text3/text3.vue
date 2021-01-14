@@ -3,10 +3,10 @@
 		<view class="status_bar">
 		</view>
 		<image src="../../static/bulidimg/county_common_build_title.png" mode="widthFix" style="width: 100%"></image>
-		<wsearch class="search" @changenav="changenav" @searchusers="searchusers"></wsearch>
+		<zsearch placeholder="请输入搜索内容" class="search" @changenav="changenav" @searchusers="searchusers"></zsearch>
 		<!-- <wuserlist v-for=" (item,index) in userlist " :key="index" :value="item"> </wuserlist> -->
 		<zlist v-for=" (item,index) in zlist "  :value="item"  v-show="zliststate"></zlist>
-		<zlist v-for=" (item,index) in zlistseach " :key="index" :value="item" v-show="!zliststate"></zlist>
+		<zlist v-for=" (item,index) in zlistseach " :key="index"  :value="item" v-show="!zliststate"></zlist>
 		<view class="end">
 			<text>以到达最底部</text>
 		</view>
@@ -16,12 +16,12 @@
 
 <script>
 	import wnavall from "../../components/w-navall/w-navall.vue"
-	import wsearch from "../../components/w-search/w-search.vue"
+	import zsearch from "../../components/z-search/z-search.vue"
 	import zlist from "../../components/z-list/z-list.vue"
 	export default {
 		components:{
 			wnavall,
-			wsearch,
+			zsearch,
 			zlist
 		},
 		data() {

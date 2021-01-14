@@ -49,8 +49,9 @@
 
 <style scoped>
 	.search {
+		margin-top: 10rpx;
 		display: flex;
-		height: 45px;
+		height: 36px;
 		justify-content: center;
 	}
 
@@ -69,8 +70,8 @@
 	}
 
 	.inputsearch {
-		width: 45px;
-		height: 45px;
+		width: 36px;
+		height: 36px;
 		display: flex;
 		justify-content: center;
 		align-items: center;

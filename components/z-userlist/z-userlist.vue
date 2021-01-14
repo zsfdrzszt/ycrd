@@ -1,6 +1,6 @@
 <template>
 	<!-- 人员卡片 -->
-	<view class="usermain">
+	<view class="usermain" @click="toppeg(value.liaison_id)">
 		<view class="userleft">
 			<image :src="value.url" class="userimg" mode="widthFix"></image>
 		</view>
@@ -20,6 +20,14 @@
 		},
 		data() {
 			return {};
+		},methods:{
+			toppeg(id){
+				uni.navigateTo({
+					url:"/pages/text1/liaison/liaison"+"?id=" + id
+				})
+				console.log(id)
+				console.log(this.value)
+			}
 		}
 	}
 </script>
