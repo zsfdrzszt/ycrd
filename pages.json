@@ -146,6 +146,15 @@
 		    }
 		    
 		}
+        ,{
+            "path" : "pages/pro2/prolist/prolist",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

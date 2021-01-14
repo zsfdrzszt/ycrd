@@ -40,6 +40,7 @@
 	   display: flex;
 	   justify-content: center;
 	   align-items: center;
+	   background-color: #FFFFFF;
    }
    .textpaly{
 	   height: 50px;

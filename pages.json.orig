@@ -28,11 +28,7 @@
 
 			}
 
-<<<<<<< HEAD
 		},
-=======
-		}, 
->>>>>>> 6125f57bc7bbed7e24871faf0faa275e1f44a350
 		{
 			"path": "pages/pro1/pro1",
 			"style": {
@@ -132,6 +128,32 @@
             }
             
         }
+        ,{
+<<<<<<< HEAD
+            "path" : "pages/text4/text4",
+=======
+            "path" : "pages/text1/liaison/liaison",
+>>>>>>> 56ddb0291a4bc760ad38e8bb63c4cd10198f4fd1
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+<<<<<<< HEAD
+        },
+		{
+		    "path" : "pages/text4/text4son",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+=======
+        }
+>>>>>>> 56ddb0291a4bc760ad38e8bb63c4cd10198f4fd1
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

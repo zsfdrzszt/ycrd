@@ -7,7 +7,7 @@
 			<wsearch @changenav="changenav" @searchusers="searchusers" placeholder="请输入代表姓名"></wsearch>
 			<view class="probuttoncont">
 				<view v-show="warterfall" class="wcontent">
-					<wcontacts class="wcontacts" :context="item.name" v-for="(item, index) in flowList" :key="index" ></wcontacts>
+					<wcontacts class="wcontacts" :context="item.name" v-for="(item, index) in flowList" :key="index"></wcontacts>
 				</view>
 				<view v-show="!warterfall" class="searchlist" >
 					{{massage}}

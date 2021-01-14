@@ -53,7 +53,7 @@
 				text4list:[],
 				text4lists:[{content:"电费滚滚根据客户",state:"回复",time:"2020.1.13"},
 				{content:"建设计划覅发",state:"回复",time:"2021.1.13"},
-				{content:"使是狗日ui看了几个 ",state:"已回复",time:"2019.1.13"},
+				{content:"啊的方法让国人 ",state:"已回复",time:"2019.1.13"},
 				{content:"阿基诺就黑",state:"回复",time:"2021.1.13"},
 				{content:"计划管控热乎乎JFK零零会计分录开始和是设立了放谁是否是和身份火箭首发机会忽视了",state:"已受理",time:"2021.1.13"},
 				{content:"啊划分方式沙发沙发是发挥好",state:"回复",time:"2019.1.13"},
@@ -80,7 +80,6 @@
 			changestate(n){
 				this.isActive = n
 				this.text4list=[]
-				console.log(this.text4list.length)
 			},
 			searchdrop(val){
 				this.text4list=[]

@@ -14,7 +14,7 @@
 		},
 		data() {
 			return {
-				imgurl: "../../static/contact/liasons_common_listpage_search.png",
+				imgurl: "/static/contact/liasons_common_listpage_search.png",
 				state:1,
 				inputval:""
 			};
@@ -23,7 +23,7 @@
 			//改变搜索栏图标X 触发父组件两栏的显示与否
 			changeurl() {
 				if(this.state == 1){
-					this.imgurl = "../../static/contact/liasons_common_connection_search.png",
+					this.imgurl = "/static/contact/liasons_common_connection_search.png",
 					this.$emit("changenav")
 					this.state = 0
 				}
@@ -31,7 +31,7 @@
 			//改变搜索栏图标返回？ 使输入栏为空
 			changeback() {
 				if(this.state == 0){
-					this.imgurl = "../../static/contact/liasons_common_listpage_search.png"
+					this.imgurl = "/static/contact/liasons_common_listpage_search.png"
 					this.$emit("changenav")
 					this.state = 1
 				}
@@ -43,7 +43,8 @@
 				this.$emit("searchusers",val)
 				
 			}
-		}
+		},
+		
 	}
 </script>
 

@@ -157,8 +157,6 @@
 					this.swiperCurrent = current;
 					this.current1 = current;
 				}
-				console.log(e.detail.current)
-				
 			},
 			// scroll-view到底部加载更多
 			onreachBottom() {

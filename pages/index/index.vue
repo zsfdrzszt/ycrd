@@ -243,7 +243,6 @@
 			},
 			topro(num) {
 				let url = "/pages/pro" + num + "/pro" + num
-				console.log(url)
 				uni.navigateTo({
 					url: url
 				})

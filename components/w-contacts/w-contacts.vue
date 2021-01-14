@@ -1,5 +1,5 @@
 <template>
-	<view class="contact">
+	<view class="contact" @click="topage">
 		<view class="contactmain">
 			<image src="../../static/contact/county_common_three_guohui.png" class="emblem" mode="widthFix"></image>
 			<text style="text-align: center;color: white;font-weight: bold;margin-top: 5px;font-size: 16px;">{{context}}</text>
@@ -14,7 +14,11 @@
 			context: String,
 		},
 		methods: {
-
+             topage(){
+				 uni.navigateTo({
+				 	url:"/pages/pro2/prolist/prolist"+"?space="+this.context
+				 })
+			 },
 		}
 	}
 </script>

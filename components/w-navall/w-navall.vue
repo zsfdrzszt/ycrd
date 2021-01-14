@@ -1,6 +1,6 @@
 <template>
 	<!-- //菜单 -->
-	<view class="navmenus">
+	<view class="navmenus" >
 	    <view  :style="{height: navHeight }" class="navmenuheight">
 			<view class="navmenu" @click="topages(0)">首页</view>
 			<view class="navmenu">个人中心</view>
@@ -41,7 +41,7 @@
 					let time = setInterval(()=>{
 							num +=5
 							this.navHeight = num +"px"
-							if(num > document.getElementsByClassName('navmenus')[0].offsetHeight){
+							if(num > 300){
 								clearInterval(time)
 							}
 					},10)
