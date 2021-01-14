@@ -20,13 +20,14 @@
 		},
 		data() {
 			return {};
-		},methods:{
+		},
+		methods:{
 			toppeg(id){
 				uni.navigateTo({
 					url:"/pages/text1/liaison/liaison"+"?id=" + id
 				})
 				console.log(id)
-				console.log(this.value)
+				// console.log(this.value)
 			}
 		}
 	}
