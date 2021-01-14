@@ -1,7 +1,7 @@
 <template>
 	<!-- tagbar -->
-	<view class="tabtopsty" @click="changething()">
-		<view class="tabtopval" :class="{navselfchange:index==isActive }"   v-for="(item,index) in list" :key="index" @click="change(index)">{{item.name}}</view>
+	<view ref="tabtopsty" class="tabtopsty" @click="changething">
+		<view ref="tabtopval" class="tabtopval" :class="{navselfchange:index==isActive }"   v-for="(item,index) in list" :key="index" @click="change(index)">{{item.name}}</view>
 	</view>
 </template>
 

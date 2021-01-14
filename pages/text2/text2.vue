@@ -79,7 +79,7 @@
 <script>
 	import wnavall from "../../components/w-navall/w-navall.vue"
 	import wnewscard from "../../components/w-newscard/w-newscard.vue"
-	import wtabnav from "../../components/w-tabnav/w-tabnav.vue"
+	import wtabnav from "../../components/w-tabnav1/w-tabnav1.vue"
 	export default {
 		components:{
 			wnavall,

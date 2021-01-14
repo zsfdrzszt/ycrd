@@ -14,8 +14,7 @@
 				<image src="../../static/indeximg/county_common_index_ten.png" class="wrapconimg" @click="show = true"></image>
 				<view class="wrapbuttom">
 					<view class="wrapback" v-show="showWarp" @click="tobuttom">
-						<image src="../../static/indeximg/county_common_index_close.png" style="position: absolute; left: 0; top: 0; width: 10%; height: 30%;"
-						 @click="showwarp"></image>
+						<image src="../../static/indeximg/county_common_index_close.png" style="position: absolute; left: 5px; top: 5px; width: 5%; " @click="showwarp" mode="widthFix"></image>
 					</view>
 					<image mode="widthFix" src="../../static/indeximg/county_common_index_nine.png" class="myself"></image>
 				</view>
@@ -31,19 +30,19 @@
 			<swiper :current="swiperCurrent" class="swiperlist" >
 				<swiper-item class="swiper-item" @touchmove.stop>
 					<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
-						<wjobnew v-for=" (item,index) in userlist " :newlist="item" @topage="tonext(index)"></wjobnew>
+						<wjobnew v-for=" (item,index) in userlist " :key="index"  :newlist="item" @topage="tonext(index)"></wjobnew>
 					</scroll-view>
 				</swiper-item>
 				<swiper-item class="swiper-item" @touchmove.stop>
 					<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
-						<wnewtwo v-for="(item,index) in newlist22" :newlist="item" @topage="tonext(index)"></wnewtwo>
+						<wnewtwo v-for="(item,index) in newlist22" :key="index" :newlist="item" @topage="tonext(index)"></wnewtwo>
 					</scroll-view>
 				</swiper-item>
 				<swiper-item class="swiper-item" @touchmove.stop>
 				</swiper-item>
 				<swiper-item class="swiper-item" @touchmove.stop>
 					<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
-						<wnewthree v-for="(item,index) in newlist33" :list="item" @topage="tonext(index)"></wnewthree>
+						<wnewthree v-for="(item,index) in newlist33" :key="index"  :list="item" @topage="tonext(index)"></wnewthree>
 					</scroll-view>
 				</swiper-item>
 			</swiper>
@@ -53,13 +52,11 @@
 </template>
 
 <script>
-	import zlist from "../../components/z-list/z-list.vue"
 	import wjobnew from "../../components/w-newone/w-newone.vue"
 	import wnewtwo from "../../components/w-newtwo/w-newtwo.vue"
 	import wnewthree from "../../components/w-newthree/w-newthree.vue"
 	export default {
 		components: {
-			zlist,
 			wjobnew,
 			wnewtwo,
 			wnewthree

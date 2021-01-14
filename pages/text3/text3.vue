@@ -5,7 +5,7 @@
 		<image src="../../static/bulidimg/county_common_build_title.png" mode="widthFix" style="width: 100%"></image>
 		<wsearch class="search" @changenav="changenav" @searchusers="searchusers"></wsearch>
 		<!-- <wuserlist v-for=" (item,index) in userlist " :key="index" :value="item"> </wuserlist> -->
-		<zlist v-for=" (item,index) in zlist "  :value="item"  v-show="zliststate"></zlist>
+		<zlist v-for=" (item,index) in zlist "  :key="index" :value="item"  v-show="zliststate"></zlist>
 		<zlist v-for=" (item,index) in zlistseach " :key="index" :value="item" v-show="!zliststate"></zlist>
 		<view class="end">
 			<text>以到达最底部</text>
