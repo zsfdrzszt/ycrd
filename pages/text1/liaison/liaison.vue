@@ -52,12 +52,14 @@
 			
 		},
 		onLoad(option) {
+			// console.log(option)
 			this.liaisonLists.filter((item)=>{
 				// console.log(item.liaison_id)
 				if(item.liaison_id == option.id){
 					this.liaisonList.push(item)
 				}
 			})
+			
 			// console.log(this.liaisonList)
 			// console.log(this.liaisonLists)
 		}
