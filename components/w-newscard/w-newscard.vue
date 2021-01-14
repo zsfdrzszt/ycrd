@@ -1,25 +1,27 @@
 <template>
 	<view class="newcon">
-		<text class="newtext">{{list.titel}}</text>
-		<view style="text-align: right;">{{list.time}}</view>
+		<navigator url="#" class="important_row">
+			<view class="important_rowleft">{{list.titel}}</view>
+			<view class="important_rowright" >{{list.time}}</view>
+		</navigator>
 	</view>
 </template>
 
 <script>
 	export default {
-		props:{
-			list:Object
+		props: {
+			list: Object
 		},
 		data() {
 			return {
-				
+
 			};
 		}
 	}
 </script>
 
 <style scoped>
-.newcon{
+	/* .newcon{
 	width: 90%;
 	margin: 10px auto;
 	padding: 10px;
@@ -38,5 +40,31 @@
 	min-height: 54px;
 	text-indent: 10px;
 	line-height: 20px;
-}
+} */
+	.newcon view {
+		height: 100%;
+		overflow: auto;
+		box-sizing: border-box;
+		background-color: white;
+	}
+
+	.important_row {
+		display: block;
+		padding: 10px;
+		box-sizing: border-box;
+		border-bottom: 1px solid #ccc;
+		font-size: 15px;
+		line-height: 26px;
+		margin: 15px 10px;
+		background-color: white;
+		border-radius: 5px;
+		box-shadow: 1px 1px 10px #ccc;
+	}
+	.important_rowleft {
+		min-height: 54px;
+		text-align: left;
+	}
+	.important_rowright {
+		text-align: right;
+	}
 </style>

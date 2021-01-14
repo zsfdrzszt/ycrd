@@ -1,23 +1,37 @@
 <template>
 	<view>
-		<view class="zlist">
+		<!-- 	<view class="zlist">
 			<text class="build_rowtitle">{{value.content}}</text>
 			<view class="detalis">
 				<view class="zregion">{{value.region}}</view>
 				<view class="ztime">{{value.time}}</view>
 			</view>
+		</view> -->
+
+
+		<view class="zlist">
+			<navigator class="a" url="#">
+				<view class="zregion">{{value.content}}</view>
+				<view class="ztime">
+					<view class="build_rowleft">
+						{{value.region}}
+					</view>
+					<view class="build_rowright">
+						{{value.time}}
+					</view>
+				</view>
+			</navigator>
 		</view>
 	</view>
 </template>
 
 <script>
 	export default {
-		props:{
-			value:Object
+		props: {
+			value: Object
 		},
 		data() {
-			return {
-			}
+			return {}
 		},
 		methods: {
 
@@ -27,23 +41,29 @@
 
 <style lang="scss">
 	.zlist {
-		margin:20px 20px;
-		background-color: #FFFFFF;
 		display: block;
-		box-shadow: 1px 7px #ccc;
-		border-radius: 3px;
-		padding: 10px 0;
-	}
-	.build_rowtitle {
-		margin: 0px 20px;
-		font-size: 18px;
-		font-family: 黑体;
-	}
-	.detalis {
-		display: flex;
-		margin: 10px 20px;
-		justify-content: space-between;
-		margin-bottom: 0;
+
+		.a {
+			margin: 20px 10px;
+			background-color: white;
+			display: block;
+			box-shadow: 1px 1px 10px #ccc;
+			border-radius: 3px;
+			padding: 10px 0;
+
+			.zregion {
+				margin: 0px 20px;
+				font-size: 18px;
+				font-family: 黑体;
+			}
+
+			.ztime {
+				display: flex;
+				margin: 10px 20px;
+				justify-content: space-between;
+				margin-bottom: 0;
+
+			}
+		}
 	}
 </style>
-

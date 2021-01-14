@@ -29,20 +29,11 @@
 			}
 
 <<<<<<< HEAD
-		}
-	    ,{
-            "path" : "pages/pro1/pro1",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        } ,{
+		},
 =======
-		}, {
-
-
+		}, 
+>>>>>>> 6125f57bc7bbed7e24871faf0faa275e1f44a350
+		{
 			"path": "pages/pro1/pro1",
 			"style": {
 				"navigationBarTitleText": "",
@@ -50,7 +41,6 @@
 			}
 
 		}, {
->>>>>>> 527514d6c370496cdf3d22f00bf7101bc482353e
 			"path": "pages/pro2/pro2",
 			"style": {
 				"navigationStyle": "custom",
@@ -116,9 +106,25 @@
 				"enablePullDownRefresh": false
 			}
 
+		}, {
+			"path": "components/z-dbzslist/z-dbzslist",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	    ,{
-            "path" : "components/z-dbzslist/z-dbzslist",
+            "path" : "pages/text5/contactWay/contactWay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/text5/contactCntent/contactCntent",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
