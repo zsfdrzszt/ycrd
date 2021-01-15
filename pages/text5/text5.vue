@@ -1,7 +1,6 @@
 <template>
 	<view>
 		<view class="status_bar">
-
 		</view>
 		<view class="kong">
 
@@ -30,16 +29,13 @@
 			</view>
 
 			<view class="double_con1">
-				<navigator url="../pro3/pro3">
+				<navigator url="/pages/text5/text5next/text5next?id=0">
 					<image src="../../static/pro5img/county_common_double_liasons.png" mode="widthFix"></image>
 				</navigator>
-
-				<navigator url="../text1/text1">
+				<navigator url="/pages/text5/text5next/text5next?id=1">
 					<image src="../../static/pro5img/county_common_double_activity.png" mode="widthFix"></image>
 				</navigator>
-
-
-				<navigator url="../text2/text2">
+				<navigator url="/pages/text5/text5next/text5next?id=2">
 					<image src="../../static/pro5img/county_common_double_service.png" mode="widthFix"></image>
 				</navigator>
 			</view>
