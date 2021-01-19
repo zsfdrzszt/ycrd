@@ -4,7 +4,7 @@
 	    <view  :style="{height: navHeight }" class="navmenuheight">
 			<view class="navmenu" @click="topages(0)">首页</view>
 			<view class="navmenu">个人中心</view>
-			<view class="navmenu">名词解释</view>
+			<view class="navmenu" @click="topage">名词解释</view>
 			<view class="navmenu"@click="topages(-1)">返回上页</view>
 		</view>
 		<view class="navmenu navmenubottom" @click="navshow">菜单</view>
@@ -22,6 +22,11 @@
 			};
 		},
 		methods:{
+			topage(){
+				uni.navigateTo({
+					url:"/pages/nextpages/explain/explain"
+				})
+			},
 			topages(val){
 			if(val<0){
 				uni.navigateBack({

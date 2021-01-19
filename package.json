@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^5.0.0",
-    "uview-ui": "file:uview-ui"
+    "uview-ui": "file:uview-ui",
+    "vuex": "^3.6.0",
+    "vuex-persistedstate": "^4.0.0-beta.3"
   },
   "repository": {
     "type": "git",
