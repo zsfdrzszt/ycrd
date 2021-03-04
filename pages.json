@@ -191,6 +191,7 @@
             }
             
         },
+		// 活动室主页
 		{
 		    "path" : "pages/activity_room/activity_index",
 		    "style" :                                                                                    
@@ -200,8 +201,29 @@
 		    }
 		    
 		},
+		// 活动室概况
 		{
 			"path" : "pages/activity_room/activity_introduction/activity_introduction",
+			"style" :
+			{
+			    "navigationBarTitleText": "",
+			    "enablePullDownRefresh": false
+			}
+		
+		},
+		// 活动室列表
+		{
+			"path" : "pages/activity_room/activity_list/activity_list",
+			"style" :
+			{
+			    "navigationBarTitleText": "",
+			    "enablePullDownRefresh": false
+			}
+		
+		},
+		// 活动室详细页面
+		{
+			"path" : "pages/activity_room/activity_det/activity_det",
 			"style" :
 			{
 			    "navigationBarTitleText": "",
