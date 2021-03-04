@@ -51,6 +51,9 @@
 			return{
 				index_title:'郭家堡安宁活动室'
 			}
+		},
+		onLoad() {
+			this.index_title = this.$route.query.space1
 		}
 	}
 </script>

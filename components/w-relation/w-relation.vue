@@ -49,8 +49,9 @@
 		methods:{
 			topage(item){
 				if(this.num == 1){
+					console.log(1111111)
 					uni.navigateTo({
-						url:"/pages/pro2/prolist/prolist"+"?space1="+item
+						url:"/pages/activity_room/activity_index"+"?space1="+item
 					})
 				}else if(this.num == 2){
 					uni.navigateTo({
