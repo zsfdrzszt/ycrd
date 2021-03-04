@@ -5,37 +5,37 @@
 		</view>
 		<view class='three_liacon'>
 			<view class='liacon_activt_item'>
-				<navigator url='' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_introduction/activity_introduction' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_gk.png" alt="">
 					<span>活动室概况</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
-				<navigator url='' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_list/activity_list' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_xj.png" alt="">
 					<span>宣讲</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
-				<navigator url='' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_list/activity_list' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_lx.png" alt="">
 					<span>联系</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
-				<navigator url='' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_list/activity_list' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_zf.png" alt="">
 					<span>走访</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
-				<navigator url='' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_list/activity_list' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_xmjd.png" alt="">
 					<span>选民接待</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
-				<navigator url='' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_list/activity_list' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_sqmyfk.png" alt="">
 					<span>社情民意反馈</span>
 				</navigator>

@@ -15,8 +15,8 @@
 	import organization  from "../../components/organization/organization.vue"  //图片 视频组件
 	import wtextsize from "../../components/w-textsize/w-textsize.vue"
 	import relation  from "../../components/relation/relation.vue"    //联系卡片
-	import reply from "../../components/reply/reply.vue"
-	export default {
+	import reply from "../../components/reply/reply.vue"      //回复组件
+	export default { 
 		components:{
 			viewvideo,
 			wtextsize,

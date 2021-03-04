@@ -5,7 +5,7 @@
 		</view>
 		<view class='center_list'>
 			<view class='list_item' v-for="(item,index) in list_all" :key=item.id>
-				<navigator url='' class="list_item_a">
+				<navigator url='/pages/activity_room/activity_det/activity_det' class="list_item_a">
 					<view class='list_left'>
 						<img :src='item.img' alt="">
 					</view>
