@@ -11,31 +11,31 @@
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
-				<navigator url='/pages/activity_room/activity_list/activity_list' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_list/activity_list?name=宣讲' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_xj.png" alt="">
 					<span>宣讲</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
-				<navigator url='/pages/activity_room/activity_list/activity_list' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_list/activity_list?name=联系' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_lx.png" alt="">
 					<span>联系</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
-				<navigator url='/pages/activity_room/activity_list/activity_list' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_list/activity_list?name=走访' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_zf.png" alt="">
 					<span>走访</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
-				<navigator url='/pages/activity_room/activity_list/activity_list' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_list/activity_list?name=选民接待' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_xmjd.png" alt="">
 					<span>选民接待</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
-				<navigator url='/pages/activity_room/activity_list/activity_list' class="liacon_activt_item_a">
+				<navigator url='/pages/activity_room/activity_list/activity_list?name=社情民意反馈' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_sqmyfk.png" alt="">
 					<span>社情民意反馈</span>
 				</navigator>

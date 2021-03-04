@@ -4,23 +4,17 @@
 			{{list_title}}
 		</view>
 		<view class='center_list'>
-			<view class='list_item' v-for="(item,index) in list_all" :key=item.id>
-				<navigator url='/pages/activity_room/activity_det/activity_det' class="list_item_a">
-					<view class='list_left'>
-						<img :src='item.img' alt="">
-					</view>
-					<view class='list_right'>
-						<view>{{item.title}}</view>
-						<view>{{item.time}}</view>
-					</view>
-				</navigator>
-			</view>
+			<activecard v-for="(item,index) in list_all"  :key=item.id :list="item"></activecard>
 		</view>
 	</view>
 </template>
 
 <script>
+	import activecard  from "../../../components/activecard/activecard.vue"
 	export default {
+		components:{
+			activecard
+		},
 		data(){
 			return{
 				list_title:'宣讲',
@@ -49,7 +43,11 @@
 					time:'[2020年03月31日]'
 				}]
 			}
+		},
+		onLoad() {
+			this.list_title = this.$route.query.name
 		}
+		
 	}
 </script>
 
@@ -75,40 +73,5 @@
 		text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
 		color: #fc3a3b;
 		margin-bottom: 20px;
-	}
-	
-	.list_item{
-		margin: 15px 10px;
-		background-color: white;
-		box-shadow: 1px 1px 10px #ccc;
-		padding: 10px 0;
-		display: flex;
-		box-sizing: border-box;
-	}
-	.list_item_a{
-		display: flex;
-	}
-	.list_left{
-		width: 120px;
-		display: flex;
-		justify-content: center;
-		align-items: center
-	}
-	.list_left img{
-		width: 80%;
-		border-radius: 6px;
-	}
-	.list_right{
-		padding: 0 10px;
-		flex:1;
-	}
-	.list_right>view:nth-child(1){
-		border-bottom: 1px solid black;
-		position: relative;
-		line-height: 1.5em;
-		height: 3em;
-		overflow: hidden;
-		text-align: justify;
-		font-weight: bold;
 	}
 </style>
