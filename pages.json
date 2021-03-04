@@ -199,6 +199,15 @@
 		        "enablePullDownRefresh": false
 		    }
 		    
+		},
+		{
+			"path" : "pages/activity_room/activity_introduction/activity_introduction",
+			"style" :
+			{
+			    "navigationBarTitleText": "",
+			    "enablePullDownRefresh": false
+			}
+		
 		}
         ,{
             "path" : "pages/nextpages/explainone/explainone",

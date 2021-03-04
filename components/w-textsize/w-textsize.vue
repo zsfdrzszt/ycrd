@@ -12,7 +12,7 @@
 		data() {
 			return {
 				num:0,
-				imgurl:["../../static/textsize/common_pluse.png","../../static/textsize/common_play.gif"]
+				imgurl:["/static/textsize/common_pluse.png","/static/textsize/common_play.gif"]
 			};
 		},
 		methods:{

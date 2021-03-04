@@ -1,48 +1,48 @@
 <template>
-	<div>
-		<div class='activity_index_title'>
+	<view>
+		<view class='activity_index_title'>
 			{{index_title}}
-		</div>
-		<div class='three_liacon'>
-			<div class='liacon_activt_item'>
+		</view>
+		<view class='three_liacon'>
+			<view class='liacon_activt_item'>
 				<navigator url='' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_gk.png" alt="">
 					<span>活动室概况</span>
 				</navigator>
-			</div>
-			<div class='liacon_activt_item'>
+			</view>
+			<view class='liacon_activt_item'>
 				<navigator url='' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_xj.png" alt="">
 					<span>宣讲</span>
 				</navigator>
-			</div>
-			<div class='liacon_activt_item'>
+			</view>
+			<view class='liacon_activt_item'>
 				<navigator url='' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_lx.png" alt="">
 					<span>联系</span>
 				</navigator>
-			</div>
-			<div class='liacon_activt_item'>
+			</view>
+			<view class='liacon_activt_item'>
 				<navigator url='' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_zf.png" alt="">
 					<span>走访</span>
 				</navigator>
-			</div>
-			<div class='liacon_activt_item'>
+			</view>
+			<view class='liacon_activt_item'>
 				<navigator url='' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_xmjd.png" alt="">
 					<span>选民接待</span>
 				</navigator>
-			</div>
-			<div class='liacon_activt_item'>
+			</view>
+			<view class='liacon_activt_item'>
 				<navigator url='' class="liacon_activt_item_a">
 					<img src="../../static/activity_room/activityroom_common_index_sqmyfk.png" alt="">
 					<span>社情民意反馈</span>
 				</navigator>
-			</div>
+			</view>
 			
-		</div>
-	</div>
+		</view>
+	</view>
 </template>
 
 <script>
@@ -60,6 +60,13 @@
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+	}
+	page{
+		padding-top:30px;
+		height: 100%;
+		background: url(@/static/text5/common_bg.jpg);
+		background-size:100% 100%;
+		background-repeat:no-repeat ;
 	}
 	.activity_index_title{
 		text-align: center;
@@ -95,11 +102,5 @@
 	.liacon_activt_item_a>span{
 		padding-top:10px;
 	}
-	page{
-		padding-top:30px;
-		height: 100%;
-		background: url(@/static/text5/common_bg.jpg);
-		background-size:100% 100%;
-		background-repeat:no-repeat ;
-	}
+	
 </style>
