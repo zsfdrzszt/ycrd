@@ -4,8 +4,6 @@
 		<view class="content" >
 			<!-- <view style="background-image: url(../../static/text2img/county_common_build_title.png);background-size:100% 100%;background-repeat: no-repeat; width: 100%; height: 18%;">
 			</view> -->
-			
-			
 			<view >
 				<image src="../../static/text2img/county_common_build_title.png" mode="widthFix" style="width: 100%;"></image>
 				<!-- <u-tabs-swiper ref="uTabs" :list="list" font-size="28" :current="current" @change="tabsChange" :is-scroll="false" active-color="red" inactive-color="black" bar-width="180" swiperWidth="750" :showBar="!showBar"></u-tabs-swiper> -->
