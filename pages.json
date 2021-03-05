@@ -241,7 +241,7 @@
             
         }
         ,{
-            "path" : "pages/liaison/index",
+            "path" : "pages/liaison/administration/administration",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
