@@ -1,19 +1,21 @@
 <template>
-	<navigator class="headline" url="">
-	    <view class="headline_title">
-	    	{{num}}、{{list.title}}
-	    </view>
-		<view class="headline_time">
-			{{list.time}}
-		</view>
-	</navigator>
+	<view>
+		<navigator class="headline" url=""  v-for="(item, index) in list" :key="index">
+		    <view class="headline_title">
+		    	{{item.id}}、{{item.title}}
+		    </view>
+			<view class="headline_time">
+				{{item.time}}
+			</view>
+		</navigator>
+	</view>
 </template>
 
 <script>
 	export default {
 		props:{
-		  list:Object,
-		  num:Number
+		  list:Array,
+		  // num:Number
 		},
 		data() {
 			return {
@@ -25,10 +27,11 @@
 
 <style>
 .headline{
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	box-shadow: 1px 1px 10px #ccc;
 	display: block;
+	margin-bottom: 20px;
 }
 .headline_title{
 	padding: 10px;
