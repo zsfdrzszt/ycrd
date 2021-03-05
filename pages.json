@@ -240,6 +240,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/liaison/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

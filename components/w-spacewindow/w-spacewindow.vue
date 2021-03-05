@@ -10,7 +10,8 @@
 <script>
 	export default {
 		props:{
-			space:String
+			space:String,
+			id:Number
 		},
 		data() {
 			return {
@@ -21,7 +22,7 @@
 			topage(){
 				console.log(111)
 				uni.navigateTo({
-					url: "/pages/text4/text4son"+"?space="+this.space
+					url: "/pages/liaison/index"+"?id="+this.id
 				})
 			}
 		}
