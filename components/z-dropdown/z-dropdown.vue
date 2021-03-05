@@ -3,9 +3,7 @@
 		<u-dropdown ref="uDropdown" @open="open">
 			<u-dropdown-item :v-model="value.number" :title=valueData :options="value.options" @change="change">
 			</u-dropdown-item>
-			
 		</u-dropdown>
-
 	</view>
 </template>
 

@@ -5,7 +5,7 @@
 				<img :src='list.img' alt="">
 			</view>
 			<view class='list_right'>
-				<view>{{list.title}}</view>
+				<view class="list_righttop" :class="{linecorlor:true == state}">{{list.title}}</view>
 				<view>{{list.time}}</view>
 			</view>
 		</navigator>
@@ -15,7 +15,8 @@
 <script>
 	export default {
 		props:{
-			list:Object
+			list:Object,
+			state:Boolean
 		},
 		data() {
 			return {
@@ -36,6 +37,7 @@
 	}
 	.list_item_a{
 		display: flex;
+		width: 100%;
 	}
 	.list_left{
 		width: 120px;
@@ -48,11 +50,13 @@
 		border-radius: 6px;
 	}
 	.list_right{
+		display: block;
 		padding: 0 10px;
-		flex:1;
+		/* flex:1; */
+		width: 60%;
 	}
 	.list_right>view:nth-child(1){
-		border-bottom: 1px solid black;
+		width: 100%;
 		position: relative;
 		line-height: 1.5em;
 		height: 3em;
@@ -60,4 +64,8 @@
 		text-align: justify;
 		font-weight: bold;
 	}
+	.linecorlor{
+		border-bottom: 1px solid black;
+	}
+	
 </style>
