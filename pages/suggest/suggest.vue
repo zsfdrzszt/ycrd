@@ -22,7 +22,22 @@
 				</view>
 				<!-- 闭会期间 -->
 				<view class="tabcont_tem close_meeting" v-show="3 == active">
-						3
+					<!-- <dropdown :list="dropdownlist"></dropdown> -->
+					<!-- 下拉列表 -->
+					<view class="close_meetinglist">
+						<wdropdown :list= "droplist1"  @searchdrop="searchdrop1"></wdropdown>
+						<wdropdown :list= "droplist2" @searchdrop="searchdrop2"></wdropdown>
+					</view>
+					<!-- 标题 -->
+					<view class="close_meetingtitle">
+						<text class="textfourbar">{{val1}}{{val2}}</text>
+					</view>
+					
+					<!-- <wtextcards :list="closelist" :num="closenum"></wtextcards> -->
+					<view class="textmainlist">
+						<text class="textmassage" v-show="closelist.length == 0">暂无数据</text>
+						<wtextcards v-for="(item,index) in closelist" :list="item" :num="index" :key="index" v-if="3== active"></wtextcards>
+					</view>
 				</view>
 			</view>
 		</view>
@@ -32,11 +47,14 @@
 <script>
 	import wnavall from "../../components/w-navall/w-navall.vue"
 	import headline from "../../components/headline/headline.vue"
+	import wdropdown from "../../components/w-dropdown/w-dropdown.vue"
+	import wtextcards from "../../components/w-text4cards/w-text4cards.vue"
 	export default {
 		components: {
 			wnavall,
 			headline,
-			
+			wdropdown,
+			wtextcards
 		},
 		data() {
 			return {
@@ -54,12 +72,40 @@
 						time:'2020-04-29'
 					}
 					
-				]
+				],
+				val:'',
+				val1:'2021年',
+				val2:'第一季度',
+				droplist1:{name:"全部",list:[{content:"2019"},{content:"2020"}]},
+				droplist2:{name:"全部",list:[{content:"第一季度"},{content:"第二季度"},{content:"第三季度"},{content:"第四季度"}]},
+				closenum:0,
+				closelist:[],
+				closelistss:[{suggest:"电费滚滚根据客户",name:"回复",time:"2020.1.13",condition:"打广告的THX绕太阳"},
+				{suggest:"电费滚滚根据客户",name:"张三",time:"2019.1.13",condition:"打广告的THX绕太阳打广告的THX绕太阳打广告的THX绕太阳打广告的THX绕太阳打广告的THX绕太阳打广告的THX绕太阳"},
+				{suggest:"电费滚滚根据客户",name:"回复",time:"2019.1.13",condition:"打广告的THX绕太阳"},
+				{suggest:"电费滚滚根据客户",name:"李四",time:"2020.1.13",condition:"打广告的THX绕太阳"},
+				{suggest:"电费滚滚根据客户",name:"回复",time:"2020.1.13",condition:"打广告的THX绕太阳打广告的THX绕太阳打广告的THX绕太阳打广告的THX绕太阳打广告的THX绕太阳打广告的THX绕太阳"},
+				{suggest:"电费滚滚根据客户",name:"王五",time:"2019.1.13",condition:"打广告的THX绕太阳"},
+				{suggest:"电费滚滚根据客户",name:"回复",time:"2020.1.13",condition:"打广告的THX绕太阳"},
+				{suggest:"电费滚滚根据客户",name:"赵六",time:"2020.1.13",condition:"打广告的THX绕太阳"},
+				{suggest:"电费滚滚根据客户",name:"回复",time:"2020.1.13",condition:"打广告的THX绕太阳"},]
 			}
 		},
 		methods: {
 			change(n){
 				this.active=n;
+			},
+			searchdrop1(val){
+				this.val1 = val.content+'年'
+				this.closelist=[]
+				this.closelistss.filter((item)=>{
+					if(item.time.match(val.content)){
+						this.closelist.push(item)
+					}
+				})
+			},
+			searchdrop2(val){
+				this.val2 = val.content
 			}
 		}
 	}
@@ -79,4 +125,9 @@
 	.tabcont_tem{width: 100%;height: 100%;}
 	.flow_chart image{width: 70%;margin: 20px 0px;}
 	.attend_meeting{padding: 0px 10px;padding-top: 20px;}
+	.close_meetinglist{display: flex;justify-content: center;padding-top: 15px;}
+	.dropmain:first-child{margin-right: 30px;}
+	.close_meetingtitle{padding-top: 15px;}
+	.textfourbar{font-weight: bold;font-size: 18px;}
+	.textmassage{display: block;margin-top: 50px;text-align: center;font-size: 20px;font-weight: bold;font-family: 黑体;color: red;}
 </style>
