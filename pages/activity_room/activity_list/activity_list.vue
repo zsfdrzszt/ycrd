@@ -4,7 +4,7 @@
 			{{list_title}}
 		</view>
 		<view class='center_list'>
-			<activecard v-for="(item,index) in list_all"  :key=item.id :list="item"></activecard>
+			<activecard v-for="(item,index) in list_all"  :state="state":key=item.id :list="item"></activecard>
 		</view>
 	</view>
 </template>
@@ -17,6 +17,7 @@
 		},
 		data(){
 			return{
+				state:true,
 				list_title:'宣讲',
 				list_all:[{
 					id:0,
@@ -27,13 +28,13 @@
 				{
 					id:1,
 					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
+					title:'柴永昌代表在活动室给选民',
 					time:'[2020年03月31日]'
 				},
 				{
 					id:2,
 					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
+					title:'柴永昌代表在活动室给选民进行宣讲柴永昌代表在活动室给选民进行宣讲柴永昌代表在活动室给选民进行宣讲柴永昌代表在活动室给选民进行宣讲柴永昌代表在活动室给选民进行宣讲',
 					time:'[2020年03月31日]'
 				},
 				{
