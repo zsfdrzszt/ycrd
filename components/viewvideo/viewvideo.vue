@@ -2,12 +2,6 @@
 	<view class="viewvideo" >
 		<image :src="list.url" mode="widthFix" @click="showviedo"></image>
 		<view class="viewtitle">{{list.content}}</view>
-		<view class="videopage" v-if="videostate">
-			<view class="viedoclose" >
-				<image src="./static/close.png" mode="widthFix" @click="showviedo"></image>
-			</view>
-			<video :src="list.video" autoplay ></video>
-		</view>	
 	</view>
 </template>
 
@@ -24,6 +18,7 @@
 		methods:{
 			showviedo(){
 				this.videostate =!this.videostate
+				this.$emit("click",this.list.video)
 			}
 		}
 	}

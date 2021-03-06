@@ -1,5 +1,5 @@
 <template>
-	<view>
+	<view class="qrservice">
 		<zqrservice v-for="(item,index) in liaisonList" :key="index" :value="item"></zqrservice>
 	</view>
 </template>
@@ -52,20 +52,17 @@
 			
 		},
 		onLoad(option) {
-			// console.log(option)
 			this.liaisonLists.filter((item)=>{
-				// console.log(item.liaison_id)
 				if(item.liaison_id == option.id){
 					this.liaisonList.push(item)
 				}
 			})
-			
-			// console.log(this.liaisonList)
-			// console.log(this.liaisonLists)
 		}
 	}
 </script>
 
 <style>
-
+.qrservice{
+	background-image: url(https://hxrd.jza2c.com//resource/m/images/liasons_common_qrservice_bg.png);
+}
 </style>

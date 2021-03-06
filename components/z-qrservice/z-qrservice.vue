@@ -86,7 +86,7 @@
 	.qrservice-section {
 		position: relative;
 		text-align: center;
-		margin: 0 20px;
+		margin: 10px 20px;
 		background-color: white;
 		box-shadow: #666 0px 0px 10px;
 		border-radius: 16px;
@@ -96,7 +96,7 @@
 		margin-bottom: 30px;
 	}
 	.padding {
-		padding-bottom: 20px;
+		padding: 20px 0;
 	}
 	.qrservice_img {
 		text-align: center;
@@ -165,7 +165,7 @@
 	}
 	
 	page {
-		background-image: url(https://hxrd.jza2c.com//resource/m/images/liasons_common_qrservice_bg.png);
+		
 	}
 	
 </style>

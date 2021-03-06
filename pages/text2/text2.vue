@@ -40,7 +40,11 @@
 				<swiper-item class="swiper-item">
 					<scroll-view scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
 						5
-						<wnewscard v-for="(item,index) in newslist"  :key="index" :list="item"></wnewscard>
+						<view class="news" v-for="(item,index) in newslist"  :key="index" :list="item">
+							<view class="news_title">宪法</view>
+							<wnewscard :list="item"></wnewscard>
+						</view>
+						
 						 <text class="hint">已到达最底部</text>
 					</scroll-view>
 				</swiper-item>
@@ -72,18 +76,36 @@
 						 <text class="hint">已到达最底部</text>
 					</scroll-view>
 				</swiper-item>
+				<swiper-item class="swiper-item  ">
+					<scroll-view scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
+						10
+						<view class="swiper-items">
+							 <viewvideo :list="item" v-for="(item,index) in viedolist " @click="showvideo"></viewvideo>
+						</view>
+						
+						 <text class="hint">已到达最底部</text>
+					</scroll-view>
+				</swiper-item>
 			</swiper>
 		</view>
 		<wnavall></wnavall>
+		<view class="videopage" v-if="videostate">
+			<view class="viedoclose" >
+				<image src="/static/text2img/close.png" mode="widthFix" @click="showvideo"></image>
+			</view>
+			<video :src="videourl" autoplay ></video>
+		</view>	
 	</view>
 </template>
 
 <script>
+	import viewvideo from "../../components/viewvideo/viewvideo.vue"  //图片 视频组件
 	import wnavall from "../../components/w-navall/w-navall.vue"
 	import wnewscard from "../../components/w-newscard/w-newscard.vue"
 	import wtabnav from "../../components/w-tabnav1/w-tabnav1.vue"
 	export default {
 		components:{
+			viewvideo,
 			wnavall,
 			wnewscard,
 			wtabnav
@@ -91,6 +113,9 @@
 		data() {
 			return {
 				showBar:false,
+				videostate:false,
+				videourl:'',
+				viedolist:[{url:"http://qiniu.jza2c.com/uploads/20210219/Fui8_6m4QgbNuPL_mk4dfZ75GzSS.png",content:"榆次新闻",video:"http://qiniu.jza2c.com/uploads/20210219/lniLUjnuwQhMkqy-9Z8mG8kOHgAq.mp4"},{url:"http://qiniu.jza2c.com/uploads/20210219/Fui8_6m4QgbNuPL_mk4dfZ75GzSS.png",content:"榆次新闻",video:"http://qiniu.jza2c.com/uploads/20210219/lniLUjnuwQhMkqy-9Z8mG8kOHgAq.mp4"}],
 				newslist:[
 					{titel:"【关注两会】区领导与代表共同审议各项报告",time:"2020-04-28"},
 					{titel:"【关注两会】区领导参加代表团分团审议",time:"2020-04-27"},
@@ -136,6 +161,9 @@
 					name: '公告'
 				},{
 					name: '通知'
+				},
+				{
+					name: '媒体报道'
 				}
 				],
 				// 因为内部的滑动机制限制，请将tabs组件和swiper组件的current用不同变量赋值
@@ -145,6 +173,10 @@
 			}
 		},
 		methods: {
+			showvideo(url){
+				this.videostate = !this.videostate
+				this.videourl = url
+			},
 			tabsChange(index) {
 				this.swiperCurrent = index;
 				this.showBar= false
@@ -173,6 +205,7 @@
 <style>
 	page {
 			height: 100%;
+			position: relative;
 	}
 	.hint {
 		padding: 15px 0px;
@@ -189,5 +222,45 @@
 	}
 	uni-swiper{
 		height: 85%;
+	}
+	.news_title{
+		width: 100%;
+		font-weight: bold;
+		text-align: left;
+		margin-left:20rpx ;
+		    font-size: 16px;
+	}
+	.news{
+		width: 100%;
+	}
+	.swiper-items{
+		display: flex;
+
+	}
+	.videopage{
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(0,0,0,0.5);
+		z-index: 100;
+		display: flex;
+		flex-direction: column;
+	    justify-content: center;
+		align-items: center;
+	}
+	.videopage video{
+		width: 100%;
+	}
+	.videopage image{
+		width: 30px;
+	}
+	.viedoclose{
+		width: 100%;
+		height: 30px;
+		text-align: right;
+		margin-bottom: 10rpx;
+		padding-right: 10rpx;
 	}
 </style>

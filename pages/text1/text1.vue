@@ -63,7 +63,7 @@
 									<text class="survey_fourwidth"> 主任</text>
 								</view>
 								<view class="survey_fourright">
-									<navigator class="survey_fourwidth" url="#">李鹏飞</navigator>
+									<navigator class="survey_fourwidth" url="/pages/text1/liaison/liaison?id=1" v-for="(item,index) in list2.larder" >{{item.name}}</navigator>
 								</view>
 							</view>
 							<view class="survey_fourrow">
@@ -71,9 +71,8 @@
 									<text class="survey_fourwidth"> 副主任</text>
 								</view>
 								<view class="survey_fourright">
-									<navigator class="survey_fourwidth" url="#">武跃勇</navigator>
-									<navigator class="survey_fourwidth" url="#">石山爱</navigator>
-									<navigator class="survey_fourwidth" url="#">李玉忠</navigator>
+									<navigator class="survey_fourwidth" url="/pages/text1/liaison/liaison?id=1" v-for="(item,index) in list2.director" >{{item.name}}</navigator>
+	
 								</view>
 							</view>
 							<view class="survey_fourrow">
@@ -87,156 +86,12 @@
 								</view>
 							</view>
 							<view class="survey_fourrow2">
-								<navigator class="a" url="#">
+								<navigator class="a" url="/pages/text1/liaison/liaison?id=1"  v-for="(item,index) in list2.member">
 									<view class="survey_fourwidth">
-										王绍泰
+										{{item.name}}
 									</view>
 								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										王福生
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										王霞
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										任光荣
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										任秀花
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										刘巧杰
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										刘秀叶
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										刘惠青
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										李双喜
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										李秀平
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										李杰
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										李爱兰
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										杨辉峰
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										张文海
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										张永亮
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										张履祥
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										陈太
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										陈丽援
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										范庆文
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										周建宇
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										郑天平
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										郑丽伟
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										药建军
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										俞国栋
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										高亚晋
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										郭秀忠
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										黄正飞
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										黄彩英
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										曹新霞
-									</view>
-								</navigator>
-								<navigator class="a" url="#">
-									<view class="survey_fourwidth">
-										詹瑜
-									</view>
-								</navigator>
+								
 							</view>
 						</view>
 					</scroll-view>
@@ -297,7 +152,8 @@
 					url: "http://qiniu.jza2c.com/uploads/20190727/Fm83br3hTxnqdMdOD_8S-jfSmpik.jpg",
 					name: "李玉",
 					job: "榆次区人大常委会副主"
-				}]
+				}],
+				list2:{larder:[{name:'李鹏飞',id:'1'}],director:[{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"}],member:[{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},]}
 			}
 		},
 		methods: {

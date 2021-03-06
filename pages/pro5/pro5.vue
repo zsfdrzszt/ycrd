@@ -11,7 +11,7 @@
 		<!-- <arrange :list="item" v-for="(item,index) in list5"></arrange> -->
 		<!-- <headline :list="item" v-for="(item,index) in list6" :num="index+1"></headline> -->
 		<!-- <wdropdown :list= "list7"  @searchdrop="searchdrop1"></wdropdown> -->
-		<perform   :list="item" v-for="(item,index) in list8" :state="2"></perform>
+		<perform   :list="item" v-for="(item,index) in list8" :num="index+1" :state="2"></perform>
 	</view>
 </template>
 
@@ -50,7 +50,8 @@
 				list5:[{time:'01',title:'集中学习',space:'乡大活动中心',name:'任光荣',content:'省委书记骆惠宁在全省组织工作会议上的讲话',state:1,attitude:0},{time:'01',title:'集中学习',space:'乡大活动中心',name:'任光荣',content:'省委书记骆惠宁在全省组织工作会议上的讲话',state:0,attitude:1}],
 				list6:[{title:'区人大监察和司法委员会',time:"2020.2.2"}],
 				list7:{name:"全部",list:[{content:"2019"},{content:"2020"},{content:"2021"}]},
-				list8:[{statio:'北关街道',name:"张爱变",time:'2020.2.2',space:"北关街道",way:"为民服务",content:'今天我村委给全体村民发福利，大米，白面，油，村民十分高兴。',effect:"好",img:["http://qiniu.jza2c.com/onadvise/20210221/fbccac6012192161fbd34a1ce12a4138","http://qiniu.jza2c.com/onadvise/20210221/9ad3c10de9e35f985752fae663ebc3e8","http://qiniu.jza2c.com/onadvise/20210221/f9e055f2be0cc224c1d2153844897005"]},{statio:'北关街道',name:"张爱变",time:'2020.2.2',space:"北关街道",way:"为民服务",content:'今天我村委给全体村民发福利，大米，白面，油，村民十分高兴。',effect:"好",img:["http://qiniu.jza2c.com/onadvise/20210221/fbccac6012192161fbd34a1ce12a4138",]}]
+				list8:[{statio:'北关街道',name:"张爱变",time:'2020.2.2',space:"北关街道",way:"为民服务",content:'今天我村委给全体村民发福利，大米，白面，油，村民十分高兴。',effect:"好",img:["http://qiniu.jza2c.com/onadvise/20210221/fbccac6012192161fbd34a1ce12a4138","http://qiniu.jza2c.com/onadvise/20210221/9ad3c10de9e35f985752fae663ebc3e8","http://qiniu.jza2c.com/onadvise/20210221/f9e055f2be0cc224c1d2153844897005"]},{statio:'北关街道',name:"张爱变",time:'2020.2.2',space:"北关街道",way:"为民服务",content:'今天我村委给全体村民发福利，大米，白面，油，村民十分高兴。',effect:"好",img:["http://qiniu.jza2c.com/onadvise/20210221/fbccac6012192161fbd34a1ce12a4138",]}],
+			    list8:[{title:"2020年5月27日郭家堡乡第十七届人民代表大会第七次会议",open:"2020-05-27",close:"2020-05-27",join:1,say:10,vote:1,suggest:2,check:0},{title:"2020年5月27日郭家堡乡第十七届人民代表大会第七次会议",open:"2020-05-27",close:"2020-05-27",join:0,say:10,vote:0,suggest:0,check:1}],
 			}
 		},
 		methods: {

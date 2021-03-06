@@ -73,7 +73,7 @@
 			 		序号
 			 	</view>
 			 	<view class="perform_con">
-			 		{{list.statio}}
+			 		{{num}}
 			 	</view>
 			 </view>
 			 <view class="perform_mian">
@@ -81,7 +81,7 @@
 			 		会议名称
 			 	</view>
 			 	<view class="perform_con">
-			 		{{list.statio}}
+			 		{{list.title}}
 			 	</view>
 			 </view>
 			 <view class="perform_mians">
@@ -93,7 +93,7 @@
                 		开会日期
                 	</view>
                 	<view class="perform_con">
-                		{{list.statio}}
+                		{{list.open}}
                 	</view>
                 </view>
 				<view class="perform_zon">
@@ -101,7 +101,7 @@
 						闭会日期
 					</view>
 					<view class="perform_con">
-						{{list.statio}}
+						{{list.close}}
 					</view>
 				</view>
 			 </view>
@@ -114,7 +114,7 @@
 			    		参加全体会议情况
 			    	</view>
 			    	<view class="perform_con">
-			    		{{list.statio}}
+			    		{{list.join ==1? "按规定时间参会":"缺席"}}
 			    	</view>
 			    </view>
 				<view class="perform_zon">
@@ -122,7 +122,7 @@
 						分团审议发言情况
 					</view>
 					<view class="perform_con">
-						{{list.statio}}
+						发言{{list.say}}次
 					</view>
 				</view>
 				<view class="perform_zon">
@@ -130,7 +130,7 @@
 						投票表决情况
 					</view>
 					<view class="perform_con">
-						{{list.statio}}
+						{{list.vote==1?"参加投票表决":"未参加投票表决"}}
 					</view>
 				</view>
 				<view class="perform_zon">
@@ -138,7 +138,7 @@
 						提出意见建议情况
 					</view>
 					<view class="perform_con">
-						{{list.statio}}
+						提出建议{{list.suggest}}次
 					</view>
 				</view>
 			 </view>
@@ -147,7 +147,7 @@
 			 		参会考勤情况
 			 	</view>
 			 	<view class="perform_con">
-			 		{{list.statio}}
+			 		{{list.check==0 ?"全勤":"缺勤"+list.check +"次"}}
 			 	</view>
 			 </view>
 		</view>
@@ -159,7 +159,8 @@
 	export default {
 		props:{
 			list:Object,
-			state:Number
+			state:Number,
+			num:Number,
 		},
 		data() {
 			return {
