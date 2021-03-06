@@ -324,7 +324,16 @@
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-		}
+		}      
+		 ,{
+            "path" : "pages/meet/meet",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

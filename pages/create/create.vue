@@ -4,15 +4,15 @@
 			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">代表履职</text>
 			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">最新要闻</text>
 		</view>
-		<scroll-view scroll-y="true" >
+		<scroll-view class="scroll-view" scroll-y="true"  v-show="isActive ==1">
 			<view>
-				<perform :list="item" v-for="(item,index) in list8" :state="1" v-show="isActive ==1"></perform>
+				<perform :list="item" v-for="(item,index) in list8" :state="1"></perform>
 			</view>
 		</scroll-view>
 		
-		<view>
+		<view v-show="isActive ==2">
 			<view class='center_list'>
-				<activecard v-for="(item,index) in list_all"  :state="state":key=item.id :list="item"></activecard>
+				<activecard v-for="(item,index) in list_all"  :state="state":key=item.id :list="item" ></activecard>
 			</view>
 		</view>
 	</view>
@@ -71,6 +71,10 @@ page{
 	display: flex;
 	flex-direction: column;
 }
+.scroll-view{
+	width: 100%;
+	height: 100%;
+}
 .create_title{
 	height: 41px;
 	display: flex;
@@ -89,13 +93,4 @@ page{
 	color: #d71f07;
 	border-bottom: #d71f07 solid 2px;
 }
-/* 	.list_title{
-		text-align: center;
-		font-size: 32px;
-		font-weight: bold;
-		letter-spacing: 3px;
-		text-shadow: #fff 1px 0 0, #fff 0 1px 0, #fff -1px 0 0, #fff 0 -1px 0;
-		color: #fc3a3b;
-		margin-bottom: 20px;
-	} */
 </style>
