@@ -294,6 +294,15 @@
 		    }
 		    
 		}
+		,{
+		    "path" : "pages/text1/close/close",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
