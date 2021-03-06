@@ -330,6 +330,15 @@
             }
             
         }
+		,{
+			"path" : "pages/suggest/suggestdet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
