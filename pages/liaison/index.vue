@@ -7,10 +7,14 @@
 					<u-loading slot="loading"></u-loading>
 				</u-image>
 			</view>
-			<view class="index_title">{{lianame}}</view>
+			<view class="index_title">{{lianame}}人大代表联络站</view>
+		</view>
+		<!-- 西南 -->
+		<view class="index_wrap" v-show="lid==2">
+			<u-swiper :list="swiperlist" :title='true' :title-style="wraptitle" height="400" @click="swiperclick"></u-swiper>
 		</view>
 		<view class="index_center">
-			<view class="index_item" v-for="(item,index) in multiple" :key="item.id" @click="btnitem(index)">
+			<view class="index_item" v-for="(item,index) in multiple" :key="item.id" @click="btnitem(index)" :style="{backgroundImage:itembg}">
 				<u-image :src="item.image" :lazy-load="true" width="100rpx" height="100rpx">
 					<u-loading slot="loading"></u-loading>
 				</u-image>
@@ -27,10 +31,14 @@
 	export default {
 		data() {
 			return {
-				lianame:'郭家堡乡人大代表联络站',//联络站名称
+				wraptitle:{'color':'#fff','height':'45px'},
+				lianame:'郭家堡乡',//联络站名称
 				lid:'',	//联络站id
+				// 页面背景图
 				bgimg:"url(../../static/liaison/common_index_bgimg.jpg)",	//联络站背景图
 				bgimgarr:["url(../../static/liaison/common_index_bgimg.jpg)","url(../../static/liaison/xnjd_index_bgimg.png)","url(../../static/liaison/zq_index_bgimg.jpg)"],
+				// 按钮背景色
+				itembg:'rgba(255,255,255,0.8)',
 				multiple:[
 					{id:1,name:'概况',image:'../../static/liaison/common_index_gk.png'},
 					{id:2,name:'代表阵地',image:'../../static/liaison/common_index_dbzd.png'},
@@ -41,17 +49,62 @@
 					{id:7,name:'履职管理',image:'../../static/liaison/common_index_lzgl.png'},
 					{id:8,name:'履职活动',image:'../../static/liaison/common_index_lzhd.png'},
 					{id:9,name:'地图导航',image:'../../static/liaison/common_index_dtdh.png'}
-				]
-				
+				],
+				list: [
+					{id:1,name: "郭家堡乡",}, 
+					{id:2,name: "西南街道",},
+					{id:3,name: "乌金山镇",}, 
+					{id:4,name: "修文镇",},
+					{id:5,name: "张庆乡",}, 
+					{id:6,name: "长凝镇",}, 
+					{id:7,name: "东阳镇",}, 
+					{id:8,name: "庄子乡",}, 
+					{id:9,name: "东赵乡",}, 
+					{id:10,name: "什贴镇",}, 
+					{id:11,name: "使赵社服中心",}, 
+					{id:12,name: "晋华街道",}, 
+					{id:13,name: "经纬街道",}, 
+					{id:14,name: "锦纶街道",}, 
+					{id:15,name: "北关街道",}, 
+					{id:16,name: "新建街道",}, 
+					{id:17,name: "安宁街道",},  
+					{id:18,name: "路西街道",},
+				],
+				// 轮播图数组
+				swiperlist: [{
+						image: 'http://qiniu.jza2c.com/uploads/20210218/FhQEYpaUkqX6ecvbY2INUgq4dZGK.jpg',
+						title: '向选民述职、接受选民监督'
+					},
+					{
+						image: 'http://qiniu.jza2c.com/uploads/20210218/FrDAPAIg6b1d493TlEVo8esEbGwa.jpg	',
+						title: '向选民述职、接受选民监督'
+					},
+					{
+						image: 'http://qiniu.jza2c.com/uploads/20210218/FmEeMlAn5m5ToWm1YRpN4A5jihS5.jpg',
+						title: '向选民述职、接受选民监督'
+					},
+					{
+						image: 'http://qiniu.jza2c.com/uploads/20201110/Fr13Ux-Nf8b4-TC_Su17yLl7GXlo.jpg',
+						title: '向选民述职、接受选民监督'
+					},
+					{
+						image: 'http://qiniu.jza2c.com/uploads/20201130/Fo_s-qTgTZBoMYeMjaDQcXaIRcn3.png',
+						title: '向选民述职、接受选民监督'
+					},
+					
+				],
 			}
 		},
 		onLoad(options) {
-			this.id = options.id
-			if(this.id==2){
+			this.lid = options.id
+			var index = this.list.findIndex((value) => value.id == this.lid)
+			this.lianame = this.list[index].name
+			if(this.lid==2){
 				// 西南
 				this.bgimg = this.bgimgarr[1]
-			}else if(this.id==5){
+			}else if(this.lid==5){
 				// 张庆
+				this.itembg='linear-gradient(rgba(219,206,195,0.77), rgba(232,217,195,0.77), rgba(240,233,223,0.77))'
 				this.bgimg = this.bgimgarr[2]
 			}else{
 				// 通用
@@ -60,6 +113,21 @@
 		},
 		methods: {
 			btnitem(index){
+				if(index==0){
+					uni.navigateTo({
+						url:"/pages/text4/text4son?con=概况",
+					})
+				}else if(index==1){
+					uni.navigateTo({
+						url:"/pages/pro2/prolist/prolist",
+					})
+				}else if(index==6){
+					uni.navigateTo({
+						url:"/pages/liaison/administration/administration",
+					})
+				}
+			},
+			swiperclick(index){
 				console.log(index)
 			}
 		}
@@ -90,6 +158,9 @@
 		text-align: center;
 		font-family: 思源黑体;
 		text-shadow: #fff 1px -1px 0, #fff -1px -1px 0, #fff -1px 1px 0, #fff 1px 1px 0, #fff 1px 0 0, #fff -1px 0 0, #fff 0 1px 0, #fff 0 -1px 0, 0 2px 4px #111;
+	}
+	.index_wrap{
+		height: 400rpx;
 	}
 	.index_center{
 		width: 100%;

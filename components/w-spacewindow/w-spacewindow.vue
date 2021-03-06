@@ -20,7 +20,6 @@
 		},
 		methods:{
 			topage(){
-				console.log(111)
 				uni.navigateTo({
 					url: "/pages/liaison/index"+"?id="+this.id
 				})
