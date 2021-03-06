@@ -60,7 +60,7 @@
 
 <style>
 	.dropmain{
-		width: 30%;
+		width: 35%;
 		position: relative;
 	}
 	.droptop{

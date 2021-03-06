@@ -303,6 +303,15 @@
 		    }
 		    
 		}
+        ,{
+            "path" : "pages/create/create",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
