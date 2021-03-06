@@ -333,6 +333,14 @@
                 "enablePullDownRefresh": false
             }
             
+        } ,{
+            "path" : "pages/upcontactDown/upcontactDown",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
         }
 	],
 	"globalStyle": {
