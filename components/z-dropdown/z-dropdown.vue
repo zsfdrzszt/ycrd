@@ -1,48 +1,111 @@
 <template>
-	<view>
-		<u-dropdown ref="uDropdown" @open="open">
-			<u-dropdown-item :v-model="value.number" :title=valueData :options="value.options" @change="change">
-			</u-dropdown-item>
-		</u-dropdown>
+	<view class="dropmain">
+		<view class="droptop">
+			<text class="dropname">{{title}}</text>
+			<u-icon class="dropimg"  :name="name[num]" color="#ffffff" @click="dropchange"></u-icon>
+		</view>
+		<view class="droplist" v-show="state" :style="{top:listtop}">
+			<view v-for="(item,index) in list.list" :key="index" class="droplistone" :class="{droplisttwo:index==isActive }"  @click="changetitle(item,index)">
+				{{item.content}}
+			</view>
+		</view>
 	</view>
 </template>
 
 <script>
 	export default {
-		props: {
-			value: Object
+		props:{
+			list : Object
 		},
 		data() {
 			return {
-				valueData: this.value.name,
-			}
+				isActive:false,
+				listtop:"45px",
+				title:this.list.name,
+				num:0,
+				state:false,
+				name:["arrow-down-fill","arrow-up-fill"]
+			};
 		},
-		methods: {
-			change(index) {
-				// 更多的细节，如有需要请自行根据业务逻辑进行处理
-				this.$refs.uDropdown.highlight(index);
-				this.valueData = this.value.options[index - 1].label
-				// console.log(this.value.name);
-				this.$emit("click")
+		methods:{
+			changetitle(item,index){
+				this.title = item.content
+				this.isActive = index
+				this.dropchange()
+				this.$emit("searchdrop",item)
 			},
-			open(index) {
-				// 展开某个下来菜单时，先关闭原来的其他菜单的高亮
-				// 同时内部会自动给当前展开项进行高亮
-				this.$refs.uDropdown.highlight();
-			},
-			close(index) {
-				// 关闭的时候，给当前项加上高亮
-				// 当然，您也可以通过监听dropdown-item的@change事件进行处理
-				this.$refs.uDropdown.highlight(index);
+			dropchange(){
+				this.isActive = false
+				if(this.num == 0){					
+					this.num= 1
+					this.state = !this.state
+					let val = parseInt(this.listtop)
+					let time = setInterval(()=>{	
+						val -= 1
+						this.listtop = val+'px'
+						if(val <= 30){
+							clearInterval(time)
+						}
+					},10)
+				}else{
+					this.num =0
+					this.state = !this.state
+					this.listtop="45px"
+				}
+				
 			}
-
 		}
 	}
 </script>
 
-<style lang="scss">
-	* {
-		margin: 0px;
-		padding: 0px;
+<style>
+	.dropmain{
+		width: 60%;
+		position: relative;
+		text-align: center;
+	}
+	.droptop{
+		display: flex;
+		align-items: center;
+		width: 100%;
+		background-color: #B50000;
+		height: 30px;
+		color: white;
+		border-radius: 4px;
+		box-shadow: 1px 1px 5px #ccc;
+	}
+	.dropimg{
+		position: absolute;
+		right: 15rpx;
+	}
+	.dropname{
+		display: block;
+		width: 100%;
+		margin: 0 10px;
+	}
+	.droplist{
+		position: absolute;
+		left: 0;
+		padding: 5px 0;
+		z-index: 899;
+		min-width: 100%;
+		border: 1px solid #d2d2d2;
+		max-height: 300px;
+		overflow-y: auto;
+		background-color: #fff;
+		border-radius: 2px;
+		box-shadow: 0 2px 4px rgba(0,0,0,.12);
+		box-sizing: border-box;
+	}
+	.droplistone{
+		padding: 0 10px;
+		line-height: 36px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis
+	}
+	.droplisttwo{
+		background-color: #B50000;
+		color: #FFFFFF;
 	}
 </style>

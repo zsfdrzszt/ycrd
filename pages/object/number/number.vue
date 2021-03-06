@@ -1,6 +1,6 @@
 <template>
 	<view class="number">
-		<scroll-view scroll-y="true" >
+		<scroll-view class="scroll-view" scroll-y="true" >
 			<view>
 				<relation :list="item" :num="index" v-for="(item,index) in list1"></relation>
 			</view>
@@ -38,5 +38,11 @@ page{
 	background-image: url(../../../static/object/county_common_twounit_bgimg.jpg);
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
+	padding-bottom: 20rpx;
+}
+.scroll-view{
+	width: 100%;
+	height: 100%;
 }
 </style>

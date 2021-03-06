@@ -4,7 +4,7 @@
 			{{list_title}}
 		</view>
 		<view class='center_list'>
-			<activecard v-for="(item,index) in list_all"  :state="state":key=item.id :list="item"></activecard>
+			<activecard v-for="(item,index) in list_all"  :state="state":key=item.id :list="item" url="/pages/activity_room/activity_det/activity_det"></activecard>
 		</view>
 	</view>
 </template>

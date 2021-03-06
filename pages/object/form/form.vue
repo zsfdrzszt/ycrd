@@ -1,7 +1,7 @@
 <template>
 	<view class="form">
 		<image src="../../../static/object/county_common_classTakeMember_top.jpg" mode="widthFix" style="width: 100%;"></image>
-		<scroll-view scroll-y="true" >
+		<scroll-view class="scroll-view" scroll-y="true" >
 			<view>
 				<organization :list="item" v-for="(item,index) in list"></organization>
 			</view>
@@ -36,5 +36,8 @@ page {
 .form{
 	width: 100%;
 	height: 100%;
+}
+.scroll-view{
+	height: 80%;
 }
 </style>

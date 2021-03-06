@@ -1,5 +1,5 @@
 <template>
-	<view class="newcon">
+	<view class="newcon" @click="nextpage">
 		<navigator url="#" class="important_row">
 			<view class="important_rowleft">{{list.titel}}</view>
 			<view class="important_rowright" >{{list.time}}</view>
@@ -16,6 +16,13 @@
 			return {
 
 			};
+		},
+		methods:{
+			nextpage(){
+				uni.navigateTo({
+					url:"/pages/text4/text4son"
+				})
+			}
 		}
 	}
 </script>

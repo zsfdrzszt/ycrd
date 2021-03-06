@@ -8,7 +8,7 @@
 		<!-- <relation :list="item" :num="index" v-for="(item,index) in list2" ></relation> -->
 		<!-- <reply v-for="(item,index) in list3" :list="item"></reply> -->
 		<!-- <system :content="item.content" v-for="(item,index) in list4" :time="item.time"></system> -->
-		<!-- <arrange :list="item" v-for="(item,index) in list5"></arrange> -->
+		<arrange :list="item" v-for="(item,index) in list5"></arrange>
 		<!-- <headline :list="item" v-for="(item,index) in list6" :num="index+1"></headline> -->
 		<!-- <wdropdown :list= "list7"  @searchdrop="searchdrop1"></wdropdown> -->
 		<perform   :list="item" v-for="(item,index) in list8" :num="index+1" :state="2"></perform>

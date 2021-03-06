@@ -1,15 +1,5 @@
 <template>
-	<view>
-		<!-- 	<view class="zlist">
-			<text class="build_rowtitle">{{value.content}}</text>
-			<view class="detalis">
-				<view class="zregion">{{value.region}}</view>
-				<view class="ztime">{{value.time}}</view>
-			</view>
-		</view> -->
-
-
-		<view class="zlist">
+		<view class="zlist" @click="topage">
 			<navigator class="a" url="#">
 				<view class="zregion">{{value.content}}</view>
 				<view class="ztime">
@@ -22,7 +12,6 @@
 				</view>
 			</navigator>
 		</view>
-	</view>
 </template>
 
 <script>
@@ -34,7 +23,9 @@
 			return {}
 		},
 		methods: {
-
+            topage(){
+				this.$emit("click")
+			}
 		}
 	}
 </script>

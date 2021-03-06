@@ -4,11 +4,10 @@
 		</view>
 		<image src="../../static/text6img/county_common_rdvoice_title.png" mode="widthFix" style="width: 100%"></image>
 		<wsearch placeholder="请输入搜索内容" class="search" @changenav="changenav" @searchusers="searchusers"></wsearch>
-		<dropdown v-for="(item,index) in dazslist" :key="index" :value="item" @click="title(index)">
-		</dropdown>
-		<!-- <zlist v-for=" (item,index) in zlist "  :value="item"  v-show="zliststate"></zlist> -->
-		<zdbzslist v-for=" (item,index) in pull_downlists "  :value="item" v-show="!zliststate"></zdbzslist>
-		<zdbzslist v-for="(item,index) in pull_downlist" v-show="zliststate" :key="index+1" :value="item"></zdbzslist>
+		  	 <dropdown class="dropdown"  :list="droplist" @searchdrop = search></dropdown>
+		<!-- <zdbzslist v-for=" (item,index) in pull_downlists "  :value="item" v-show="!zliststate "></zdbzslist> -->
+		<zdbzslist v-for="(item,index) in pull_downlist" v-show="zliststate ==1" :key="index+1" :value="item"></zdbzslist>
+		<representative v-for="(item,index) in list"  v-show="zliststate==2" :list="item" ></representative>
 		<wnavall></wnavall>
 	</view>
 </template>
@@ -16,18 +15,21 @@
 <script>
 	import wnavall from "../../components/w-navall/w-navall.vue"
 	import wsearch from "../../components/w-search/w-search.vue"
-	import dropdown from "../../components/z-dropdown/z-dropdown"
+	import dropdown from "../../components/z-dropdown/z-dropdown.vue"
 	import zdbzslist from "../../components/z-dbzslist/z-dbzslist"
+	import representative from "../../components/representative/representative.vue"
 	export default {
 		components: {
 			wnavall,
 			wsearch,
 			dropdown,
-			zdbzslist
+			zdbzslist,
+			representative
 		},
 		data() {
 			return {
-				
+				droplist:{name:"全部",list:[{content:"代表"},{content:"代表访谈录"},{content:"抗疫阻击战中的人大代表"},{content:"活动咨询"}]},
+				list:[{url:"http://qiniu.jza2c.com/uploads/20200512/Fqdsxes6X6DPN9l30WVyvbcB2WkT.png",title:"抗疫阻击战中的人大力量",content:"人大代表为人民  疫情宣传我当先——记榆次区人大代表薛爱红疫情就是命令，防控就是责任。自冠肺炎疫情爆发以来，榆次区第十六届人大代表薛爱红挺身而出、履职尽责、共同战“疫”，在疫情防控一线展现了人大代表的担当和风采。疫情发生以来，薛爱红第一时间投入到基层，做好疫情防控和维护稳定工作，带头执行落实疫情防控各项要求，积极参加疫情防控志愿服务活动，主动当好疫情防控的“宣传员”“监督员”“行动者”。在防控疫情宣传工作中，薛爱红与社区工作人员走街串巷，挨个小区走访分发疫情宣传单、登记居民信息、排查疑似人员，进行新型冠状病毒防控知识的宣传，并呼吁大家不要集会，不要赶闹子，对于不戴口罩的居民，耐心细致的做工作，以人大代表的先锋模范作用和过硬的作风推动防控工作落地见效。同时呼吁广大群众在这个非常时期多理解、多配合防控工作，大家齐心协力共同打赢疫情防控阻击战。在她的示范带头下，广大党员干部的不忘初心牢记使命，在明责、履职、尽责中，体现在深入防控疫情的最前线。她的一举一动不仅增强了疫情防控的信心，也温暖了小区居民的心。大家坚信，以顽强的精神、更加得力的举措，更加紧密地和人民群众站在一起，这场疫情防控阻击战必定能赢。"},{url:"http://qiniu.jza2c.com/uploads/20200512/Fqdsxes6X6DPN9l30WVyvbcB2WkT.png",title:"抗疫阻击战中的人大力量",content:"人大代表为人民  疫情宣传我当先——记榆次区人大代表薛爱红疫情就是命令，防控就是责任。自冠肺炎疫情爆发以来，榆次区第十六届人大代表薛爱红挺身而出、履职尽责、共同战“疫”，在疫情防控一线展现了人大代表的担当和风采。疫情发生以来，薛爱红第一时间投入到基层，做好疫情防控和维护稳定工作，带头执行落实疫情防控各项要求，积极参加疫情防控志愿服务活动，主动当好疫情防控的“宣传员”“监督员”“行动者”。在防控疫情宣传工作中，薛爱红与社区工作人员走街串巷，挨个小区走访分发疫情宣传单、登记居民信息、排查疑似人员，进行新型冠状病毒防控知识的宣传，并呼吁大家不要集会，不要赶闹子，对于不戴口罩的居民，耐心细致的做工作，以人大代表的先锋模范作用和过硬的作风推动防控工作落地见效。同时呼吁广大群众在这个非常时期多理解、多配合防控工作，大家齐心协力共同打赢疫情防控阻击战。在她的示范带头下，广大党员干部的不忘初心牢记使命，在明责、履职、尽责中，体现在深入防控疫情的最前线。她的一举一动不仅增强了疫情防控的信心，也温暖了小区居民的心。大家坚信，以顽强的精神、更加得力的举措，更加紧密地和人民群众站在一起，这场疫情防控阻击战必定能赢。"}],
 				dazslist: [{
 					number: 1,
 					name: "全部",
@@ -47,12 +49,12 @@
 							value: 4
 						},
 						{
-							label: '活动咨询',
+							label: '',
 							value: 5
 						}
 					]
 				}],
-				zliststate:true,
+				zliststate:1,
 				pull_downlists:[],
 				pull_downlist: [{
 					url: "http://qiniu.jza2c.com/uploads/20200526/Fg-ewXpxXlwfiOfqrWyfzQBYVhkX.png",
@@ -98,6 +100,17 @@
 				}else{
 					this.pull_downlists=[]
 				}
+			},
+			search(val){
+			    console.log(val)
+				if(val.content == "代表"){
+					this.zliststate = 2
+				}else if(val.content == "代表访谈录"){
+					this.zliststate = 1
+				}else if(val.content == "抗疫阻击战中的人大代表"){
+					this.zliststate= 2
+				}
+					
 			}
 		}
 	}
@@ -111,5 +124,8 @@
 
 	.search {
 		margin-top: 10px;
+	}
+	.dropdown{
+		margin: 20rpx auto;
 	}
 </style>
