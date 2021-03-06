@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<navigator class="headline" url=""  v-for="(item, index) in list" :key="index">
+		<navigator class="headline" url="/pages/liaison/suggestdet"  v-for="(item, index) in list" :key="index">
 		    <view class="headline_title">
 		    	{{item.id}}、{{item.title}}
 		    </view>

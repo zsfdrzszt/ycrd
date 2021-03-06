@@ -1,5 +1,5 @@
 <template>
-	<navigator class="system" url="">
+	<navigator class="system" url="/pages/activity_room/activity_det/activity_det">
 		<view class="">{{content}}</view>
 		 <view class="system_time" v-if="time">{{time}}</view>
 	</navigator>

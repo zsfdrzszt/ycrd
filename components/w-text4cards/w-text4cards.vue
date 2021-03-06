@@ -1,5 +1,5 @@
 <template>
-	<view class="text4card2">
+	<view class="text4card2" @click="nextpage">
 		<view class="text4row">
 			<view class="card2title" style="font-weight: bold;">代表姓名：</view>
 			<view class="">{{list.name}}</view>
@@ -33,6 +33,13 @@
 			return {
 
 			};
+		},
+		methods:{
+			nextpage(){
+				uni.navigateTo({
+					url:"/pages/liaison/suggestdet"
+				})
+			}
 		}
 	}
 </script>

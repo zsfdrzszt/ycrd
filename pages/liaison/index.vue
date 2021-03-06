@@ -31,6 +31,7 @@
 	export default {
 		data() {
 			return {
+				map:'37.76311,112.74',//地图导航
 				wraptitle:{'color':'#fff','height':'45px'},
 				lianame:'郭家堡乡',//联络站名称
 				lid:'',	//联络站id
@@ -114,17 +115,53 @@
 		methods: {
 			btnitem(index){
 				if(index==0){
+					// 概况
 					uni.navigateTo({
 						url:"/pages/text4/text4son?con=概况",
 					})
 				}else if(index==1){
+					// 代表阵地
 					uni.navigateTo({
 						url:"/pages/pro2/prolist/prolist",
 					})
+				}else if(index==2){
+					// 活动纪实
+					uni.navigateTo({
+						url:"/pages/liaison/activity",
+					})
+				}else if(index==3){
+					// 一季一星
+					// uni.navigateTo({
+					// 	url:"/pages/liaison/activity",
+					// })
+				}else if(index==4){
+					// 选民接待
+					uni.navigateTo({
+						url:"/pages/liaison/reception/reception",
+					})
+				}else if(index==5){
+					// 意见建议
+					uni.navigateTo({
+						url:"/pages/liaison/suggest",
+					})
 				}else if(index==6){
+					// 履职管理
 					uni.navigateTo({
 						url:"/pages/liaison/administration/administration",
 					})
+				}else if(index==7){
+					// 履职活动
+					// uni.navigateTo({
+					// 	url:"/pages/liaison/administration/administration",
+					// })
+				}else if(index==8){
+					// 地图导航
+					if(this.map!=''){
+						var maparr = this.map.split(',')
+						var m1=maparr[0]
+						var m2=maparr[1]
+						window.location.href =  "https://apis.map.qq.com/tools/routeplan/eword="+this.lianame+"&epointx=" + m2 + "&epointy=" + m1 +"?referer=web&key=JMFBZ-2X4E4-A3ZUZ-DPNQX-RYAUS-5NFL4"
+					}
 				}
 			},
 			swiperclick(index){

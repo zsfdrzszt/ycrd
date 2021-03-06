@@ -5,9 +5,9 @@
 			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">意见建议</text>
 		</view>
 		<view>
-			<scroll-view scroll-y="true" >
+			<scroll-view scroll-y="true" v-show="1 == isActive" class="scroll-view" >
 				<view>
-					<perform :list="item" v-for="(item,index) in list8" :state="1" v-show="1 == isActive"></perform>
+					<perform :list="item" v-for="(item,index) in list8" :state="1"></perform>
 				</view>
 			</scroll-view>
 			<view v-show="2 == isActive">
@@ -57,6 +57,11 @@ page{
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
+}
+.scroll-view{
+	width: 100%;
+	height: 100%;
 }
 .close_title{
 	height: 41px;
