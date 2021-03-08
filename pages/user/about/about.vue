@@ -1,7 +1,7 @@
 <template>
 	<view class="about">
 		<!-- banner图 -->
-		<image class="about_image" src="../../static/user/user_aboutus_back.jpg" mode="widthFix"></image>
+		<image class="about_image" src="/static/user/user_aboutus_back.jpg" mode="widthFix"></image>
 		<view class="about_cont">
 			<text class="about_cont_intro">本平台由山西华迅网络科技股份有限公司开发，在使用过程中如有疑问，请及时与我们联系，我们第一时间为您解决</text>
 			<view class="about_cont_info">
@@ -22,7 +22,7 @@
 					<text class="about_rightitem">sunwang@jzhxwl.com</text>
 				</view>
 			</view>
-			<image class="about_code" src="../../static/user/user_aboutus_code.jpg" mode="widthFix"></image>
+			<image class="about_code" src="/static/user/user_aboutus_code.jpg" mode="widthFix"></image>
 		</view>
 	</view>
 	

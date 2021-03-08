@@ -1,7 +1,7 @@
 <template>
 	<view class="feedback">
 		<!-- banner图 -->
-		<image class="feedback_image" src="../../static/user/user_feetback_back.jpg" mode="widthFix"></image>
+		<image class="feedback_image" src="/static/user/user_feetback_back.jpg" mode="widthFix"></image>
 		<!-- 文本框 -->
 		<view class="feedback_word">
 			  <textarea class="textarea" v-model="txt" placeholder="请输入反馈意见 "></textarea>
@@ -15,7 +15,7 @@
 	export default {
 		data() {
 			return {
-				
+				txt:''
 			}
 		},
 		methods: {
