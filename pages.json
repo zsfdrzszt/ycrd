@@ -175,7 +175,7 @@
 			}
 
 		},
-		// 活动室主�
+		// 活动室主页
 		{
 			"path": "pages/activity_room/activity_index",
 			"style": {
@@ -184,7 +184,7 @@
 			}
 
 		},
-		// 活动室概�
+		// 活动室概况
 		{
 			"path": "pages/activity_room/activity_introduction/activity_introduction",
 			"style": {
@@ -193,7 +193,7 @@
 			}
 
 		},
-		// 活动室列�
+		// 活动室列表
 		{
 			"path": "pages/activity_room/activity_list/activity_list",
 			"style": {
@@ -202,7 +202,7 @@
 			}
 
 		},
-		// 活动室详细页�
+		// 活动室详细页面
 		{
 			"path": "pages/activity_room/activity_det/activity_det",
 			"style": {
@@ -217,8 +217,8 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, {
-			"path": "pages/liaison/administration/administration",
+		}, {	//联络站 履职管理
+			"path": "pages/liaison/rules",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -253,7 +253,7 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, {
+		}, {	//联络站  意见建议
 			"path": "pages/liaison/suggest",
 			"style": {
 				"navigationBarTitleText": "",
@@ -275,27 +275,27 @@
 			}
 
 		}, {
-			"path": "pages/feedback/feedback",
+			"path": "pages/user/feedback/feedback",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/about/about",
+			"path": "pages/user/about/about",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
-		}, {
+		}, {//联络站  建议详情
 			"path": "pages/liaison/suggestdet",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
-		}, { // 联络站活动纪�
+		}, { // 联络站活动纪实
 			"path": "pages/liaison/activity",
 			"style": {
 				"navigationBarTitleText": "",
@@ -303,7 +303,7 @@
 			}
 
 		}, { // 联络站选民接待
-			"path": "pages/liaison/reception/reception",
+			"path": "pages/liaison/reception",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -311,7 +311,7 @@
 
 		},
 		{
-			"path": "pages/edition/edition",
+			"path": "pages/user/edition/edition",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -319,7 +319,7 @@
 
 		},
 		{
-			"path": "pages/edition/editiondet",
+			"path": "pages/user/edition/editiondet",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -343,7 +343,7 @@
             
         }
 	    ,{
-            "path" : "pages/duty/duty",
+            "path" : "pages/user/recommend/recommend",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -352,7 +352,7 @@
             
         }
         ,{
-            "path" : "pages/duty/content/content",
+            "path" : "pages/user/myMessages/myMessages",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -360,6 +360,33 @@
             }
             
         }
+        ,{
+            "path" : "pages/user/myMessage/myMessage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{		//联络站  一季一星
+			"path" : "pages/liaison/outcome",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		}
+		,{	//联络站  履职活动
+			"path" : "pages/liaison/plan",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

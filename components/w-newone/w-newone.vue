@@ -18,7 +18,10 @@
 		},
 		methods:{
 			topage(){
-				this.$emit("topage")
+				// this.$emit("topage")
+				uni.navigateTo({
+					url:"/pages/archives/archives"
+				})
 			}
 		}
 	}
