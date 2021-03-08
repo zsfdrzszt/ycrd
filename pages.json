@@ -217,14 +217,15 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, {
-			"path": "pages/liaison/administration/administration",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
+		}, 
+		// {
+		// 	"path": "pages/administration/administration",
+		// 	"style": {
+		// 		"navigationBarTitleText": "",
+		// 		"enablePullDownRefresh": false
+		// 	}
 
-		},
+		// },
 		{
 			"path": "pages/liaison/index",
 			"style": {
@@ -303,7 +304,7 @@
 			}
 
 		}, { // 联络站选民接待
-			"path": "pages/liaison/reception/reception",
+			"path": "pages/liaison/reception",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
