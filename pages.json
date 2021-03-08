@@ -386,6 +386,33 @@
 				"enablePullDownRefresh": false
 			}
 			
+		},
+		{	//联络站  履职活动
+			"path" : "pages/duty/duty",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{	//联络站  履职活动
+			"path" : "pages/duty/content/content",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{	//履职档案
+			"path" : "pages/archives/archives",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
 		}
     ],
 	"globalStyle": {

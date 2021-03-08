@@ -215,9 +215,9 @@
 		},
 		methods: {
 			tonext(index){
-				uni.navigateTo({
-					url: "/pages/pro1/pro1"+"?ind="+index
-				})
+				// uni.navigateTo({
+				// 	url: "/pages/pro1/pro1"+"?ind="+index
+				// })
 			},
 			topnew() {
 				this.newlist2.filter((item) => {
