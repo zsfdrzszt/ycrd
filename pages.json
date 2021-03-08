@@ -219,15 +219,6 @@
 
 		}, {	//联络站 履职管理
 			"path": "pages/liaison/rules",
-		}, 
-		// {
-		// 	"path": "pages/administration/administration",
-		// 	"style": {
-		// 		"navigationBarTitleText": "",
-		// 		"enablePullDownRefresh": false
-		// 	}
-
-		// },
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -389,6 +380,24 @@
 		}
 		,{	//联络站  履职活动
 			"path" : "pages/liaison/plan",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{	//联络站  履职活动
+			"path" : "pages/duty/duty",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{	//联络站  履职活动
+			"path" : "pages/duty/content/content",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
