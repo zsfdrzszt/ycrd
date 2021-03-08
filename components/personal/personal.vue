@@ -1,5 +1,5 @@
 <template>
-	<view class="person">
+	<view class="person" @click="nextpage">
 		<view class="pimage">
 			<u-image :src="image" :lazy-load="true" width="180rpx" mode="widthFix">
 				<u-loading slot="loading"></u-loading>
@@ -19,6 +19,13 @@
 			return {
 				
 			};
+		},
+		methods:{
+			nextpage(){
+				uni.navigateTo({
+					url:"/pages/activity_room/activity_det/activity_det",
+				})
+			}
 		},
 		props:['image','quater','name','step']
 	}

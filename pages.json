@@ -413,6 +413,15 @@
 				"enablePullDownRefresh": false
 			}
 			
+		},
+		{	//联络站  计划详情
+			"path" : "pages/liaison/plandet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
 		}
     ],
 	"globalStyle": {
