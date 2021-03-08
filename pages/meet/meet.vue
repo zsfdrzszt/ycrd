@@ -74,6 +74,8 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.meet_title {

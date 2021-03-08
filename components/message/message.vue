@@ -31,7 +31,7 @@
 			<text></text>
 		</view>
 		<view class="message_image">
-			<image src="http://qiniu.jza2c.com/uploads/20190729/FucxO7PfGJ-jA0VUxiocMHzrj780.jpg" style="width: 100%;"  mode="widthFix"></image>
+			<image src="http://qiniu.jza2c.com/uploads/20190729/FucxO7PfGJ-jA0VUxiocMHzrj780.jpg" style="width: 30%;"  mode="widthFix"></image>
 		</view>
 	</view>
 </template>
@@ -93,7 +93,11 @@ page{
 	padding-top: 0;
 }
 .message_image{
-	width: 97.6667px;
-	margin-right: 30px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.message_image image{
+	margin: 0 1.5% 20px;
 }
 </style>
