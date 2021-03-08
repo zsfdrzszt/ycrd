@@ -404,6 +404,15 @@
 				"enablePullDownRefresh": false
 			}
 			
+		},
+		{	//履职档案
+			"path" : "pages/archives/archives",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
 		}
     ],
 	"globalStyle": {

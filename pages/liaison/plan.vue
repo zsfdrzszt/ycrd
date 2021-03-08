@@ -27,6 +27,7 @@
 		data() {
 			return {
 				isActive:1,
+				list:[{time:'01',title:'集中学习',space:'乡大活动中心',name:'任光荣',content:'省委书记骆惠宁在全省组织工作会议上的讲话',state:1,attitude:0},{time:'01',title:'集中学习',space:'乡大活动中心',name:'任光荣',content:'省委书记骆惠宁在全省组织工作会议上的讲话',state:0,attitude:1}],
 			}
 		},
 		methods: {

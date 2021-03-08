@@ -55,7 +55,7 @@
 			}
 		},
 		methods:{
-			topage(){
+			nextpage(){
 				// uni.navigateTo({
 				// })
 			}
