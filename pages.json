@@ -388,7 +388,7 @@
 			
 		},
 		{	//联络站  履职活动
-			"path" : "pages/duty/duty",
+			"path" : "pages/user/duty/duty",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
@@ -397,7 +397,7 @@
 			
 		},
 		{	//联络站  履职活动
-			"path" : "pages/duty/content/content",
+			"path" : "pages/user/duty/content/content",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
