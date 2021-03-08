@@ -11,7 +11,7 @@
 				<text>岗位：{{value.job}}</text>				<br>
 				<text>联络站：{{value.space}}</text>				<br>
                 <view class="buttons">
-					<view class="userbutton">留言</view>
+					<view class="userbutton" @click="message">留言</view>
 					<view class="userbutton" @click="topage">查看详情</view>
 				</view>
 			</view>
@@ -32,6 +32,11 @@
 			topage(){
 				uni.navigateTo({
 					url:"/pages/text1/liaison/liaison?id=1"
+				})
+			},
+			message(){
+				uni.navigateTo({
+					url:"/pages/liaison/message?id=1"
 				})
 			}
 		}
