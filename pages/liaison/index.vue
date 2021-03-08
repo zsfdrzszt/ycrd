@@ -22,7 +22,7 @@
 			</view>
 		</view>
 		<view class="index_bottom">
-			<view class="index_btn"><u-icon name="chat" color="#fff" size="38" style="padding-right: 30rpx;"></u-icon><text>站长留言</text></view>
+			<view class="index_btn" @click="sendinfo"><u-icon name="chat" color="#fff" size="38" style="padding-right: 30rpx;"></u-icon><text>站长留言</text></view>
 		</view>
 	</view>
 </template>
@@ -122,7 +122,7 @@
 				}else if(index==1){
 					// 代表阵地
 					uni.navigateTo({
-						url:"/pages/pro2/prolist/prolist?id="+this.lid,
+						url:"/pages/pro2/prolist/prolist?space="+this.lianame,
 					})
 				}else if(index==2){
 					// 活动纪实
@@ -152,7 +152,7 @@
 				}else if(index==7){
 					// 履职活动
 					uni.navigateTo({
-						url:"/pages/liaison/plan",
+						url:"/pages/liaison/plan?id="+this.lid,
 					})
 				}else if(index==8){
 					// 地图导航
@@ -166,6 +166,12 @@
 			},
 			swiperclick(index){
 				console.log(index)
+			},
+			// 站长留言
+			sendinfo(){
+				uni.navigateTo({
+					url:"/pages/liaison/message",
+				})
 			}
 		}
 	}
