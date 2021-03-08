@@ -1,0 +1,63 @@
+<template>
+	<view class="duty">
+		<image src="../../static/duty/user_myperform_back.jpg" mode="widthFix" style="width: 100%;"></image>
+		<view class="scroll-view">
+			<scroll-view scroll-y="true" >
+				<navigator class="duty_con" v-for="(item,index) in list">
+					<text>{{index+1}}、</text>
+					<text>{{item}}</text>
+					<view class="duty_image">
+						<image src="../../static/duty/download.png" mode="widthFix" style="width: 100%;"></image>
+					</view>
+				</navigator>
+			</scroll-view>
+		</view>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				list:['人代会参会情况(0)','人代会期间提出的意见建议(0)','闭会期间提出的意见建议(0)','学习培训教育(0)','工作评议(0)','宣讲、联系、走访(0)','为民服务(0)','闭会期间提出的意见建议(0)','学习培训教育(0)','工作评议(0)','宣讲、联系、走访(0)','为民服务(0)',]
+			}
+		},
+		methods: {
+			
+		}
+	}
+</script>
+
+<style>
+page{
+	width: 100%;
+}
+.duty{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+.scroll-view {
+	height: 100%;
+	overflow: auto;
+	box-sizing: border-box;
+	background-color: white;
+}
+.duty_con{
+    margin: 15px 10px;
+    box-shadow: 1px 1px 3px #ccc;
+    display: block;
+    padding: 10px 5px;
+	line-height: 32px;
+	height: 50px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.duty_image{
+	float: right;
+	width: 8px;
+	display: inline-block;
+}
+</style>
