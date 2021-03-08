@@ -396,7 +396,7 @@
 			}
 			
 		},
-		{	//联络站  履职活动
+		{	//
 			"path" : "pages/duty/content/content",
 			"style" :                                                                                    
 			{
@@ -405,8 +405,35 @@
 			}
 			
 		},
-		{	//履职档案
-			"path" : "pages/archives/archives",
+		{	//
+			"path" : "pages/user/userindex/userindex",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{	//
+			"path" : "pages/user/user_personal/user_personal",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{	//
+			"path" : "pages/user/user_delegation/user_delegation",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{	//
+			"path" : "pages/user/user_delegation/user_delegation_list",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
