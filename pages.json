@@ -440,6 +440,15 @@
 				"enablePullDownRefresh": false
 			}
 			
+		},
+		{		// 选民接待详情
+			"path" : "pages/liaison/receptiondet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
 		}
     ],
 	"globalStyle": {
