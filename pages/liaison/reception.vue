@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view>
-			<u-image src="../../../static/liaison/common_reception_title.jpg" :lazy-load="true" mode="widthFix">
+			<u-image src="../../static/liaison/common_reception_title.jpg" :lazy-load="true" mode="widthFix">
 				<u-loading slot="loading"></u-loading>
 			</u-image>
 		</view>
@@ -28,7 +28,7 @@
 </template>
 
 <script>
-	import wdropdown from "../../../components/w-dropdown/w-dropdown.vue"
+	import wdropdown from "../../components/w-dropdown/w-dropdown.vue"
 	export default {
 		data() {
 			return {
@@ -67,7 +67,7 @@
 
 <style>
 	page{
-		background-image: url(../../../static/text5/common_bg.jpg);
+		background-image: url(../../static/text5/common_bg.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: fixed;

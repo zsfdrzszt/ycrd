@@ -1,6 +1,6 @@
 <template>
 	<view class="administration">
-		<image src="../../../static/liaison/liasons_common_rules_title.jpg" mode="widthFix" style="width: 100%;"></image>
+		<image src="../../static/liaison/liasons_common_rules_title.jpg" mode="widthFix" style="width: 100%;"></image>
 		<view class="administration_title">
 			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">人大代表履职管理制度</text>
 			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">履职能力提升</text>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-	import system  from "../../../components/system/system.vue"      //履职管理制度组件
+	import system  from "../../components/system/system.vue"      //履职管理制度组件
 	export default {
 		components:{
 			system
