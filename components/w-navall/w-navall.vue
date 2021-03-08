@@ -28,6 +28,7 @@
 				})
 			},
 			topages(val){
+				this.navstate =false
 			if(val<0){
 				uni.navigateBack({
 					delta: 1

@@ -26,18 +26,23 @@
 				</view>
 			</view>
 		</scroll-view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
+		components:{
+			wnavall
+		},
 		data() {
 			return {
 			   userlist:{img:'https://thirdwx.qlogo.cn/mmopen/vi_32/0K9JHnppgBZNrSiblnKdjn3ia9NibrSDvvpmSOzmr88mNNN0uw3I5pianBudSyVUEdTvibYib4B1K8PD8MLW8jxakYaQ/132',name:"南北",},
 			   titlelist:[{title:"个人",content:[{name:"个人资料",icone:"/static/user/grzl.png",url:"/pages/user/user_personal/user_personal"},{name:"通讯录",icone:"/static/user/txl.png",url:"/pages/user/user_delegation/user_delegation_list"},{name:"全区统计",icone:"/static/user/qqtj.png",url:""}]},
 			   {title:"联络站",content:[{name:"我的联络站",icone:"/static/user/grzl.png",url:""},{name:"联络站履职",icone:"/static/user/txl.png",url:""},{name:"数据统计",icone:"/static/user/qqtj.png",url:""}]},
 			   {title:"双联系",content:[{name:"联系常委",icone:"/static/user/grzl.png",url:""},{name:"我的留言",icone:"/static/user/txl.png",url:""},{name:"我的回复",icone:"/static/user/qqtj.png",url:""}]},
-			   {title:"履职",content:[{name:"履职档案",icone:"/static/user/grzl.png",url:""},{name:"履职共享",icone:"/static/user/txl.png",url:""},{name:"履职排名",icone:"/static/user/qqtj.png",url:""}]},
+			   {title:"履职",content:[{name:"履职档案",icone:"/static/user/grzl.png",url:"/pages/user/duty/duty"},{name:"履职共享",icone:"/static/user/txl.png",url:""},{name:"履职排名",icone:"/static/user/qqtj.png",url:""}]},
 			   {title:"审批",content:[{name:"群众留言",icone:"/static/user/grzl.png",url:""},{name:"代表回复",icone:"/static/user/txl.png",url:""},{name:"履职",icone:"/static/user/qqtj.png",url:""}]},
 			   {title:"其他",content:[{name:"名次解释",icone:"/static/user/grzl.png",url:"/pages/nextpages/explain/explain"},{name:"意见反馈",icone:"/static/user/txl.png",url:""},{name:"关于我们",icone:"/static/user/qqtj.png",url:""},{name:"版本更新",icone:"/static/user/qqtj.png",url:""}]}
 			   ],
@@ -68,6 +73,7 @@
     overflow: hidden;
 	display: flex;
     flex-direction: column;
+	position: relative;
 }
 .index_top{
 	height: 130px;
