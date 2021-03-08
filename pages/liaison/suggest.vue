@@ -8,7 +8,7 @@
 			<view class="suggest_tab">
 				<text class="textnav" :class="{activetab:1==active }" @click="change(1)">流程图</text>
 				<text class="textnav" :class="{activetab:2==active }" @click="change(2)">人代会期间</text>
-					<text class="textnav" :class="{activetab:3==active }" @click="change(3)">闭会期间</text>
+				<text class="textnav" :class="{activetab:3==active }" @click="change(3)">闭会期间</text>
 			</view>
 			<!-- 选项卡内容 -->
 			<view class="suggest_tabcont">

@@ -175,7 +175,7 @@
 			}
 
 		},
-		// 活动室主页
+		// 活动室主�
 		{
 			"path": "pages/activity_room/activity_index",
 			"style": {
@@ -184,7 +184,7 @@
 			}
 
 		},
-		// 活动室概况
+		// 活动室概�
 		{
 			"path": "pages/activity_room/activity_introduction/activity_introduction",
 			"style": {
@@ -193,7 +193,7 @@
 			}
 
 		},
-		// 活动室列表
+		// 活动室列�
 		{
 			"path": "pages/activity_room/activity_list/activity_list",
 			"style": {
@@ -202,7 +202,7 @@
 			}
 
 		},
-		// 活动室详细页面
+		// 活动室详细页�
 		{
 			"path": "pages/activity_room/activity_det/activity_det",
 			"style": {
@@ -295,7 +295,7 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, { // 联络站活动纪实
+		}, { // 联络站活动纪�
 			"path": "pages/liaison/activity",
 			"style": {
 				"navigationBarTitleText": "",

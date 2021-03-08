@@ -122,38 +122,38 @@
 				}else if(index==1){
 					// 代表阵地
 					uni.navigateTo({
-						url:"/pages/pro2/prolist/prolist",
+						url:"/pages/pro2/prolist/prolist?id="+this.lid,
 					})
 				}else if(index==2){
 					// 活动纪实
 					uni.navigateTo({
-						url:"/pages/liaison/activity",
+						url:"/pages/liaison/activity?id="+this.lid,
 					})
 				}else if(index==3){
 					// 一季一星
-					// uni.navigateTo({
-					// 	url:"/pages/liaison/activity",
-					// })
+					uni.navigateTo({
+						url:"/pages/liaison/outcome?id="+this.lid,
+					})
 				}else if(index==4){
 					// 选民接待
 					uni.navigateTo({
-						url:"/pages/liaison/reception/reception",
+						url:"/pages/liaison/reception?id="+this.lid,
 					})
 				}else if(index==5){
 					// 意见建议
 					uni.navigateTo({
-						url:"/pages/liaison/suggest",
+						url:"/pages/liaison/suggest?id="+this.lid,
 					})
 				}else if(index==6){
 					// 履职管理
 					uni.navigateTo({
-						url:"/pages/liaison/administration/administration",
+						url:"/pages/liaison/rules?id="+this.lid,
 					})
 				}else if(index==7){
 					// 履职活动
-					// uni.navigateTo({
-					// 	url:"/pages/liaison/administration/administration",
-					// })
+					uni.navigateTo({
+						url:"/pages/liaison/plan",
+					})
 				}else if(index==8){
 					// 地图导航
 					if(this.map!=''){
