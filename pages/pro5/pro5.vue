@@ -11,7 +11,7 @@
 		<arrange :list="item" v-for="(item,index) in list5"></arrange>
 		<!-- <headline :list="item" v-for="(item,index) in list6" :num="index+1"></headline> -->
 		<!-- <wdropdown :list= "list7"  @searchdrop="searchdrop1"></wdropdown> -->
-		<perform   :list="item" v-for="(item,index) in list8" :num="index+1" :state="2"></perform>
+		<!-- <perform   :list="item" v-for="(item,index) in list8" :num="index+1" :state="2"></perform> -->
 	</view>
 </template>
 
