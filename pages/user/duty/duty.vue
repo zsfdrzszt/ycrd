@@ -1,13 +1,13 @@
 <template>
 	<view class="duty">
-		<image src="../../static/duty/user_myperform_back.jpg" mode="widthFix" style="width: 100%;"></image>
+		<image src="../../../static/duty/user_myperform_back.jpg" mode="widthFix" style="width: 100%;"></image>
 		<view class="scroll-view">
 			<scroll-view scroll-y="true" >
 				<navigator class="duty_con" v-for="(item,index) in list">
 					<text>{{index+1}}、</text>
 					<text>{{item}}</text>
 					<view class="duty_image">
-						<image src="../../static/duty/download.png" mode="widthFix" style="width: 100%;"></image>
+						<image src="../../../static/duty/download.png" mode="widthFix" style="width: 100%;"></image>
 					</view>
 				</navigator>
 			</scroll-view>

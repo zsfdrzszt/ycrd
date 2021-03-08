@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<image src="../../../static/duty/download.jpg" mode="widthFix"  style="width: 100%;"></image>
+		<image src="../../../../static/duty/download.jpg" mode="widthFix"  style="width: 100%;"></image>
 		<view class="content_top">
 			<input type="text" id="search" placeholder="请输入搜索内容">
 			<wdropdown :list= "list7"  @searchdrop="searchdrop1"></wdropdown>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-	import wdropdown from "../../../components/w-dropdown/w-dropdown.vue"
+	import wdropdown from "../../../../components/w-dropdown/w-dropdown.vue"
 	export default {
 		components:{
 			wdropdown
