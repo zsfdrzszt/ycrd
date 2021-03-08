@@ -3,7 +3,7 @@
 	<view class="navmenus" >
 	    <view  :style="{height: navHeight }" class="navmenuheight">
 			<view class="navmenu" @click="topages(0)">首页</view>
-			<view class="navmenu">个人中心</view>
+			<view class="navmenu" @click="topages(1)">个人中心</view>
 			<view class="navmenu" @click="topage">名词解释</view>
 			<view class="navmenu"@click="topages(-1)">返回上页</view>
 		</view>
@@ -18,7 +18,7 @@
 				navstate : false,
 				navHeight: 0,
 				num :0,
-				url:["/pages/index/index",]
+				url:["/pages/index/index","/pages/user/userindex/userindex"]
 			};
 		},
 		methods:{
@@ -28,11 +28,16 @@
 				})
 			},
 			topages(val){
+				this.navstate =false
 			if(val<0){
 				uni.navigateBack({
 					delta: 1
 				})
-			}else{
+			}else if(val ==0){
+				uni.navigateTo({
+					url:this.url[val]
+				})
+			}else if(val == 1){
 				uni.navigateTo({
 					url:this.url[val]
 				})

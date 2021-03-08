@@ -16,7 +16,7 @@
 					<view class="wrapback" v-show="showWarp" @click="tobuttom">
 						<image src="../../static/indeximg/county_common_index_close.png" style="position: absolute; left: 5px; top: 5px; width: 5%; " @click="showwarp" mode="widthFix"></image>
 					</view>
-					<image mode="widthFix" src="../../static/indeximg/county_common_index_nine.png" class="myself"></image>
+					<image mode="widthFix" src="../../static/indeximg/county_common_index_nine.png" class="myself" @click="touser"></image>
 				</view>
 			</view>
 		</view>
@@ -233,6 +233,11 @@
 					} else {
 						this.newlist22.push(item)
 					}
+				})
+			},
+			touser(){
+				uni.navigateTo({
+					url:'/pages/user/userindex/userindex'
 				})
 			},
 			changenav(n) {

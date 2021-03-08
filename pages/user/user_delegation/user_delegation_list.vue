@@ -4,7 +4,7 @@
 			<text>代表团名录</text>
 		</view>
 		<view class="user_del_list_content">
-			<navigator url='' class="del_list_item"  v-for="(item,index) in list_data" :key=index>
+			<navigator url='/pages/user/user_delegation/user_delegation' class="del_list_item"  v-for="(item,index) in list_data" :key=index>
 				<view class="">
 					<text>{{item}}</text>
 				</view>

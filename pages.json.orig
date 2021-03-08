@@ -396,8 +396,13 @@
 			}
 			
 		},
+<<<<<<< HEAD
 		{	//
+			"path" : "pages/duty/content/content",
+=======
+		{	//联络站  履职活动
 			"path" : "pages/user/duty/content/content",
+>>>>>>> 66b293fcdb60e64525131d51e7bc18ad61702fa8
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
@@ -440,7 +445,25 @@
 				"enablePullDownRefresh": false
 			}
 			
+		},
+		{	//联络站  计划详情
+			"path" : "pages/liaison/plandet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
 		}
+        ,{
+            "path" : "pages/liaison/message",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
