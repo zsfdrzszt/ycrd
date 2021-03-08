@@ -68,12 +68,16 @@
 	.meet {
 		width: 100%;
 		height: 100%;
-		display: flex;
-		flex-direction: column;
 		overflow: hidden;
+		background-image: url(../../static/create/common_bg.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
 	}
 
 	.meet_title {
+		width: 100%;
 		height: 41px;
 		display: flex;
 		flex-wrap: wrap;
@@ -102,7 +106,6 @@
 	.scroll-view {
 		flex: 1;
 		overflow: auto;
-		
 	}
 
 	.meet_list {

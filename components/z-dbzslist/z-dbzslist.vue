@@ -1,6 +1,5 @@
 <template>
-	<view>
-		<view class="rdvoice_con">
+		<view class="rdvoice_con" @click="nextpage">
 			<navigator class="rdvoice_conrow" url="../w-contacts/w-contacts">
 				<view class="rdvoice_conleft">
 					<image :src="value.url" mode="widthFix"></image>
@@ -15,7 +14,6 @@
 				</view>
 			</navigator>
 		</view>
-	</view>
 </template>
 
 <script>
@@ -29,7 +27,11 @@
 			}
 		},
 		methods: {
-			
+			nextpage(){
+				uni.navigateTo({
+					url:"/pages/text4/text4son"
+				})
+			}
 		}
 	}
 </script>

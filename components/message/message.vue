@@ -26,6 +26,13 @@
 		<view class="message_rows">
 			<text>{{list.jie}}</text>
 		</view>
+		<view class="message_row">
+			<text>查看图片</text>
+			<text></text>
+		</view>
+		<view class="message_image">
+			<image src="http://qiniu.jza2c.com/uploads/20190729/FucxO7PfGJ-jA0VUxiocMHzrj780.jpg" style="width: 100%;"  mode="widthFix"></image>
+		</view>
 	</view>
 </template>
 
@@ -84,5 +91,9 @@ page{
 	margin: 0 10px;
 	color: #777777;
 	padding-top: 0;
+}
+.message_image{
+	width: 97.6667px;
+	margin-right: 30px;
 }
 </style>

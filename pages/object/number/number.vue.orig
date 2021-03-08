@@ -1,6 +1,10 @@
 <template>
 	<view class="number">
+<<<<<<< HEAD
 		<scroll-view class="scroll-view" scroll-y="true" >
+=======
+		<scroll-view scroll-y="true" class="scroll-view" >
+>>>>>>> aa083071aba9b71cc2278ae03e7734d254d45678
 			<view>
 				<relation :list="item" :num="index" v-for="(item,index) in list1"></relation>
 			</view>
@@ -39,7 +43,10 @@ page{
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
+<<<<<<< HEAD
 	padding-bottom: 20rpx;
+=======
+>>>>>>> aa083071aba9b71cc2278ae03e7734d254d45678
 }
 .scroll-view{
 	width: 100%;

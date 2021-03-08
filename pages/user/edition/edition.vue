@@ -11,12 +11,12 @@
 				<view class="edition_txt2">{{txt3}}</view>
 				<view class="edition_txt1">{{txt4}}</view>
 			</view>
-			<navigator url="/pages/edition/editiondet" hover-class="none" class="edition_chak">
+			<navigator url="/pages/user/edition/editiondet" hover-class="none" class="edition_chak">
 			   [查看更多]
 			</navigator>
 		</view>
 		<view class="edition_center">
-			<navigator url="" hover-class="none" class="edition_center_item">
+			<navigator url="/pages/user/edition/editiondet" hover-class="none" class="edition_center_item">
 				<view class="edition_center_leftitem">
 					RDYC<text class="edition_da">1.0.2</text>
 				</view>
@@ -24,7 +24,7 @@
 				   <u-icon name="arrow-right" color="#9b9b9b" size="30"></u-icon>
 			   </view>
 			</navigator>
-			<navigator url="" hover-class="none" class="edition_center_item">
+			<navigator url="/pages/user/edition/editiondet" hover-class="none" class="edition_center_item">
 				<view class="edition_center_leftitem">
 					RDYC<text class="edition_da">1.0.1</text>
 				</view>

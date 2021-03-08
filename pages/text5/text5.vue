@@ -14,7 +14,7 @@
 				<navigator url="contactCntent/contactCntent">
 					<image src="../../static/pro5img/county_common_double_con.png" mode="widthFix"></image>
 				</navigator>
-				<navigator url="../pro2/pro2">
+				<navigator url="/pages/object/object">
 					<image src="../../static/pro5img/county_common_double_object.png" mode="widthFix"></image>
 				</navigator>
 			</view>

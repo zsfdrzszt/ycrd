@@ -27,7 +27,7 @@
 					</view>
 				</view>
 			</view>
-			<navigator url="" class="cont_btn">
+			<navigator url="" class="cont_btn" hover-class="none">
 				<image class="cont_btnpic" src="../../static/county/county_common_upcontactDown_mess.jpg" mode="widthFix"></image>
 			</navigator>
 		</view>

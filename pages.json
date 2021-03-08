@@ -275,14 +275,14 @@
 			}
 
 		}, {
-			"path": "pages/feedback/feedback",
+			"path": "pages/user/feedback/feedback",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/about/about",
+			"path": "pages/user/about/about",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -311,7 +311,7 @@
 
 		},
 		{
-			"path": "pages/edition/edition",
+			"path": "pages/user/edition/edition",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -319,7 +319,7 @@
 
 		},
 		{
-			"path": "pages/edition/editiondet",
+			"path": "pages/user/edition/editiondet",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -342,7 +342,34 @@
             }
             
         }
-	],
+	    ,{
+            "path" : "pages/user/recommend/recommend",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/myMessages/myMessages",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/myMessage/myMessage",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",

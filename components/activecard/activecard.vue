@@ -1,6 +1,6 @@
 <template>
 	<view class='list_item' >
-		<navigator url='/pages/activity_room/activity_det/activity_det' class="list_item_a">
+		<navigator :url='url' class="list_item_a">
 			<view class='list_left'>
 				<img :src='list.img' alt="">
 			</view>
@@ -16,7 +16,8 @@
 	export default {
 		props:{
 			list:Object,
-			state:Boolean
+			state:Boolean,
+			url:String,
 		},
 		data() {
 			return {

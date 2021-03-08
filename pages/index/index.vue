@@ -35,6 +35,11 @@
 				</swiper-item>
 				<swiper-item class="swiper-item" @touchmove.stop>
 					<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
+						<reply v-for="(item,index) in list3" :list="item"></reply>
+					</scroll-view>
+				</swiper-item>
+				<swiper-item class="swiper-item" @touchmove.stop>
+					<scroll-view scroll-y style="height: 800rpx;width: 100%;" @scrolltolower="onreachBottom">
 						<wnewtwo v-for="(item,index) in newlist22" :key="index" :newlist="item" @topage="tonext(index)"></wnewtwo>
 					</scroll-view>
 				</swiper-item>
@@ -55,16 +60,21 @@
 	import wjobnew from "../../components/w-newone/w-newone.vue"
 	import wnewtwo from "../../components/w-newtwo/w-newtwo.vue"
 	import wnewthree from "../../components/w-newthree/w-newthree.vue"
+	import reply from "../../components/reply/reply.vue" 
 	export default {
 		components: {
 			wjobnew,
 			wnewtwo,
-			wnewthree
+			wnewthree,
+			reply
 		},
 		data() {
 			return {
 				newlist33: [],
 				newlist22: [],
+				list3:[{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05",reply:{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05"}},
+				{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05",reply:{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05"}},{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05",reply:{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05"}}
+				,{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05",reply:{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05"}}],
 				newlist2: [{
 					space: "榆次区人大常委会办公室",
 					class: "联络站建设",
@@ -178,8 +188,12 @@
 				}],
 				isActive: false,
 				swiperCurrent: 0,
-				navlist: [{
+				navlist: [
+				{
 					name: "最新履职"
+				},
+				{
+					name: "最新留言"
 				}, {
 					name: "最新要闻"
 				}, {
@@ -222,9 +236,9 @@
 				})
 			},
 			changenav(n) {
-				if (n == 2) {
+				if (n == 3) {
 					uni.navigateTo({
-						url: "/pages/text1/text1"
+						url: "/pages/create/create"
 					})
 				}else {
 					this.swiperCurrent = n

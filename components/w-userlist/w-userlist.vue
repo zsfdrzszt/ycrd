@@ -1,6 +1,6 @@
 <template>
 	<!-- 人员卡片 -->
-	<view class="usermain">
+	<view class="usermain" >
 		<view class="userleft">
 			<image :src="value.url" class="userimg" mode="widthFix" ></image>
 		</view>
@@ -12,7 +12,7 @@
 				<text>联络站：{{value.space}}</text>				<br>
                 <view class="buttons">
 					<view class="userbutton">留言</view>
-					<view class="userbutton">查看详情</view>
+					<view class="userbutton" @click="topage">查看详情</view>
 				</view>
 			</view>
 		</view>
@@ -27,6 +27,13 @@
 		data() {
 			return {
 			};
+		},
+		methods:{
+			topage(){
+				uni.navigateTo({
+					url:"/pages/text1/liaison/liaison?id=1"
+				})
+			}
 		}
 	}
 </script>

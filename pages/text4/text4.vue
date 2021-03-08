@@ -76,6 +76,9 @@
 				{suggest:"电费滚滚根据客户",name:"回复",time:"2020.1.13",condition:"打广告的THX绕太阳"},]
 			}
 		},
+		onLoad() {
+			this.text4list= this.text4lists 
+		},
 		methods: {
 			changestate(n){
 				this.isActive = n

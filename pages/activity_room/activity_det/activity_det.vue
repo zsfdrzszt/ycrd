@@ -70,7 +70,7 @@
 	page{
 		padding-top:30px;
 		height: 100%;
-		background: url(@/static/text4/common_articlebg.jpg);
+		background: url("@/static/text4/common_articlebg.jpg");
 		background-size:100% 100%;
 		background-repeat:no-repeat ;
 		font:14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;

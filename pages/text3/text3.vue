@@ -5,8 +5,8 @@
 		<image src="../../static/bulidimg/county_common_build_title.png" mode="widthFix" style="width: 100%"></image>
 		<zsearch placeholder="请输入搜索内容" class="search" @changenav="changenav" @searchusers="searchusers"></zsearch>
 		<!-- <wuserlist v-for=" (item,index) in userlist " :key="index" :value="item"> </wuserlist> -->
-		<zlist v-for=" (item,index) in zlist "  :key="index" :value="item"  v-show="zliststate"></zlist>
-		<zlist v-for=" (item,index) in zlistseach " :key="index"  :value="item" v-show="!zliststate"></zlist>
+		<zlist v-for=" (item,index) in zlist "  :key="index" :value="item"  v-show="zliststate" @click="nextpage"></zlist>
+		<zlist v-for=" (item,index) in zlistseach " :key="index"  :value="item" v-show="!zliststate" @click="nextpage"></zlist>
 		<view class="end">
 			<text>以到达最底部</text>
 		</view>
@@ -61,6 +61,11 @@
 			}
 		},
 		methods: {
+			nextpage(){
+				uni.navigateTo({
+					url:"/pages/text4/text4son"
+				})
+			},
 			changenav(){
 				this.zliststate = !this.zliststate
 				this.zlistseach=[]
