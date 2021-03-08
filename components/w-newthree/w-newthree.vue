@@ -18,7 +18,11 @@
 		},
 		methods:{
 			topage(){
-				this.$emit("topage")
+				uni.navigateTo({
+					url:"/pages/text4/text4son"
+				})({
+					
+				})
 			}
 		}
 	}
