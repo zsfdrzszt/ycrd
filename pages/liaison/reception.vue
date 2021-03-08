@@ -11,18 +11,16 @@
 		</view>
 		<view class="dropdown"><wdropdown :list= "droplist" @searchdrop="searchdrop"></wdropdown></view>
 		<view class="table">
-			<u-table color="#999" padding="30rpx">
-				<u-tr class="u-tr">
-					<u-th class="u-th"  width="250rpx">接待时间</u-th>
-					<u-th class="u-th">接待代表</u-th>
-					<u-th class="u-th"  width="200rpx">接待情况</u-th>
-				</u-tr>
-				<u-tr class="u-tr" v-for="(item,index) in tabledata" :key="index">
-					<u-td class="u-td" width="250rpx">{{item.time}}</u-td>
-					<u-td class="u-td"><view class="person" ><text v-for="(p,index) in item.person">{{p}}</text></view></u-td>
-					<u-td class="u-td" width="200rpx" @click="showdet(item.id)">查看详情</u-td>
-				</u-tr>
-			</u-table>
+			<view class="row headrow">
+				<view class="time">接待时间</view>
+				<view class="person">接待代表</view>
+				<view class="details">接待情况</view>
+			</view>
+			<view class="row" v-for="(item,index) in tabledata" :key="index">
+				<view class="time">{{item.time}}</view>
+				<view class="person" ><text v-for="(p,index) in item.person">{{p}}</text></view>
+				<view class="details" @click="showdet(item.id)" :style="item.content?{color:'#007AFF'}:''">查看详情</view>
+			</view>
 		</view>
 	</view>
 </template>
@@ -42,10 +40,10 @@
 				},
 				explain: '<div class="d1" style="white-space:normal;padding:0px;margin:12px 0px 0px;list-style:none;font-family:微软雅黑;touch-action:pan-y;display:flex;font-size:medium;"><div class="d2" style="padding:0px;margin:0px;list-style:none;font-family:黑体;touch-action:pan-y;font-size:20px;"><strong><span style="font-family:&quot;Microsoft YaHei&quot;;">1、接待时间：</span></strong></div><div class="d3" style="padding:0px;margin:0px;list-style:none;font-family:黑体;touch-action:pan-y;flex:1 1 0%;font-size:20px;"><span style="font-family:&quot;Microsoft YaHei&quot;;">每月第一周的周五下午15:00—16:00（如遇节假日则顺延一周）</span></div></div><div class="d1" style="white-space:normal;padding:0px;margin:12px 0px 0px;list-style:none;font-family:微软雅黑;touch-action:pan-y;display:flex;font-size:medium;"><div class="d2" style="padding:0px;margin:0px;list-style:none;font-family:黑体;touch-action:pan-y;font-size:20px;"><strong><span style="font-family:&quot;Microsoft YaHei&quot;;">2、接待地点：</span></strong></div><div class="d3" style="padding:0px;margin:0px;list-style:none;font-family:黑体;touch-action:pan-y;flex:1 1 0%;font-size:20px;"><span style="font-family:&quot;Microsoft YaHei&quot;;">郭家堡乡人大代表联络站</span></div></div><div class="d1" style="white-space:normal;padding:0px;margin:12px 0px 0px;list-style:none;font-family:微软雅黑;touch-action:pan-y;display:flex;font-size:medium;"><div class="d2" style="padding:0px;margin:0px;list-style:none;font-family:黑体;touch-action:pan-y;font-size:20px;"><strong><span style="font-family:&quot;Microsoft YaHei&quot;;">3、接待范围：</span></strong></div><div class="d3" style="padding:0px;margin:0px;list-style:none;font-family:黑体;touch-action:pan-y;flex:1 1 0%;font-size:20px;"><span style="font-family:&quot;Microsoft YaHei&quot;;">辖区群众（选民）</span></div></div><div class="d1" style="white-space:normal;padding:0px;margin:12px 0px 0px;list-style:none;font-family:微软雅黑;touch-action:pan-y;display:flex;font-size:medium;"><div class="d2" style="padding:0px;margin:0px;list-style:none;font-family:黑体;touch-action:pan-y;font-size:20px;"><strong><span style="font-family:&quot;Microsoft YaHei&quot;;">4、受理内容：</span></strong></div><div class="d3" style="padding:0px;margin:0px;list-style:none;font-family:黑体;touch-action:pan-y;flex:1 1 0%;font-size:20px;"><span style="font-family:&quot;Microsoft YaHei&quot;;">郭家堡乡辖区和人大代表职权范围内涉及的有关事项。</span></div></div><div class="d1" style="white-space:normal;padding:0px;margin:12px 0px 0px;list-style:none;font-family:微软雅黑;touch-action:pan-y;display:flex;font-size:medium;"><div class="d2" style="padding:0px;margin:0px;list-style:none;font-family:黑体;touch-action:pan-y;font-size:20px;"><strong><span style="font-family:&quot;Microsoft YaHei&quot;;">5、接待要求：</span></strong></div><div class="d3" style="padding:0px;margin:0px;list-style:none;font-family:黑体;touch-action:pan-y;flex:1 1 0%;font-size:20px;"><span style="font-family:&quot;Microsoft YaHei&quot;">要认真记录选民意见和建议，代表不直接处理问题。</span></div></div>',
 				tabledata:[
-					{id:1,time:'2020-01-03',person:['田晓宇','田晓宇']},
-					{id:2,time:'2020-01-03',person:['田晓宇','田晓宇']},
-					{id:3,time:'2020-01-03',person:['田晓宇','田晓宇']},
-					{id:4,time:'2020-01-03',person:['田晓宇','田晓宇']}
+					{id:1,time:'2020-01-03',person:['田晓宇','田晓宇','田晓宇','田晓宇'],content:''},
+					{id:2,time:'2020-01-03',person:['田晓宇','田晓宇'],content:'有内容'},
+					{id:3,time:'2020-01-03',person:['田晓宇','田晓宇'],content:''},
+					{id:4,time:'2020-01-03',person:['田晓宇','田晓宇'],content:''}
 				]
 			}
 		},
@@ -56,7 +54,12 @@
 			},
 			// 查看详情
 			showdet(id){
-				console.log(id)
+				var index = this.tabledata.findIndex((value)=>value.id==id)
+				if(this.tabledata[index].content!=''){
+					uni.navigateTo({
+						url:"/pages/liaison/receptiondet?id="+id
+					})
+				}
 			}
 		},
 		components:{
@@ -93,10 +96,39 @@
 	}
 	.table{
 		margin: 0 20rpx;
+		padding-bottom: 20rpx;
+	}
+	.row{
+		display: flex;
+		width: 100%;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		font-size: 30rpx;
+		background-color: #fff;
+		color: #666;
+		border: 1px solid #e6e6e6;
+		border-bottom: none;
+	}
+	.headrow{
+		background-color: #f2f2f2;
+	}
+	.time{
+		width : 200rpx;
+		padding: 20rpx 10rpx;
 	}
 	.person{
+		flex: 1;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		text-align: center;
+		padding: 20rpx 10rpx;
+		border-left: 1px solid #e6e6e6;
+		border-right: 1px solid #e6e6e6;
+	}
+	.details{
+		width: 180rpx;
+		padding: 20rpx 10rpx;
 	}
 </style>
