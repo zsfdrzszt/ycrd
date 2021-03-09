@@ -53,7 +53,7 @@
 			</view>
 		</view>
 	
-		<navigator class="a" url="#">
+		<navigator class="a" url="/pages/liaison/message">
 			<image src="https://hxrd.jza2c.com//resource/m/images/liasons_common_qrservice_ly.png" mode="widthFix"></image>
 		</navigator>
 	
