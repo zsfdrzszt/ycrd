@@ -1,4 +1,5 @@
 <template>
+	<!-- 双联系 -->
 	<view>
 		<view class="status_bar">
 		</view>
@@ -29,13 +30,13 @@
 			</view>
 
 			<view class="double_con1">
-				<navigator url="/pages/text5/text5next/text5next?id=0">
+				<navigator url="/pages/relation/relationnext/relationnext?id=0">
 					<image src="../../static/pro5img/county_common_double_liasons.png" mode="widthFix"></image>
 				</navigator>
-				<navigator url="/pages/text5/text5next/text5next?id=1">
+				<navigator url="/pages/relation/relationnext/relationnext?id=1">
 					<image src="../../static/pro5img/county_common_double_activity.png" mode="widthFix"></image>
 				</navigator>
-				<navigator url="/pages/text5/text5next/text5next?id=2">
+				<navigator url="/pages/relation/relationnext/relationnext?id=2">
 					<image src="../../static/pro5img/county_common_double_service.png" mode="widthFix"></image>
 				</navigator>
 			</view>

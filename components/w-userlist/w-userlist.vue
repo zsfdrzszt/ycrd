@@ -43,7 +43,7 @@
 		methods:{
 			topage(){
 				uni.navigateTo({
-					url:"/pages/text1/liaison/liaison?id=1"
+					url:"/pages/general/liaison/liaison?id=1"
 				})
 			},
 			message(){

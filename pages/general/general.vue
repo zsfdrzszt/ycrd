@@ -1,4 +1,5 @@
 <template>
+	<!-- //人大概况 -->
 	<view class="contactmain">
 		<view class="status_bar"></view>
 		<view class="content">
@@ -63,7 +64,7 @@
 									<text class="survey_fourwidth"> 主任</text>
 								</view>
 								<view class="survey_fourright">
-									<navigator class="survey_fourwidth" url="/pages/text1/liaison/liaison?id=1" v-for="(item,index) in list2.larder" >{{item.name}}</navigator>
+									<navigator class="survey_fourwidth" url="/pages/general/liaison/liaison?id=1" v-for="(item,index) in list2.larder" >{{item.name}}</navigator>
 								</view>
 							</view>
 							<view class="survey_fourrow">
@@ -71,7 +72,7 @@
 									<text class="survey_fourwidth"> 副主任</text>
 								</view>
 								<view class="survey_fourright">
-									<navigator class="survey_fourwidth" url="/pages/text1/liaison/liaison?id=1" v-for="(item,index) in list2.director" >{{item.name}}</navigator>
+									<navigator class="survey_fourwidth" url="/pages/general/liaison/liaison?id=1" v-for="(item,index) in list2.director" >{{item.name}}</navigator>
 	
 								</view>
 							</view>
@@ -86,7 +87,7 @@
 								</view>
 							</view>
 							<view class="survey_fourrow2">
-								<navigator class="a" url="/pages/text1/liaison/liaison?id=1"  v-for="(item,index) in list2.member">
+								<navigator class="a" url="/pages/general/liaison/liaison?id=1"  v-for="(item,index) in list2.member">
 									<view class="survey_fourwidth">
 										{{item.name}}
 									</view>

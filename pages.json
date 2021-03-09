@@ -10,7 +10,7 @@
 				"scrollIndicator": "none"
 			}
 		}, {
-			"path": "pages/text1/text1",
+			"path": "pages/general/general",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false,
@@ -18,7 +18,7 @@
 			}
 
 		}, {
-			"path": "pages/text2/text2",
+			"path": "pages/publish/publish",
 			"style": {
 				"navigationBarTitleText": "",
 				"navigationStyle": "custom",
@@ -30,21 +30,14 @@
 
 		},
 		{
-			"path": "pages/pro1/pro1",
+			"path": "pages/uploading/uploading",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/pro2/pro2",
-			"style": {
-				"navigationStyle": "custom",
-				"scrollIndicator": "none"
-			}
-
-		}, {
-			"path": "pages/pro3/pro3",
+			"path": "pages/ligature/ligature",
 			"style": {
 				"navigationStyle": "custom",
 				"scrollIndicator": "none"
@@ -61,7 +54,7 @@
 
 
 		, {
-			"path": "pages/text3/text3",
+			"path": "pages/construction/construction",
 			"style": {
 				"navigationStyle": "custom",
 				"enablePullDownRefresh": false
@@ -75,7 +68,7 @@
 			}
 
 		}, {
-			"path": "pages/text5/text5",
+			"path": "pages/relation/relation",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -89,7 +82,7 @@
 			}
 
 		}, {
-			"path": "pages/text6/text6",
+			"path": "pages/deputy/deputy",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -110,21 +103,21 @@
 			}
 
 		}, {
-			"path": "pages/text5/contactWay/contactWay",
+			"path": "pages/relation/contactWay/contactWay",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/text5/contactCntent/contactCntent",
+			"path": "pages/relation/contactCntent/contactCntent",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/text4/text4",
+			"path": "pages/proposal/proposal",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -132,7 +125,7 @@
 
 		},
 		{
-			"path": "pages/text4/text4son",
+			"path": "pages/proposal/proposalson",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -140,28 +133,28 @@
 
 		},
 		{
-			"path": "pages/text1/liaison/liaison",
+			"path": "pages/general/liaison/liaison",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/pro2/prolist/prolist",
+			"path": "pages/ligature/prolist/prolist",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/text5/text5next/text5next",
+			"path": "pages/relation/relationnext/relationnext",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
 		}, {
-			"path": "pages/text5/text5uesrs/text5uesrs",
+			"path": "pages/relation/relationuesrs/relationuesrs",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -261,7 +254,7 @@
 			}
 
 		}, {
-			"path": "pages/text1/close/close",
+			"path": "pages/general/close/close",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
@@ -458,7 +451,26 @@
                 "enablePullDownRefresh": false
             }
             
-        }
+        },
+		{	//个人中心首页
+				"path" : "pages/user/userindex/userindex",
+				"style" :                                                                                    
+				{
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+				
+		},
+		// 排名
+		{
+			"path" : "pages/user/userall/userall",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

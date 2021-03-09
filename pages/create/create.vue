@@ -9,7 +9,7 @@
 				<perform :list="item" v-for="(item,index) in list8" :state="1" ></perform>
 			</view>
 			<view class='center_list' v-show="isActive ==2">
-				<activecard v-for="(item,index) in list_all"  :state="state":key=item.id :list="item" url="/pages/text4/text4son"></activecard>
+				<activecard v-for="(item,index) in list_all"  :state="state":key=item.id :list="item" url="/pages/proposal/proposalson"></activecard>
 			</view>
 		</scroll-view>
 	</view>

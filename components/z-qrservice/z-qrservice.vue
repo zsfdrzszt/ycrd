@@ -53,7 +53,7 @@
 			</view>
 		</view>
 	
-		<navigator class="a" url="#">
+		<navigator class="a" url="/pages/liaison/message">
 			<image src="https://hxrd.jza2c.com//resource/m/images/liasons_common_qrservice_ly.png" mode="widthFix"></image>
 		</navigator>
 	
@@ -61,7 +61,7 @@
 			<image src="https://hxrd.jza2c.com//resource/m/images/liasons_common_qrservice_rdhqj.png" mode="widthFix"></image>
 		</navigator>
 	
-		<navigator class="a" url="/pages/text1/close/close">
+		<navigator class="a" url="/pages/general/close/close">
 			<image src="https://hxrd.jza2c.com/resource/m/images/liasons_common_qrservice_bhqj.png" mode="widthFix"></image>
 		</navigator>
 	

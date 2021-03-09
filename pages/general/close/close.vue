@@ -4,22 +4,20 @@
 			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">履职档案</text>
 			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">意见建议</text>
 		</view>
-		<view>
-			<scroll-view scroll-y="true" v-show="1 == isActive" class="scroll-view" >
-				<view>
+			<scroll-view scroll-y="true"  class="scroll-view" >
+				<view v-show="1 == isActive">
 					<perform :list="item" v-for="(item,index) in list8" :state="1"></perform>
 				</view>
+				<view v-show="2 == isActive">
+					<view class="close_item" >
+					   <wdropdown :list= "list7"  @searchdrop="searchdrop1"></wdropdown>
+					   <wdropdown :list= "list6"  @searchdrop="searchdrop1"></wdropdown>
+					</view>
+					<view class="close_footer">
+					 <text>暂无数据</text>
+					</view>
+				</view>
 			</scroll-view>
-			<view v-show="2 == isActive">
-				<view class="close_item" >
-				   <wdropdown :list= "list7"  @searchdrop="searchdrop1"></wdropdown>
-				   <wdropdown :list= "list6"  @searchdrop="searchdrop1"></wdropdown>
-				</view>
-				<view class="close_footer">
-				 <text>暂无数据</text>
-				</view>
-			</view>
-		</view>
 	</view>
 </template>
 
@@ -58,10 +56,13 @@ page{
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+	background: url(@/static/create/common_bg.jpg);
+	background-size: 100% 100%;
 }
 .scroll-view{
 	width: 100%;
-	height: 100%;
+	height: 90%;
+	overflow: hidden;
 }
 .close_title{
 	height: 41px;
