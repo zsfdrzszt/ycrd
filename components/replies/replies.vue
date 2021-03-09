@@ -48,7 +48,7 @@
 			<view class="reply_name">回复</view>
 			<view class="reply_spot">:</view>
 			<view class="reply_text">
-				<textarea class="textarea" disabled="disabled">。。。</textarea>
+				<textarea class="textarea" ></textarea>
 			</view>
 		</view>
 	</view>
