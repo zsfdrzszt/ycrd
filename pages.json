@@ -459,6 +459,15 @@
             }
             
         }
+		,{
+			"path" : "pages/user/userall/userall",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
