@@ -40,7 +40,7 @@
 .examine_center{
 	height: 90%;
 	overflow: auto;
-	padding: 10px;
+	padding: 0 10px;
 }
 .examine_all{
 	border-radius: 5px;

@@ -1,10 +1,11 @@
 <template>
 	<view class="answer">
+		<view class="status_bar"></view>
 		<image src="../../../static/duty/reply.jpg" mode="widthFix" style="width: 100%;"></image>
 		<view class="answer_con">
 			<replies  :list="list" @magnify="magnify"></replies>
 		</view>
-		<view class="img_back" v-show="this.imgstate" @click.self="hideimg">
+		<view class="img_back" v-show="this.imgstate" @click="hideimg">
 			<view class="img_back_box">
 				<image :src="imgurl" mode="widthFix"></image>
 			</view>

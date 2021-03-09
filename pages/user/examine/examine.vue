@@ -1,5 +1,6 @@
 <template>
 	<view class="examine">
+		<view class="status_bar"></view>
 		<image src="../../../static/duty/examine.jpg" mode="widthFix" style="width: 100%;"></image>
 		<view class="examine_con">
 			<view class="examine_txt">
@@ -9,7 +10,7 @@
 				<text :class="{textnavchange:4==isActive }" @click="changestate(4)">已驳回</text>
 				<text :class="{textnavchange:5==isActive }" @click="changestate(5)">精选留言</text>
 			</view>
-			<scroll-view scroll-y="true" v-show="isActive == 1 || isActive == 2">
+			<scroll-view class="scroll-view" scroll-y="true" v-show="isActive == 1 || isActive == 2">
 				<navigator url="./reply">
 					<leave v-for="(item,index) in list" :list="item"></leave>
 				</navigator>
@@ -27,7 +28,15 @@
 		data() {
 			return {
 				isActive: 1,
-				list:[{title:'好好学习',name:'侯静亚',time:'2021-03-08 10:10:42',tong:'已通过',liu:'普通留言'}]
+				list:[{title:'好好学习',name:'侯静亚',time:'2021-03-08 10:10:42',tong:'已通过',liu:'普通留言'},
+				{title:'好好学习',name:'侯静亚',time:'2021-03-08 10:10:42',tong:'已通过',liu:'普通留言'},
+				{title:'好好学习',name:'侯静亚',time:'2021-03-08 10:10:42',tong:'已通过',liu:'普通留言'},
+				{title:'好好学习',name:'侯静亚',time:'2021-03-08 10:10:42',tong:'已通过',liu:'普通留言'},
+				{title:'好好学习',name:'侯静亚',time:'2021-03-08 10:10:42',tong:'已通过',liu:'普通留言'},
+				{title:'好好学习',name:'侯静亚',time:'2021-03-08 10:10:42',tong:'已通过',liu:'普通留言'},
+				{title:'好好学习',name:'侯静亚',time:'2021-03-08 10:10:42',tong:'已通过',liu:'普通留言'},
+				{title:'好好学习',name:'侯静亚',time:'2021-03-08 10:10:42',tong:'已通过',liu:'普通留言'}
+				]
 			}
 		},
 		methods: {
@@ -76,4 +85,8 @@ page{
 	color: #d71f07;
 	border-bottom: #d71f07 solid 2px;
 	}
+.scroll-view{
+	height: 90%;
+	overflow: hidden;
+}
 </style>
