@@ -7,12 +7,12 @@
 		</view>
 		<scroll-view scroll-y="true" v-show="1 == isActive">
 			<view>
-				<system v-for="(value,index) in txt" :content="value.content"></system>
+				<system v-for="(value,index) in txt" :content="value.content" :url="'/pages/liaison/gkdet'"></system>
 			</view>
 		</scroll-view>
 		<scroll-view scroll-y="true" v-show="2 == isActive">
 			<view>
-				<system v-for="(value,index) in txt1" :content="value.content" :time="value.time"></system>
+				<system v-for="(value,index) in txt1" :content="value.content" :time="value.time" :url="'/pages/liaison/gkdet'"></system>
 			</view>
 		</scroll-view>
 	</view>

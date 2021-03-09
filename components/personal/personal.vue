@@ -22,12 +22,10 @@
 		},
 		methods:{
 			nextpage(){
-				uni.navigateTo({
-					url:"/pages/activity_room/activity_det/activity_det",
-				})
+				this.$emit("nextpage",this.id)
 			}
 		},
-		props:['image','quater','name','step']
+		props:['image','quater','name','step','id']
 	}
 </script>
 

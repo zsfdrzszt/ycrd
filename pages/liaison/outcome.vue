@@ -7,7 +7,7 @@
 		</view>
 		<view class="dropdown"><wdropdown :list= "droplist" @searchdrop="searchdrop"></wdropdown></view>
 		<view class="title"><text>{{year}}年{{liason}}人大代表</text><text>“一季一星”公告栏</text></view>
-		<personal v-for="(item,index) in list" :key="index" :image = 'item.image' :quater='item.quater' :name = 'item.name' :step='item.step'></personal>
+		<personal v-for="(item,index) in list" :key="index" :image = 'item.image' :quater='item.quater' :name = 'item.name' :step='item.step' :id="item.id" @nextpage="nextpage"></personal>
 	</view>
 </template>
 
@@ -21,10 +21,10 @@
 				year:'2020',
 				droplist:{name:"全部",list:[{content:"2019"},{content:"2020"}]},
 				list:[
-					{image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第一季度',name:'霍志明',step:'区代表'},
-					{image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第二季度',name:'霍志明',step:'区代表'},
-					{image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第二季度',name:'霍志明',step:'区代表'},
-					{image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第二季度',name:'霍志明',step:'区代表'}
+					{id:1,image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第一季度',name:'霍志明',step:'区代表'},
+					{id:2,image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第二季度',name:'霍志明',step:'区代表'},
+					{id:3,image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第二季度',name:'霍志明',step:'区代表'},
+					{id:4,image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第二季度',name:'霍志明',step:'区代表'}
 				]
 			}
 		},
@@ -34,6 +34,11 @@
 				console.log(arg.content)
 				this.year = arg.content
 			},
+			nextpage(id){
+				uni.navigateTo({
+					url:"/pages/liaison/gkdet?id="+id,
+				})
+			}
 		},
 		components:{
 			wdropdown,

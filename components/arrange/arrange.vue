@@ -98,6 +98,7 @@
 		},
 		methods:{
 			nextpage(){
+				console.log(this.list.state)
 				if(this.list.state==1){
 					uni.navigateTo({
 						url:"/pages/liaison/plandet?tid="+this.type,
