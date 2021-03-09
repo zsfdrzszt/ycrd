@@ -5,7 +5,7 @@
 		</view>
 		<view class="user_del_content">
 			<view class="user_del_item" v-for="(item,index) in user_list" :key=item.id>
-				<img :src="item.img" alt="">
+				<image :src="item.img" mode="widthFix"></image>
 				<view class="item_content">
 					<text>{{item.name}}</text>
 					<text>{{item.job}}</text>
@@ -24,14 +24,14 @@
 				user_list:[{
 					id:1,
 					name:'王绍泰',
-					tel:'tel:1363485238',
+					tel:'1363485238',
 					job:'榆次区安宁实业有限公司董事长',
 					img:'/static/user/user_tx.jpg'
 				},
 				{
 					id:2,
 					name:'王绍泰',
-					tel:'tel:1363485238',
+					tel:'1363485238',
 					job:'榆次区安宁实业有限公司董事长',
 					img:'/static/user/user_tx.jpg'
 				}]
@@ -68,13 +68,14 @@
 		overflow-y: auto;
 	}
 	.user_del_item{
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		border-bottom: 1px solid #ccc;
 		padding: 10px 0;
 	}
-	.user_del_item>img{
+	.user_del_item>image{
 		width: 20%;
 	}
 	.user_del_item>a{
