@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<view class="status_bar"></view>
 		<view class="boxhead">
 			<view class="suggest_tab">
 				<text class="textnav" :class="{activetab:1==active }" @click="change(1)">站内排行</text>

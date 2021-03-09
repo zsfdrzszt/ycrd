@@ -1,5 +1,6 @@
 <template>
 	<view class="reply">
+		<view class="status_bar"></view>
 		<image src="../../../static/duty/examine.jpg" mode="widthFix" style="width: 100%;"></image>
 		<view class="reply_con">
 			<view class="reply_txt">
@@ -7,7 +8,7 @@
 				<text :class="{textnavchange:2==isActive }" @click="changestate(2)">已审核</text>
 				<text :class="{textnavchange:3==isActive }" @click="changestate(3)">未审核</text>
 			</view>
-			<scroll-view scroll-y="true" v-show="isActive == 1 || isActive == 2">
+			<scroll-view class="scroll-view" scroll-y="true" v-show="isActive == 1 || isActive == 2">
 				<navigator url="./answer">
 					<leave v-for="(item,index) in list" :list="item"></leave>
 				</navigator>
@@ -35,10 +36,12 @@
 <style>
 page{
 	width: 100%;
+	height: 100%;
 	background-color:  #F5F5F5;
 }
 .reply{
 	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
@@ -68,4 +71,8 @@ page{
 	color: #d71f07;
 	border-bottom: #d71f07 solid 2px;
 	}
+.scroll-view{
+	height: 90%;
+	overflow: hidden;
+}
 </style>

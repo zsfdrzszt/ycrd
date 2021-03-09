@@ -58,6 +58,8 @@
 <style>
 	page {
 		width: 100%;
+		height: 100%;
+		overflow: hidden;
 	}
 
 	.meet {
@@ -71,6 +73,7 @@
 		background-attachment: fixed;
 		display: flex;
 		flex-direction: column;
+		overflow: hidden;
 	}
 
 	.meet_title {

@@ -1,5 +1,6 @@
 <template>
 	<view class="form">
+		<view class="status_bar"></view>
 		<image src="../../../static/object/county_common_classTakeMember_top.jpg" mode="widthFix" style="width: 100%;"></image>
 		<scroll-view class="scroll-view" scroll-y="true" >
 		    <organization :list="item" v-for="(item,index) in list"></organization>
