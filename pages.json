@@ -471,6 +471,16 @@
 			}
 			
 		}
+        ,{
+			// 个人中心/履职共享页
+            "path" : "pages/user/share/share",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
