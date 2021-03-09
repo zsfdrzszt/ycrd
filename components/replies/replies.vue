@@ -36,7 +36,7 @@
 		</view>
 		<view class="reply_image">
 			<view class="image_item">
-				<image :src="list.imgUrl" style="width: 100%;"></image>
+				<image :src="list.imgUrl" style="width: 100%;" @click="magnify"></image>
 			</view>
 		</view>
 		<view class="reply_item">
@@ -63,6 +63,11 @@
 			return {
 				
 			};
+		},
+		methods:{
+			magnify(){
+				this.$emit("magnify",this.list.imgUrl)
+			}
 		}
 	}
 </script>
@@ -87,6 +92,7 @@
 	text-align-last: justify;
 	font-weight: bold;
 }
+
 .reply_names{
 	flex: 1;
 	padding: 0 10px;

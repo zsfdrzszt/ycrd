@@ -510,7 +510,18 @@
 				"enablePullDownRefresh": false
 			}
 			
+		},
+          // 双联系详情
+		{
+			"path" : "pages/double/double",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
 		}
+		
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

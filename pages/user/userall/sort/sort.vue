@@ -28,7 +28,7 @@
 		methods:{
 			nextpage(){
 				uni.navigateTo({
-					url:"/pages/text1/liaison/liaison?id="+this.item.id
+					url:"/pages/general/liaison/liaison?id="+this.item.id
 				})
 			}
 		}
