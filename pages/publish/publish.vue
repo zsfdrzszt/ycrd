@@ -1,4 +1,5 @@
 <template>
+	<!-- 重要发布 -->
 	<view class="contactmain">
 		<view class="status_bar" ></view>
 		<view class="content" >

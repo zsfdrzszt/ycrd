@@ -5,7 +5,7 @@
 				<u-loading slot="loading"></u-loading>
 			</u-image>
 		</view>
-		<activecard v-for="(item,index) in list_all"  :state="true" :key=item.id :list="item"></activecard>
+		<activecard v-for="(item,index) in list_all"  :state="true" :key=item.id :list="item" url="/pages/proposal/proposalson"></activecard>
 	</view>
 </template>
 

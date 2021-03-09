@@ -1,4 +1,5 @@
 <template>
+	<!-- 代表建议 -->
 		<view class="textfour">
 			<view class="status_bar">
 			</view>

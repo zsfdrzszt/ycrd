@@ -24,7 +24,7 @@
 		methods:{
 			toppeg(id){
 				uni.navigateTo({
-					url:"/pages/text1/liaison/liaison"+"?id=" + id
+					url:"/pages/general/liaison/liaison"+"?id=" + id
 				})
 			}
 		}

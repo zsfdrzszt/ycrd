@@ -3,7 +3,7 @@
 		<image src="../../../../static/duty/download.jpg" mode="widthFix"  style="width: 100%;"></image>
 		<view class="content_top">
 			<input type="text" id="search" placeholder="请输入搜索内容">
-			<wdropdown :list= "list7"  @searchdrop="searchdrop1"></wdropdown>
+			<wdropdown :list= "list7"  @searchdrop="searchdrop"></wdropdown>
 		</view>
 		<view class="content_txt">
 			<view class="content_title">
@@ -12,6 +12,9 @@
 				<text :class="{textnavchange:3==isActive }" @click="changestate(3)">未审核</text>
 			</view>
 			<view class="footer">暂无数据</view>
+		</view>
+		<view class="">
+			
 		</view>
 	</view>
 </template>
@@ -32,6 +35,9 @@
 			changestate(n){
 				this.isActive = n
 			},
+			searchdrop(){
+				
+			}
 		}
 	}
 </script>

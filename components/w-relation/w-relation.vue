@@ -55,7 +55,7 @@
 					})
 				}else if(this.num == 2){
 					uni.navigateTo({
-						url:"/pages/text5/text5uesrs/text5uesrs"+"?space2="+item
+						url:"/pages/relation/relationuesrs/relationuesrs"+"?space2="+item
 					})
 				}	 
 			},

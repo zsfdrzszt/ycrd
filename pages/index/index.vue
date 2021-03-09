@@ -5,12 +5,12 @@
 			<view class="content-text">榆次区人大常委会<br>智慧人大平台</view>
 			<!-- //人大概述 。。。。-->
 			<view class="wrap">
-				<image mode="widthFix" v-for="(item,index) in images" class="wrapimg" @click="topage(index+1)" :src="item"></image>
+				<image mode="widthFix" v-for="(item,index) in images" class="wrapimg" @click="topage(index)" :src="item"></image>
 			</view>
 			<!-- 履历上传 -->
 			<view class="wrapcon">
-				<image src="../../static/indeximg/county_common_index_seven.png" class="wrapconimg" @click="topro(1)"></image>
-				<image src="../../static/indeximg/county_common_index_eight.png" class="wrapconimg" @click="topro(2)"></image>
+				<image src="../../static/indeximg/county_common_index_seven.png" class="wrapconimg" @click="topro(0)"></image>
+				<image src="../../static/indeximg/county_common_index_eight.png" class="wrapconimg" @click="topro(1)"></image>
 				<image src="../../static/indeximg/county_common_index_ten.png" class="wrapconimg" @click="show = true"></image>
 				<view class="wrapbuttom">
 					<view class="wrapback" v-show="showWarp" @click="tobuttom">
@@ -207,7 +207,8 @@
 				images: ["../../static/indeximg/county_common_index_one.png", "../../static/indeximg/county_common_index_two.png",
 					"../../static/indeximg/county_common_index_three.png", "../../static/indeximg/county_common_index_four.png",
 					"../../static/indeximg/county_common_index_five.png", "../../static/indeximg/county_common_index_six.png"
-				]
+				],
+				url:["/pages/general/general","/pages/publish/publish","/pages/construction/construction","/pages/proposal/proposal","/pages/relation/relation","/pages/deputy/deputy"]
 			}
 		},
 		onLoad() {
@@ -215,9 +216,7 @@
 		},
 		methods: {
 			tonext(index){
-				// uni.navigateTo({
-				// 	url: "/pages/pro1/pro1"+"?ind="+index
-				// })
+				
 			},
 			topnew() {
 				this.newlist2.filter((item) => {
@@ -251,19 +250,17 @@
 				}
 			},
 			topage(num) {
-				let url = "/pages/text" + num + "/text" + num
-				
 				uni.navigateTo({
-					url: url
+					url: this.url[num]
 				})
 			},
 			showwarp() {
 				this.showWarp = !this.showWarp
 			},
 			topro(num) {
-				let url = "/pages/pro" + num + "/pro" + num
+				var url = ["/pages/uploading/uploading","/pages/ligature/ligature"]
 				uni.navigateTo({
-					url: url
+					url: url[num]
 				})
 			},
 			tobuttom() {
