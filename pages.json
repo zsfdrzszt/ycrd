@@ -396,7 +396,7 @@
 			}
 			
 		},
-		{	//
+		{	//联络站  履职活动
 			"path" : "pages/user/duty/content/content",
 			"style" :                                                                                    
 			{
@@ -405,8 +405,8 @@
 			}
 			
 		},
-		{	//
-			"path" : "pages/user/userindex/userindex",
+		{	//履职档案
+			"path" : "pages/archives/archives",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
@@ -414,61 +414,7 @@
 			}
 			
 		},
-		{	//
-			"path" : "pages/user/user_personal/user_personal",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		},
-		{	//
-			"path" : "pages/user/user_delegation/user_delegation",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		},
-		{	//
-			"path" : "pages/user/user_delegation/user_delegation_list",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		},
-		{		// 联络站  选民接待详情
-			"path" : "pages/liaison/receptiondet",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		},
-		{		// 联络站  概况
-			"path" : "pages/liaison/gkdet",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		},
-		{		// 联络站  代表阵地
-			"path" : "pages/liaison/prolist",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		},
-		{		// 联络站  计划详情
+		{	//联络站  计划详情
 			"path" : "pages/liaison/plandet",
 			"style" :                                                                                    
 			{
@@ -476,16 +422,43 @@
 				"enablePullDownRefresh": false
 			}
 			
-		},
-		{		// 联络站  留言
-			"path" : "pages/liaison/message",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
 		}
+        ,{
+            "path" : "pages/user/examine/examine",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/examine/reply",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/people/people",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/user/people/answer",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
