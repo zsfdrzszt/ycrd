@@ -453,8 +453,48 @@
             
         },
 		// 排名
-		,{
+		{
 			"path" : "pages/user/userall/userall",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		// 个人中心
+		{
+			"path" : "pages/user/userindex/userindex",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		// 个人资料
+		{
+			"path" : "pages/user/user_personal/user_personal",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		// 通讯录
+		{
+			"path" : "pages/user/user_delegation/user_delegation_list",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		// 通讯录下级
+		{
+			"path" : "pages/user/user_delegation/user_delegation",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
