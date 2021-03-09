@@ -1,5 +1,6 @@
 <template>
 	<view class="feedback">
+		<view class="status_bar"></view>
 		<!-- banner图 -->
 		<image class="feedback_image" src="/static/user/user_feetback_back.jpg" mode="widthFix"></image>
 		<!-- 文本框 -->

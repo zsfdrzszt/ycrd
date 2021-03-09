@@ -1,5 +1,6 @@
 <template>
 	<view class="about">
+		<view class="status_bar"></view>
 		<!-- banner图 -->
 		<image class="about_image" src="/static/user/user_aboutus_back.jpg" mode="widthFix"></image>
 		<view class="about_cont">

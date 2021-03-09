@@ -1,6 +1,7 @@
 <template>
 	<!-- 个人中心/双联系/联系常委 -->
 	<view class="recommend">
+		<view class="status_bar"></view>
 		<wnavall></wnavall>
 		<!-- banner图 -->
 		<image class="recommend_image" src="/static/user/user_myMessages_back.jpg" mode="widthFix"></image>

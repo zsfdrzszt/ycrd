@@ -1,5 +1,6 @@
 <template>
 	<view class="all">
+		<view class="status_bar"></view>
 		<view>
 			<u-image src="../../static/liaison/common_plan_title.jpg" :lazy-load="true" mode="widthFix">
 				<u-loading slot="loading"></u-loading>

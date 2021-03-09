@@ -1,5 +1,6 @@
 <template>
 	<view class="create">
+		<view class="status_bar"></view>
 		<view class="create_title">
 			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">代表履职</text>
 			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">最新要闻</text>

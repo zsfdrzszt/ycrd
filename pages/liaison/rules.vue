@@ -1,5 +1,6 @@
 <template>
 	<view class="administration">
+		<view class="status_bar"></view>
 		<image src="../../static/liaison/liasons_common_rules_title.jpg" mode="widthFix" style="width: 100%;"></image>
 		<view class="administration_title">
 			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">人大代表履职管理制度</text>

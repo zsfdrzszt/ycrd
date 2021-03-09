@@ -1,5 +1,6 @@
 <template>
 	<view class="duty">
+		<view class="status_bar"></view>
 		<image src="../../../static/duty/user_myperform_back.jpg" mode="widthFix" style="width: 100%;"></image>
 		<view class="scroll-view">
 			<scroll-view scroll-y="true" >

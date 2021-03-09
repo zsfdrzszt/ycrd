@@ -1,5 +1,6 @@
 <template>
 	<view class="close">
+		<view class="status_bar"></view>
 		<view class="close_title">
 			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">履职档案</text>
 			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">意见建议</text>

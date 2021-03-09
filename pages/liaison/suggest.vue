@@ -1,5 +1,6 @@
 <template>
 	<view class="suggest">
+		<view class="status_bar"></view>
 		<!-- 菜单组件 -->
 		<wnavall></wnavall>
 		<!-- 内容 -->

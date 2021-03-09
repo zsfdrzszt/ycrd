@@ -1,6 +1,7 @@
 <template>
 	<!-- 个人中心/双联系/我的留言-->
 	<view class="myMessages">
+		<view class="status_bar"></view>
 		<wnavall></wnavall>
 		<!-- banner图 -->
 		<image class="myMessages_image" src="/static/user/user_myMessages_back.jpg" mode="widthFix"></image>

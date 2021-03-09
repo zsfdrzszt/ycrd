@@ -1,5 +1,6 @@
 <template>
 	<view class="content">
+		<view class="status_bar"></view>
 		<image src="../../../../static/duty/download.jpg" mode="widthFix"  style="width: 100%;"></image>
 		<view class="content_top">
 			<input type="text" id="search" placeholder="请输入搜索内容">

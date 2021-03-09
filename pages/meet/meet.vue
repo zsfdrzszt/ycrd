@@ -1,5 +1,6 @@
 <template>
 	<view class="meet">
+		<view class="status_bar"></view>
 		<view class="meet_title">
 			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">参会情况</text>
 			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">人代会建议</text>
@@ -106,7 +107,7 @@
 	}
 
 	.scroll-view {
-		flex: 1;
+		height: 90%;
 		overflow: auto;
 	}
 

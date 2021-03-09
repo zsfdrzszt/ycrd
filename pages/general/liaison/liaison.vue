@@ -1,5 +1,6 @@
 <template>
 	<view class="qrservice">
+		<view class="status_bar"></view>
 		<zqrservice v-for="(item,index) in liaisonList" :key="index" :value="item"></zqrservice>
 	</view>
 </template>
