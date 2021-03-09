@@ -15,15 +15,15 @@
 			<view class="myMessages_cont_cen">
 				<!-- 全部留言 -->
 				<view class="myMessages_cont_cenitem" v-show="activetab==1">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in all.reply" :type="all.type"></CenterMessage>
+					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in all" :type="true"></CenterMessage>
 				</view>
 				<!-- 已回复 -->
 				<view class="myMessages_cont_cenitem" v-show="activetab==2">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in replied.reply" :type="replied.type"></CenterMessage>
+					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in replied" :type="false"></CenterMessage>
 				</view>
 				<!-- 未回复-->
 				<view class="myMessages_cont_cenitem" v-show="activetab==3">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in noreply.reply" :type="noreply.type"></CenterMessage>
+					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in noreply" :type="false"></CenterMessage>
 					</view>
 				</view>
 			</view>
@@ -42,10 +42,8 @@
 		data() {
 			return {
 				activetab:1,
-				all:{
-					type:true,
-					reply:[
-						{
+				all:[
+					{
 							id:1,
 							name:'小飞侠',
 							time:'2021-03-08 16:17:59',
@@ -53,7 +51,7 @@
 							leave:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件',
 							reply:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言'
 						},
-						{
+					{
 							id:2,
 							name:'小飞侠1',
 							time:'2021-03-08 16:17:59',
@@ -61,11 +59,8 @@
 							leave:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件',
 							reply:''
 						}
-					]
-				},
-				replied:{
-					type:false,
-					reply:[
+				],
+				replied:[
 						{
 							id:1,
 							name:'小飞侠',
@@ -73,12 +68,9 @@
 							status:'已回复',
 							leave:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件',
 							reply:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言'
-						},
-					],
-				},
-				noreply:{
-					type:false,
-					reply:[
+						}
+				],
+				noreply:[
 						{
 							id:1,
 							name:'小飞侠1',
@@ -87,8 +79,8 @@
 							leave:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件',
 							reply:''
 						}
-					]
-				}
+				]
+				
 			}
 		},
 		methods: {

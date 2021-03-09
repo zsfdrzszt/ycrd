@@ -452,8 +452,17 @@
             }
             
         },
+		{	//个人中心首页
+				"path" : "pages/user/userindex/userindex",
+				"style" :                                                                                    
+				{
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+				
+		},
 		// 排名
-		,{
+		{
 			"path" : "pages/user/userall/userall",
 			"style" :                                                                                    
 			{
