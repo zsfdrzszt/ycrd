@@ -451,7 +451,8 @@
                 "enablePullDownRefresh": false
             }
             
-        }
+        },
+		// 排名
 		,{
 			"path" : "pages/user/userall/userall",
 			"style" :                                                                                    
