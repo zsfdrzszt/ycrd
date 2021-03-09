@@ -1,5 +1,6 @@
 <template>
 	<view class="number">
+		<view class="status_bar"></view>
 		<scroll-view class="scroll-view" scroll-y="true" >
 			<view>
 				<relation :list="item" :num="index" v-for="(item,index) in list1"></relation>
