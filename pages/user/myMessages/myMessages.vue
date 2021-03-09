@@ -103,5 +103,5 @@
 	.active{color: #ee0000;border-bottom: 2px solid #ee0000;}
 	/* 选项卡内容 */
 	.myMessages_cont_cen{flex: 1;overflow: auto;}
-	.myMessages_cont_cenitem{padding:0px 10px;padding-top: 10px;margin-bottom: 10px;}
+	.myMessages_cont_cenitem{padding:0px 10px;padding-top: 10px;}
 </style>
