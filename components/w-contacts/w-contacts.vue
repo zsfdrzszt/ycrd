@@ -16,7 +16,7 @@
 		methods: {
              topage(){
 				 uni.navigateTo({
-				 	url:"/pages/pro2/prolist/prolist"+"?space="+this.context
+				 	url:"/pages/ligature/prolist/prolist"+"?space="+this.context
 				 })
 			 },
 		}

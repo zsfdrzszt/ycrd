@@ -117,12 +117,12 @@
 				if(index==0){
 					// 概况
 					uni.navigateTo({
-						url:"/pages/liaison/gkdet?id="+this.lid,
+						url:"/pages/proposal/proposalson?con=概况",
 					})
 				}else if(index==1){
 					// 代表阵地
 					uni.navigateTo({
-						url:"/pages/liaison/prolist?space="+this.lianame,
+						url:"/pages/ligature/prolist/prolist?space="+this.lianame,
 					})
 				}else if(index==2){
 					// 活动纪实

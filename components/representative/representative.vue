@@ -25,7 +25,7 @@
 		methods:{
 			nextpage(){
 				uni.navigateTo({
-					url:'/pages/text4/text4son'
+					url:'/pages/proposal/proposalson'
 				})
 			}
 		}

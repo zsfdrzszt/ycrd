@@ -5,7 +5,8 @@
 			<scroll-view scroll-y="true" >
 				<navigator url="content/content" class="duty_con" v-for="(item,index) in list">
 					<text>{{index+1}}、</text>
-					<text>{{item}}</text>
+					<text>{{item.name}}</text>
+					<text>({{item.num}})</text>
 					<view class="duty_image">
 						<image src="../../../static/duty/download.png" mode="widthFix" style="width: 100%;"></image>
 					</view>
@@ -19,7 +20,7 @@
 	export default {
 		data() {
 			return {
-				list:['人代会参会情况(0)','人代会期间提出的意见建议(0)','闭会期间提出的意见建议(0)','学习培训教育(0)','工作评议(0)','宣讲、联系、走访(0)','为民服务(0)','闭会期间提出的意见建议(0)','学习培训教育(0)','工作评议(0)','宣讲、联系、走访(0)','为民服务(0)',]
+				list:[{name:'人代会参会情况',num:1},{name:'人代会期间提出的意见建议',num:2},{name:'闭会期间提出的意见建议',num:3},{name:'学习培训教育',num:0},{name:'工作评议',num:0},{name:'宣讲、联系、走访',num:0},{name:'为民服务',num:0},{name:'闭会期间提出的意见建议',num:0},{name:'学习培训教育',num:0},{name:'工作评议',num:0},{name:'宣讲、联系、走访',num:0},{name:'为民服务',num:0},]
 			}
 		},
 		methods: {

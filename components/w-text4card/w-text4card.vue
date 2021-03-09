@@ -23,7 +23,7 @@
 		methods:{
 			topage(val){
 				uni.navigateTo({
-					url:"/pages/text4/text4son"+"?con="+val
+					url:"/pages/proposal/proposalson"+"?con="+val
 				})
 			}
 		}
