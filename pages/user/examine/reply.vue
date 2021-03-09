@@ -1,5 +1,6 @@
 <template>
 	<view class="reply">
+		<view class="status_bar"></view>
 		<image src="../../../static/duty/reply.jpg" mode="widthFix" style="width: 100%;"></image>
 		<view class="reply_con">
 			<replies  :list="list" @magnify="magnify"></replies>
