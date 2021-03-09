@@ -41,10 +41,12 @@
 <style>
 page{
 	width: 100%;
+	height: 100%;
 	background-color:  #F5F5F5;
 }
 .examine{
 	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
