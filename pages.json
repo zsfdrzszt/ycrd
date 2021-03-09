@@ -441,8 +441,44 @@
 			}
 			
 		},
-		{		// 选民接待详情
+		{		// 联络站  选民接待详情
 			"path" : "pages/liaison/receptiondet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{		// 联络站  概况
+			"path" : "pages/liaison/gkdet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{		// 联络站  代表阵地
+			"path" : "pages/liaison/prolist",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{		// 联络站  计划详情
+			"path" : "pages/liaison/plandet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{		// 联络站  留言
+			"path" : "pages/liaison/message",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",

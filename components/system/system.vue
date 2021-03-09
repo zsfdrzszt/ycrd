@@ -1,5 +1,5 @@
 <template>
-	<navigator class="system" url="/pages/activity_room/activity_det/activity_det">
+	<navigator class="system" :url="url">
 		<view class="">{{content}}</view>
 		 <view class="system_time" v-if="time">{{time}}</view>
 	</navigator>
@@ -10,6 +10,7 @@
 		props:{
 			content:String,
 			time:String,
+			url:String
 		},
 		data() {
 			return {
