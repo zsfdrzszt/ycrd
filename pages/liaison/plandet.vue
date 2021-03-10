@@ -79,11 +79,16 @@
 				</view>
 			</view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
+		components:{
+			wnavall
+		},
 		data() {
 			return {
 				type:'',

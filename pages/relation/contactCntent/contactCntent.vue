@@ -5,14 +5,17 @@
 		</view>
 		<image class="title_picture" src="../../../static/contact/county_common_relationmode_title.png" mode="widthFix"></image>
 		<zlxfs v-for="(item,index) in lxfslist" :key="index" :lxfs="item"></zlxfs>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import zlxfs from "../../../components/z-lxfs/z-lsfs.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		components: {
-			zlxfs
+			zlxfs,
+			wnavall
 		},
 		data() {
 			return {

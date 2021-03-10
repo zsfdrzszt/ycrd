@@ -5,20 +5,23 @@
 			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">参会情况</text>
 			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">人代会建议</text>
 		</view>
-			<scroll-view scroll-y="true"  class="scroll-view " >
-				<meets v-for="(item,index) in list" :list="item" :num="index"  v-show="isActive == 1"> </meets>
-				<message v-for="(item,index) in list1" :list="item" :num="index"  v-show="isActive == 2"></message>
-			</scroll-view>
+		<scroll-view scroll-y="true"  class="scroll-view " >
+			<meets v-for="(item,index) in list" :list="item" :num="index"  v-show="isActive == 1"> </meets>
+			<message v-for="(item,index) in list1" :list="item" :num="index"  v-show="isActive == 2"></message>
+		</scroll-view>
+		 <wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import meets from "../../components/meets/meets.vue"
 	import message from "../../components/message/message.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		components: {
 			meets,
-			message
+			message,
+			wnavall
 		},
 		data() {
 			return {

@@ -24,11 +24,16 @@
 		<view class="index_bottom">
 			<view class="index_btn" @click="sendinfo"><u-icon name="chat" color="#fff" size="38" style="padding-right: 30rpx;"></u-icon><text>站长留言</text></view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
+		components:{
+			wnavall
+		},
 		data() {
 			return {
 				map:'37.76311,112.74',//地图导航

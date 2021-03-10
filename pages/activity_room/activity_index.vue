@@ -42,11 +42,16 @@
 			</view>
 			
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
+		components:{
+			wnavall
+		},
 		data(){
 			return{
 				index_title:'郭家堡安宁活动室'

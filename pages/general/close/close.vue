@@ -19,16 +19,19 @@
 				</view>
 			</view>
 		</scroll-view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import perform from "../../../components/perform/perform.vue"
 	import wdropdown from "../../../components/w-dropdown/w-dropdown.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		components:{
 			perform,
-			wdropdown
+			wdropdown,
+			wnavall
 		},
 		data() {
 			return {

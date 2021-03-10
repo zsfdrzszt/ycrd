@@ -6,14 +6,17 @@
 				<relation :list="item" :num="index" v-for="(item,index) in list1"></relation>
 			</view>
 		</scroll-view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import relation  from "../../../components/relation/relation.vue"  
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		components:{
-			relation
+			relation,
+			wnavall
 		},
 		data() {
 			return {

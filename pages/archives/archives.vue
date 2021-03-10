@@ -79,11 +79,16 @@
 				</view>
 			</view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
+		components:{
+			 wnavall 
+		},
 		data() {
 			return {
 				list:{name:"刘健",time:"2020-1-3",space:"地址",way:"学习教育培训",content:"内容",effect:"圆满成功",img:"http://qiniu.jza2c.com/uploads/20190727/Fkw9oHU_XEOwLnFM5-41s8zFj5RG.jpg",num:20,zan:19}

@@ -2,14 +2,17 @@
 	<view class="qrservice">
 		<view class="status_bar"></view>
 		<zqrservice v-for="(item,index) in liaisonList" :key="index" :value="item"></zqrservice>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import zqrservice from "../../../components/z-qrservice/z-qrservice.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		components: {
-			zqrservice
+			zqrservice,
+			wnavall
 		},
 		data() {
 			return {

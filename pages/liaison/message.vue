@@ -88,11 +88,16 @@
 			</u-form>
 			<u-toast ref="uToast"></u-toast>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
+		components:{
+			wnavall
+		},
 		data() {
 			return {
 				action:'',

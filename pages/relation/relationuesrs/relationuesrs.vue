@@ -77,11 +77,16 @@
 			<view>在广大选民的关心、支持下，自己做了自己应做的工作，但与大家的期望还有很大差距，今后我要更加努力学习，不断提高自己的履职水平。最后，感谢大家的支持帮助，请大家对我的工作进行评议，并多提出宝贵意见。</view>
 			
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
+		components:{
+			wnavall
+		},
 		data() {
 			return {
 				isActive: 1,

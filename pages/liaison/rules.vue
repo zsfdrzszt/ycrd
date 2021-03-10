@@ -16,14 +16,17 @@
 				<system v-for="(value,index) in txt1" :content="value.content" :time="value.time" :url="'/pages/liaison/gkdet'"></system>
 			</view>
 		</scroll-view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import system  from "../../components/system/system.vue"      //履职管理制度组件
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		components:{
-			system
+			system,
+			wnavall
 		},
 		data() {
 			return {
