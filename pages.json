@@ -583,41 +583,6 @@
 			}
 			
 		}
-		,{
-			"path" : "pages/user/rdhdet/rdhdet",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		}
-        ,{
-            "path" : "pages/user/rdhjydet/rdhjydet",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/user/rdhdet/rdhdet",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        },{
-            "path" : "pages/user/rdhjydet/rdhjydet",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
         ,{
             "path" : "pages/user/administration/administration",
             "style" :                                                                                    
@@ -627,6 +592,42 @@
             }
             
         }
+		,{	// 人代会期间 提交
+		    "path" : "pages/user/onadvise/onadvise",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{		// 人代会参会情况提交
+		    "path" : "pages/user/participation/participation",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{	// 闭会期间履职
+		    "path" : "pages/user/resumption/resumption",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+		,{		// 闭会期间提出的意见建议
+		    "path" : "pages/user/offproposal/offproposal",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
