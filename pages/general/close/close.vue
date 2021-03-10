@@ -71,14 +71,14 @@ page{
 .close_title{
 	height: 41px;
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	border-bottom: 1px solid #ff0000;
 }
 .close_title text{
 	width: 50%;
 	height: 41px;
 	line-height: 41px;
-	padding: 0!important;
+	/* padding: 0!important; */
 	text-align: center;
 	font-weight: bold;
 }

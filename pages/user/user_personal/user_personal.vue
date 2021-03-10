@@ -1,8 +1,8 @@
 <template>
 	<view>
 		<view class='user_personal_top'>
-			<img src="/static/user/user_personal.jpg" alt="">
-			<img src="/static/user/user_tx.jpg" alt="">
+			<image src="/static/user/user_personal.jpg" mode="widthFix"></image>
+			<image src="/static/user/user_tx.jpg" mode="widthFix"></image>
 		</view>
 		<view class='user_personal_content'>
 			<view>
@@ -15,7 +15,8 @@
 			</view>
 			<view>
 				<text>二维码名片</text>
-				<img src="/static/user/user_ewm.png" alt="">
+				<image src="/static/user/user_ewm.png" mode="widthFix"></image>
+				
 			</view>
 			<view>
 				<text>手机号</text>
@@ -54,10 +55,10 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.user_personal_top>img:nth-child(1){
+	.user_personal_top>image:nth-child(1){
 		width: 100%;
 	}
-	.user_personal_top>img:nth-child(2){
+	.user_personal_top>image:nth-child(2){
 		width: 100px;
 		border-radius: 50%;
 		transform: translateY(-50px);
@@ -74,7 +75,7 @@
 		font-size: 14px;
 		padding: 10px 0;
 	}
-	.user_personal_content>view>img{
+	.user_personal_content>view>image{
 		width: 20px;
 	}
 	.user_seave_btn{

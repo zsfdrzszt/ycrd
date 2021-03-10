@@ -73,118 +73,68 @@
 				newlist33: [],
 				newlist22: [],
 				list3:[{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05",reply:{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05"}},
-				{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05",reply:{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05"}},{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05",reply:{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05"}}
+				{content:"李代表您好，我家是在南关村南苑新区住，现在我想向您反映一下我们这边的交通状况,多次联系12345，广播，122交警部门等都没有改善，从南关路一进来到南关牌楼，早上上班上学堵，中午下班下学堵，晚上还堵，原因主要是路窄加乱停车。现在有些人乱停车到直接堵半条路，希望您可以沟通交警安装高清监控拍摄违停。还有就是在南关路和思凤街路口，改变现在的一条左转一条右转车道，因为左转车辆太多也会造成拥堵，变为一条左转一条可左转可右转车道。希望能得到您的答复",name:"任光耀",time:"2021-03-04 15:00:05",reply:{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05"}},{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05",reply:{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05"}}
 				,{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05",reply:{content:"普惠幼儿园的方案什么情况了？",name:"任光耀",time:"2021-03-04 15:00:05"}}],
 				newlist2: [{
 					space: "榆次区人大常委会办公室",
 					class: "联络站建设",
 					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
-					content: "啊大大的大好机会",
-					title: "啊发发free",
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "安宁街道人大代表联络站--李明",
 					time: "20200109"
-				}, {
-					space: "榆次区人大常委办公室",
-					class: "履职经验",
-					state: "true",
-					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
-					content: "啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会啊大大的大好机会",
-					title: "啊发发free九月一日有日日日有人突然一件代发行业应用土地规划的都有很好的活动如也有很多移动端任何的打电话",
-					time: "20200109"
-				}, {
-					space: "榆次区人大常委办公室",
-					class: "履职经验",
-					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "20200109"
-				}, {
-					space: "榆次区人大常委办公室",
-					class: "履职经验",
-					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "20200109"
-				}, {
-					space: "榆次区人大常委办公室",
-					class: "履职经验",
-					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "20200109"
-				}, {
-					space: "榆次区人大常委办公室",
-					class: "履职经验",
-					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "20200110"
-				}, {
-					space: "榆次区人大常委办公室",
-					class: "履职经验",
-					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adada455a"
-				}, {
-					space: "榆次区人大常委办公室",
-					class: "履职经验",
-					url: "http://qiniu.jza2c.com/uploads/20200813/Fljpa0OWrJQCMaASQF5gRktBDST5.jpg",
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
 				}],
 				userlist: [{
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "安宁街道人大代表联络站--李明",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}, {
-					content: "啊大大的大好机会",
-					title: "啊发发free",
-					time: "adadasda"
+					content: "晋中市委常委、榆次区委书记王兵和代区长任光耀、区人大常委会主任李鹏飞一行调研指导榆次智慧人大平台信息化建设。",
+					title: "西南街道人大代表联络站--王利军",
+					time: "20200109"
 				}],
 				isActive: false,
 				swiperCurrent: 0,

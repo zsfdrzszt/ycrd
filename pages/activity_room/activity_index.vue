@@ -6,37 +6,37 @@
 		<view class='three_liacon'>
 			<view class='liacon_activt_item'>
 				<navigator url='/pages/activity_room/activity_introduction/activity_introduction' class="liacon_activt_item_a">
-					<img src="../../static/activity_room/activityroom_common_index_gk.png" alt="">
+					<image src="../../static/activity_room/activityroom_common_index_gk.png" mode="widthFix"></image>
 					<span>活动室概况</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
 				<navigator url='/pages/activity_room/activity_list/activity_list?name=宣讲' class="liacon_activt_item_a">
-					<img src="../../static/activity_room/activityroom_common_index_xj.png" alt="">
+					<image src="../../static/activity_room/activityroom_common_index_xj.png" mode="widthFix"></image>
 					<span>宣讲</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
 				<navigator url='/pages/activity_room/activity_list/activity_list?name=联系' class="liacon_activt_item_a">
-					<img src="../../static/activity_room/activityroom_common_index_lx.png" alt="">
+					<image src="../../static/activity_room/activityroom_common_index_lx.png" mode="widthFix"></image>
 					<span>联系</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
 				<navigator url='/pages/activity_room/activity_list/activity_list?name=走访' class="liacon_activt_item_a">
-					<img src="../../static/activity_room/activityroom_common_index_zf.png" alt="">
+					<image src="../../static/activity_room/activityroom_common_index_zf.png" mode="widthFix"></image>
 					<span>走访</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
 				<navigator url='/pages/activity_room/activity_list/activity_list?name=选民接待' class="liacon_activt_item_a">
-					<img src="../../static/activity_room/activityroom_common_index_xmjd.png" alt="">
+					<image src="../../static/activity_room/activityroom_common_index_xmjd.png" mode="widthFix"></image>
 					<span>选民接待</span>
 				</navigator>
 			</view>
 			<view class='liacon_activt_item'>
 				<navigator url='/pages/activity_room/activity_list/activity_list?name=社情民意反馈' class="liacon_activt_item_a">
-					<img src="../../static/activity_room/activityroom_common_index_sqmyfk.png" alt="">
+					<image src="../../static/activity_room/activityroom_common_index_sqmyfk.png" mode="widthFix"></image>
 					<span>社情民意反馈</span>
 				</navigator>
 			</view>
@@ -96,7 +96,7 @@
 		margin-bottom: 10px;
 		border-radius: 10px;
 	}
-	.liacon_activt_item img{
+	.liacon_activt_item image{
 		width: 60%;
 	}
 	.liacon_activt_item_a{
