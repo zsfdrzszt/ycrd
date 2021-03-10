@@ -188,6 +188,7 @@
 	}
 	.text5next{
 		height: 100%;
+		overflow: hidden;
 	}
 	.navlists {
 		display: flex;

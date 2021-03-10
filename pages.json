@@ -529,7 +529,25 @@
 				"enablePullDownRefresh": false
 			}
 			
-		}
+		},
+		{
+		            "path" : "pages/user/share/share",
+		            "style" :                                                                                    
+		            {
+		                "navigationBarTitleText": "",
+		                "enablePullDownRefresh": false
+		            }
+		            
+		 }
+        ,{
+            "path" : "pages/user/shareadd/shareadd",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

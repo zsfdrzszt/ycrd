@@ -5,16 +5,10 @@
 			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">参会情况</text>
 			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">人代会建议</text>
 		</view>
-		<view class="scroll-view " v-show="isActive == 1">
-			<scroll-view scroll-y="true" height="100%">
-				<meets v-for="(item,index) in list" :list="item" :num="index" ></meets>
+			<scroll-view scroll-y="true"  class="scroll-view " >
+				<meets v-for="(item,index) in list" :list="item" :num="index"  v-show="isActive == 1"> </meets>
+				<message v-for="(item,index) in list1" :list="item" :num="index"  v-show="isActive == 2"></message>
 			</scroll-view>
-		</view>
-		<view class="scroll-view" v-show="isActive == 2">
-			<scroll-view scroll-y="true" >
-				<message v-for="(item,index) in list1" :list="item" :num="index"></message>
-			</scroll-view>
-		</view>
 	</view>
 </template>
 
