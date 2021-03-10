@@ -19,6 +19,7 @@
 				
 			</view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

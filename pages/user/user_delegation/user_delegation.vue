@@ -13,6 +13,7 @@
 				<a :href='item.tel'>联系</a>
 			</view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

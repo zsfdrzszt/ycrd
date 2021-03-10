@@ -548,6 +548,15 @@
             }
             
         }
+        ,{
+            "path" : "pages/user/administration/administration",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
