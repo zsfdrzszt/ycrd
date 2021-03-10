@@ -557,7 +557,7 @@
             
         }
         ,{
-            "path" : "pages/shareaddu/shareaddu",
+            "path" : "pages/user/shareaddu/shareaddu",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
