@@ -609,6 +609,14 @@
                 "enablePullDownRefresh": false
             }
             
+        },{
+            "path" : "pages/user/rdhjydet/rdhjydet",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
         }
     ],
 	"globalStyle": {

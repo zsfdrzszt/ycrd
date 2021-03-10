@@ -1,7 +1,7 @@
 <template>
 	<!--履职共享添加上传图片页 -->
 	<view class="shareaddu">
-		222
+		1122
 	</view>
 </template>
 
