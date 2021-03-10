@@ -1,10 +1,10 @@
 <template>
 	<view class="organization ">
-		<view class="organtop">
+		<navigator class="organtop" url="/pages/double/double" >
 			<image :src="list.url" mode="widthFix" ></image>
 			<view class="organname">{{list.name}}</view>
 			<view class="details" style="width: 80px;">详情</view>
-		</view>
+		</navigator>
 		<!-- 横线 -->
 		<view class="organline"></view>
 		<!-- 竖线 -->
@@ -20,7 +20,7 @@
 			<view class="organcir"></view>
 		</view>
 		<view class="organbuttom">
-			<view class="button_main" v-for="(item,index) in list.next">
+			<view class="button_main" v-for="(item,index) in list.next" @click="message">
 				<image :src="item.url" mode="widthFix"></image>
 				<view class="organname">{{item.name}}</view>
 				<view class="details" style="width: 65px;">详情</view>
@@ -38,6 +38,13 @@
 			return {
 				
 			};
+		},
+		methods:{
+			message(){
+				uni.navigateTo({
+					url:"/pages/double/double"
+				})
+			}
 		}
 	}
 </script>

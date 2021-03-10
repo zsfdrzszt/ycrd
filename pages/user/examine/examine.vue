@@ -2,20 +2,19 @@
 	<view class="examine">
 		<view class="status_bar"></view>
 		<image src="../../../static/duty/examine.jpg" mode="widthFix" style="width: 100%;"></image>
-		<view class="examine_con">
-			<view class="examine_txt">
-				<text :class="{textnavchange:1==isActive }" @click="changestate(1)">全部留言</text>
-				<text :class="{textnavchange:2==isActive }" @click="changestate(2)">已通过</text>
-				<text :class="{textnavchange:3==isActive }" @click="changestate(3)">未审核</text>
-				<text :class="{textnavchange:4==isActive }" @click="changestate(4)">已驳回</text>
-				<text :class="{textnavchange:5==isActive }" @click="changestate(5)">精选留言</text>
-			</view>
-			<scroll-view class="scroll-view" scroll-y="true" v-show="isActive == 1 || isActive == 2">
-				<navigator url="./reply">
-					<leave v-for="(item,index) in list" :list="item"></leave>
-				</navigator>
-			</scroll-view>
+
+		<view class="examine_txt">
+			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">全部留言</text>
+			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">已通过</text>
+			<text :class="{textnavchange:3==isActive }" @click="changestate(3)">未审核</text>
+			<text :class="{textnavchange:4==isActive }" @click="changestate(4)">已驳回</text>
+			<text :class="{textnavchange:5==isActive }" @click="changestate(5)">精选留言</text>
 		</view>
+		<scroll-view class="scroll-view" scroll-y="true" >
+			<navigator url="./reply">
+				<leave v-for="(item,index) in list" :list="item"></leave>
+			</navigator>
+		</scroll-view>
 	</view>
 </template>
 
@@ -88,5 +87,6 @@ page{
 .scroll-view{
 	height: 90%;
 	overflow: hidden;
+	margin-top: 5px;
 }
 </style>

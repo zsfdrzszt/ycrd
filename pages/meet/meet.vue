@@ -44,12 +44,14 @@
 					txt: '关于撤村转居之后农民独生子女家庭补助金的遗留问题',
 					time: '2020-04-25',
 					con: '区人代会',
-					jie:'办理中'
+					jie:'办理中',
+					imgUrl:'http://qiniu.jza2c.com/uploads/20190729/FucxO7PfGJ-jA0VUxiocMHzrj780.jpg'
 				},{
 					txt: '2020年5月27日郭家堡乡第十七届人民代表大会第七次会议',
 					time: '2020-04-25',
 					com: '区人代会',
-					jie:'办理中'
+					jie:'办理中',
+					imgUrl:'http://qiniu.jza2c.com/uploads/20190729/FucxO7PfGJ-jA0VUxiocMHzrj780.jpg'
 				}]
 			}
 		},
