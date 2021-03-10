@@ -1,7 +1,7 @@
 <template>
-	<!-- 个人中心/履职共享页添加页 -->
-	<view>
-		
+	<!--履职共享添加上传图片页 -->
+	<view class="shareaddu">
+		222
 	</view>
 </template>
 

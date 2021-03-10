@@ -547,7 +547,51 @@
                 "enablePullDownRefresh": false
             }
             
+        },{
+            "path" : "pages/user/shares/shares",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
         }
+        ,{
+            "path" : "pages/shareaddu/shareaddu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+			"path" : "pages/user/duties/duties",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		}
+		,{
+			"path" : "pages/user/dutiesdet/dutiesdet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		}
+		,{
+			"path" : "pages/user/rdhdet/rdhdet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
