@@ -362,6 +362,15 @@
             }
             
         }
+		,{
+		    "path" : "pages/liaison/message",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
 		,{		//联络站  一季一星
 			"path" : "pages/liaison/outcome",
 			"style" :                                                                                    
@@ -530,7 +539,6 @@
 		            }
 		            
 		 }
-		
         ,{
             "path" : "pages/user/shareadd/shareadd",
             "style" :                                                                                    

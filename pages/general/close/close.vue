@@ -5,20 +5,20 @@
 			<text :class="{textnavchange:1==isActive }" @click="changestate(1)">履职档案</text>
 			<text :class="{textnavchange:2==isActive }" @click="changestate(2)">意见建议</text>
 		</view>
-			<scroll-view scroll-y="true"  class="scroll-view" >
-				<view v-show="1 == isActive">
-					<perform :list="item" v-for="(item,index) in list8" :state="1"></perform>
+		<scroll-view scroll-y="true"  class="scroll-view" >
+			<view v-show="1 == isActive">
+				<perform :list="item" v-for="(item,index) in list8" :state="1"></perform>
+			</view>
+			<view v-show="2 == isActive">
+				<view class="close_item" >
+				   <wdropdown :list= "list7"  @searchdrop="searchdrop1"></wdropdown>
+				   <wdropdown :list= "list6"  @searchdrop="searchdrop1"></wdropdown>
 				</view>
-				<view v-show="2 == isActive">
-					<view class="close_item" >
-					   <wdropdown :list= "list7"  @searchdrop="searchdrop1"></wdropdown>
-					   <wdropdown :list= "list6"  @searchdrop="searchdrop1"></wdropdown>
-					</view>
-					<view class="close_footer">
-					 <text>暂无数据</text>
-					</view>
+				<view class="close_footer">
+				 <text>暂无数据</text>
 				</view>
-			</scroll-view>
+			</view>
+		</scroll-view>
 	</view>
 </template>
 
@@ -84,15 +84,15 @@ page{
 	border-bottom: #d71f07 solid 2px;
 }
 .close_item{
-	 margin-top: 15px;
+	 padding-top: 15px;
 	 display: flex;
 	 justify-content: space-around;
 }
 .close_footer{
-     font-weight: bold;
+    font-weight: bold;
     font-size: 20px;
     text-align: center;
-    margin: 30px 0;
+    padding: 30px 0;
     color: red;
 }
 </style>

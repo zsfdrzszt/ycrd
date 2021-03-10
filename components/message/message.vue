@@ -31,7 +31,7 @@
 			<text></text>
 		</view>
 		<view class="message_image">
-			<image src="http://qiniu.jza2c.com/uploads/20190729/FucxO7PfGJ-jA0VUxiocMHzrj780.jpg" style="width: 30%;"  mode="widthFix"></image>
+			<image :src="list.imgUrl" style="width: 30%;"  mode="widthFix"></image>
 		</view>
 	</view>
 </template>

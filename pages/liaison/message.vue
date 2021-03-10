@@ -1,5 +1,6 @@
 <template>
 	<view class="message_all">
+		<view class="status_bar"></view>
 		<view class="message_top">
 			<image src="../../static/liaison/common_lmessage_back.jpg" mode="widthFix"></image>
 		</view>

@@ -20,9 +20,9 @@
 					<view class="double_right"></view>
 				</view>
 			</view>
-			<view class="double_footer">
+			<navigator url="../liaison/message" class="double_footer">
 				<image src="../../static/double/download.jpg" mode="widthFix"></image>
-			</view>
+			</navigator>
 		</view>
 	</view>
 </template>
