@@ -8,12 +8,13 @@
 				<text :class="{textnavchange:2==isActive }" @click="changestate(2)">已审核</text>
 				<text :class="{textnavchange:3==isActive }" @click="changestate(3)">未审核</text>
 			</view>
-			<scroll-view class="scroll-view" scroll-y="true" v-show="isActive == 1 || isActive == 2">
+			<scroll-view class="scroll-view" scroll-y="true">
 				<navigator url="./answer">
 					<leave v-for="(item,index) in list" :list="item"></leave>
 				</navigator>
 			</scroll-view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

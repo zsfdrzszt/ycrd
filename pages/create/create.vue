@@ -28,6 +28,7 @@
 				</movable-view>               
 			</movable-area>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

@@ -10,6 +10,7 @@
 				<image :src="imgurl" mode="widthFix"></image>
 			</view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
