@@ -6,9 +6,27 @@
 		<image class="share_image" src="/static/user/user_share_back.jpg" mode="widthFix"></image>
 		<view class="share_cont">
 			<view class="share_allcont">
-				<CenterShare v-for="(item,index) in list" :key="index" :num="index+1" :title="item.title" :status="item.status" :time="item.time"></CenterShare>
+				<!-- 履职共享 -->
+				<navigator url="/pages/user/shares/shares" hover-class="none" v-for="(item,index) in list" :key="index">
+					<view class="centershare">
+						<view class="centershare_title">
+							{{index+1}}、{{item.title}}
+						</view>
+						<view class="centershare_cont">
+							<view class="centershare_leftcont">
+								<text class="word" v-if="item.status=='正常'" :style="{background:word1}">{{item.status}}</text>
+								<text class="word" v-if="item.status=='紧急'" :style="{background:word2}">{{item.status}}</text>
+								<text class="word" v-if="item.status=='非常紧急'" :style="{background:word3}">{{item.status}}</text>
+								<text>{{item.time}}</text>
+							</view>
+							<view class="centershare_rightcont">
+								<u-icon name="arrow-right"></u-icon>
+							</view>
+						</view>
+					</view>
+				</navigator>
 			</view>
-			<navigator url="" hover-class="none" class="share_btn1">
+			<navigator url="/pages/user/shareadd/shareadd" hover-class="none" class="share_btn1">
 				<view class="share_btn">
 					<u-image class="share_btnpic" width="100px" src="/static/user/user_share_add.png" mode="widthFix"></u-image>
 				</view>
@@ -19,14 +37,15 @@
 
 <script>
 	import wnavall from "@/components/w-navall/w-navall.vue"
-	import CenterShare from "@/components/CenterShare/CenterShare.vue"
 	export default {
 		components:{
-			wnavall,
-			CenterShare
+			wnavall
 		},
 		data() {
 			return {
+				word1:'#5cb85c',
+				word2:'#f0ad41',
+				word3:'#d9534f',
 				list:[
 					{
 						id:1,
@@ -62,4 +81,9 @@
 	.share_btn{width: 100%;height: 70px;display: flex;justify-content: center;align-items: center;}
 	/* .share_btn1{display: block;} */
 	/* .share_btnpic{width: 100%;} */
+	.centershare{width: 100%;background-color: #FFFFFF;border-radius: 5px;padding: 8px;margin-bottom: 10px;}
+	.centershare_title{font-size: 16px;color:#333333;}
+	.centershare_cont{line-height: 50px;display: flex;justify-content: space-between;}
+	.word{color: #FFFFFF;border-radius: 5px;padding: 2px 5px;margin-right: 10px;}
+	.centershare_leftcont{font-size: 16px;color: #333333;}
 </style>

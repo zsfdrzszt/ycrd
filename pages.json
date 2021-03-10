@@ -547,6 +547,23 @@
                 "enablePullDownRefresh": false
             }
             
+        },{
+            "path" : "pages/user/shares/shares",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/shareaddu/shareaddu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
         }
     ],
 	"globalStyle": {
