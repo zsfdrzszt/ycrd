@@ -8,16 +8,22 @@
 					<view class="uni-input">{{date}}</view>
 				</picker>
 			</view>
-			<view class="timeform" v-if="type==2">
-				<u-input v-model="value"  class="timeform_word uni-input" input-align="right   " />
+			<view class="timeform" v-else-if="type==2">
+				<u-input v-model="textvalue"  class="timeform_word uni-input" input-align="right" height="80" :placeholder="placetext"/>
+			</view>
+			<view class="timeform right" v-else>
+				{{value}}
 			</view>
 		</view>
 	</view>
 </template>
 
 <script>
+	// 时间  	传值 type=1 标题-lrtitle 展示值-value  事件datechange发送值
+	// input  	传值 type=2 标题-lrtitle 提示语-placetext 展示值-value  事件textchange发送值
+	// 展示  	传值 type=3 标题-lrtitle 展示值-value  
 	export default {
-		props:['type','lrtitle','value'],
+		props:['type','lrtitle','value','placetext'],
 		data() {
 			return {
 			};
@@ -36,7 +42,15 @@
 				set(val){
 					this.$emit('datechange',val)
 				}
-			}
+			},
+			textvalue:{
+				get(){
+					return this.value
+				},
+				set(val){
+					this.$emit('textchange',val)
+				}
+			},
 		},
 		methods: {
 			// 时间选择器
@@ -127,5 +141,5 @@
 		padding: 0 10rpx;
 		text-align: right;
 	}
-	.timeform_word{height: 80rpx;line-height: 80rpx;}
+	.right{text-align: right;}
 </style>
