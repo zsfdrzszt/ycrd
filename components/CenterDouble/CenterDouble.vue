@@ -1,5 +1,5 @@
 <template>
-	 <navigator url="" hover-class="none"  class="double">
+	 <navigator url="/pages/user/administration/administration" hover-class="none"  class="double">
 		<view class="double_cont">
 			<view class="double_topcont">
 				<text class="double_topleftcont">
