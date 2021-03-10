@@ -62,7 +62,7 @@
 					查看图片
 				</view>
 				<view class="perform_cons perform_cono">
-					<image :src="item"  style="width: 91px;height: 70px;display: block;margin: 0 10px;" v-for="(item,index) in list.img"></image>
+					<image :src="item"  style="width: 91px;height: 70px;display: block;margin: 0 10px;" v-for="(item,index) in list.img" @click="magnify(item)"></image>
 				</view>
 			</view>
 		</view>
@@ -166,6 +166,12 @@
 			return {
 				
 			};
+		},
+		
+		methods:{
+			magnify(val){
+				this.$emit("magnify",val)
+			}
 		}
 	}
 </script>

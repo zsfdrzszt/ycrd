@@ -4,7 +4,7 @@
 			<image style="width: 15px;" src="./static/county_common_index_hot.png" mode="widthFix" v-if="list.state"></image>
 		</view>
 		<view class="reply_main">
-			<view class="">
+			<view class="reply_con">
 				{{list.content}}
 			</view>
 			<view class="reply_time">
@@ -63,5 +63,8 @@
 }
 .reply_star{
 	width: 10%;
+}
+.reply_con{
+	padding-right: 10rpx;
 }
 </style>
