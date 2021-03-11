@@ -1,5 +1,6 @@
 <template>
 	<view class="detall">
+		<view class="status_bar"></view>
 		<view class="title">{{title}}</view>
 		<view class="username">---{{username}}</view>
 		<view class="steps">

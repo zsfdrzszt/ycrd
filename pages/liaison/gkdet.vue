@@ -1,5 +1,6 @@
 <template>
 	<view class="all" style="">
+		<view class="status_bar"></view>
 		<view class="title">{{title}}</view>
 		<view class="content" :style="{'font-size':font+'px !important'}">
 			<u-parse class="pages" :html="content" :tag-style="contentstyle"></u-parse>

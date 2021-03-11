@@ -1,29 +1,7 @@
 <template>
 	<view class="text4" style="background-image: url(../../static/text4/common_articlebg.jpg);background-size: cover;">
+		<view class="status_bar"></view>
 		<view class="textsontitle">{{title}}</view>
-		<!-- <view class="progressbar">
-			<view class="progressbartop">
-				<text>审核</text>
-				<text></text>
-				<text>沟通</text>
-				<text></text>
-				<text>答复</text>
-				<text></text>
-				<text>办结</text>
-			</view>
-			<view class="">
-				
-			</view>
-			<view class="progressbardown">
-				<text></text>
-				<text>交办</text>
-				<text></text>
-				<text>办理</text>
-				<text></text>
-				<text>满意度测评</text>
-				<text></text>
-			</view>
-		</view> -->
 		<view class="textsoncon">
 			<view :style="{fontSize:textSize}">代表建议：</view>
 			<view :style="{fontSize:textsize}">十九大报告中提出三年人居环境行动和今年全市学习浙江“千村示范、万村整治”经验。打造美丽宜居农村人居环境，需配套基础设施，包括农村道路硬化、安全饮水管网、污水收集管网、集中供热管网等。修文镇农村人居环境基础设施建设现况如下:我镇下辖21个行政村，已全部实施街巷硬化。修文村、东长寿村等6村完成了煤改气管网改造。中郝村、东郝村等8村完成了集中供热管网改造。现我镇自行配备生活污水管网的共有9个行政村，其中东郝、郭村、修文、东长寿四个村建有污水排放处理站。大部分村安全饮水管网已达到设计使用最高年限，需对管网进行更新。</view>

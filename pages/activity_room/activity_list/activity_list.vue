@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<view class="status_bar"></view>
 		<view class='list_title'>
 			{{list_title}}
 		</view>

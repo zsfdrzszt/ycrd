@@ -123,8 +123,8 @@
 	.activetab{color: red;border-bottom: 1px solid red;}
 	/* 选项卡内容 */
 	.suggest_tabcont{width: 100%;flex: 1;text-align: center;overflow: auto;}
-	.tabcont_tem{width: 100%;height: 100%;}
-	.flow_chart image{width: 70%;margin: 20px 0px;}
+	.tabcont_tem{width: 100%;}
+	.flow_chart image{display:block;width:90%;margin: 20px auto;}
 	.attend_meeting{padding: 0px 10px;padding-top: 20px;}
 	.close_meetinglist{display: flex;justify-content: center;padding-top: 15px;}
 	.dropmain:first-child{margin-right: 30px;}

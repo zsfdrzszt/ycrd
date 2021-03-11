@@ -70,6 +70,7 @@ page{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 .reply_con{
 	padding: 10px;

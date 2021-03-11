@@ -13,7 +13,7 @@
 				<activecard v-for="(item,index) in list_all"  :state="state":key=item.id :list="item" url="/pages/proposal/proposalson"></activecard>
 			</view>
 		</scroll-view>
-		<view class="img_back" v-show="this.imgstate">
+		<view class="img_back" v-if="this.imgstate">
 			<movable-area scale-area class="movable-area "  @click="hideimg">
 				<movable-view  
 				class="movable-view"
@@ -114,9 +114,9 @@
 				this.imgurl =val
 			},
 			hideimg(){
-				this.imgstate =false
 				this.imgurl =""
 				this.scale = 1;
+				this.imgstate =false
 			},
 		}
 	}

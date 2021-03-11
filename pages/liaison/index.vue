@@ -1,5 +1,6 @@
 <template>
 	<view class="index_all" :style="{backgroundImage:bgimg}">
+		<view class="status_bar"></view>
 		<!-- common 张庆 -->
 		<view class="index_top" v-show="lid!=2">
 			<view class="index_topimg">

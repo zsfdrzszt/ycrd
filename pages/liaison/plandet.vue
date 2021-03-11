@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<view class="status_bar"></view>
 		<view v-if="type==1">
 			<u-image src="../../static/liaison/common_plandet_title.jpg" :lazy-load="true" mode="widthFix">
 				<u-loading slot="loading"></u-loading>

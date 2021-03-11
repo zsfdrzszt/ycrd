@@ -19,7 +19,7 @@
 				</view>
 			</view>
 		</scroll-view>
-		<view class="img_back" v-show="this.imgstate">
+		<view class="img_back" v-if="this.imgstate">
 			<movable-area scale-area class="movable-area "  @click="hideimg">
 				<movable-view  
 				class="movable-view"
@@ -34,6 +34,7 @@
 				</movable-view>               
 			</movable-area>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

@@ -1,6 +1,7 @@
 <template>
 	<view class="upcontactDown">
 		<!-- banner图 -->
+		<view class="status_bar" ></view>
 		<image class="upcontactDown_image" src="../../static/county/county_common_upcontactDown_title.png" mode="widthFix"></image>
 		<view class="upcontactDown_cont">
 			<view class="cont_pic">
@@ -29,10 +30,11 @@
 					</view>
 				</view>
 			</view>
-			<navigator url="" class="cont_btn" hover-class="none">
+			<navigator url="/pages/liaison/message" class="cont_btn" hover-class="none">
 				<image class="cont_btnpic" src="../../static/county/county_common_upcontactDown_mess.jpg" mode="widthFix"></image>
 			</navigator>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

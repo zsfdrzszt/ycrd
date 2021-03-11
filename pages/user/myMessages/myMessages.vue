@@ -75,7 +75,7 @@
 </script>
 
 <style scoped>
-	page{width: 100%;height: 100%;}
+	page{width: 100%;height: 100%;overflow: hidden;}
 	.myMessages{width: 100%;height: 100%;display: flex;flex-direction: column;overflow: hidden;background-color: #f5f5f5;}
 	.myMessages_image{width: 100%;}
 	/* 内容 */

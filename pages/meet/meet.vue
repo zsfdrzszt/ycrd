@@ -10,7 +10,7 @@
 				<message v-for="(item,index) in list1" :list="item" :num="index"  v-show="isActive == 2"  @magnify="magnify"></message>
 			</scroll-view>
 		
-		<view class="img_back" v-show="this.imgstate">
+		<view class="img_back" v-if="this.imgstate">
 			<movable-area scale-area class="movable-area "  @click="hideimg">
 				<movable-view  
 				class="movable-view"
@@ -25,6 +25,7 @@
 				</movable-view>               
 			</movable-area>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
@@ -80,9 +81,9 @@
 				this.imgurl =val
 			},
 			hideimg(){
-				this.imgstate =false
 				this.imgurl =""
 				this.scale = 1;
+				this.imgstate =false
 			},
 		}
 	}

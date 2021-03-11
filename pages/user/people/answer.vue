@@ -49,6 +49,7 @@ page{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 .answer_con{
 	padding: 10px;

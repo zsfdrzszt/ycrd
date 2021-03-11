@@ -12,7 +12,7 @@
 			<swiper :current="swiperCurrent" @transition="transition" @animationfinish="animationfinish">
 				<!-- 人大概述 -->
 				<swiper-item class="swiper-item">
-					<scroll-view scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
+					<scroll-view scroll-y style="height: 95%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
 						<view class="stickycontact">
 							<view class="survey_sec">
 								<text class="survey_h2" style=" display: block;text-align: center;" :style="{fontSize:textSize}">榆次区人民代表大会简介</text>
@@ -99,7 +99,7 @@
 				</swiper-item>
 			</swiper>
 		</view>
-		<wtextsize @click="changetextsize"></wtextsize>
+		<wtextsize @click="changetextsize" v-show="swiperCurrent==0"></wtextsize>
 		<wnavall></wnavall>
 	</view>
 </template>
@@ -211,7 +211,7 @@
 		padding-bottom: 20px;
 		// display: flex;
 		text-align: left;
-
+		overflow: hidden;
 
 		.survey_h2 {
 			font-size: 20px;
@@ -319,6 +319,7 @@
 	.contactmain {
 		width: 100%;
 		height: 100%;
+		overflow: hidden;
 	}
 
 	.content {
@@ -327,6 +328,6 @@
 	}
 
 	uni-swiper {
-		height: 70%;
+		height: 75%;
 	}
 </style>
