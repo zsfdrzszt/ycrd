@@ -1,6 +1,7 @@
 <template>
 	<!-- 个人中心/履职共享页添加页 -->
 	<view class="shareadd">
+		<wnavall></wnavall>
 		<!-- 标题 -->
 		<resum2 :type="2" :lrtitle='"标题"' :value='title' :placetext='"请输入标题"' @textchange="titlechange"></resum2>
 		<!-- 工作情况 -->
@@ -38,10 +39,12 @@
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	import resum1 from "../../../components/resum/resum1.vue"	//上下型 
 	import resum2 from "../../../components/resum/resum2.vue" //左右型
 	export default {
 		components:{
+			wnavall,
 			resum1,
 			resum2,
 		},
@@ -56,6 +59,7 @@
 				textareaval:'',	//建议内容
 				site:'', //地址
 				presentime:currentDate, // 时间
+				satisfy:'',		//紧急程度
 				radioList:[
 					{
 						id:'1',
@@ -70,8 +74,7 @@
 						name: '非常紧急',
 					}
 				],
-				satisfy:'',		//紧急程度
-				bgimg:'url(../../../static/user/shareadd_ico_checkon.png)',
+				way:'',
 				current: 2,
 				items: [{
 							value: '1',
@@ -134,6 +137,7 @@
 					day = day > 9 ? day : '0' + day;
 					return `${year}-${month}-${day}`;
 				 },
+				 // 履职方式
 		        radioChange: function(evt) {
 		            for (let i = 0; i < this.items.length; i++) {
 		                if (this.items[i].value === evt.target.value) {
@@ -141,6 +145,8 @@
 		                    break;
 		                }
 		            }
+					this.way=evt.detail.value;
+					console.log(this.way)
 		        },
 				// 标题
 				titlechange(val){
@@ -162,7 +168,7 @@
 					this.time = val
 					console.log(val)
 				},
-				// 满意度
+				// 紧急程度
 				radchange(val){
 					var srr = this.radioList.filter(p=>p.name==val)
 					this.satisfy= srr[0].id
