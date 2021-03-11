@@ -5,15 +5,18 @@
 		<scroll-view class="scroll-view" scroll-y="true" >
 		    <organization :list="item" v-for="(item,index) in list"></organization>
 		</scroll-view>
+		<wnavall></wnavall>
 	</view>
 	
 </template>
 
 <script>
-	import organization  from "../../../components/organization/organization.vue"  
+	import organization  from "../../../components/organization/organization.vue" 
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		components:{
-			organization
+			organization,
+			wnavall
 		},
 		data() {
 			return {

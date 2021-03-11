@@ -10,6 +10,7 @@
 			<view class="edition_txt1">{{txt4}}</view>
 			<view class="edition_txt1">{{txt5}}</view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

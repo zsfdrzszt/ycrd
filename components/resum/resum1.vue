@@ -27,7 +27,7 @@
 <script>
 	// 下拉  		传值 type=1 标题-uptitle 下拉列表-list 提示语-placetext 展示值-value   事件selconfirm发送值 
 	// textarea  	传值 type=2 标题-uptitle 提示语-placetext 	展示值-value 		事件textchange发送值
-	// 单选  		传值 type=3 标题-uptitle 单选列表-list  		展示值-value  		事件radioGroupChange发送值
+	// 单选  		传值 type=3 标题-uptitle 单选列表-list  		展示值-value  		事件radchange发送值
 	// 文字展示 		传值 type=4 	标题-uptitle 	展示值-value  	
 	export default {
 		props:['type','uptitle','list','placetext','value'],	//type==1-下拉选择  type==2-多行文本  type==3-单选  type==4-文字展示 

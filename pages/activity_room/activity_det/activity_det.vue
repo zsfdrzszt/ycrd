@@ -15,14 +15,17 @@
 			</view>
 		</view>
 		<wtextsize @click="changetextsize"></wtextsize>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import wtextsize from "../../../components/w-textsize/w-textsize.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default{
 		components: {
-			wtextsize
+			wtextsize,
+			wnavall
 		},
 		data(){
 			return{

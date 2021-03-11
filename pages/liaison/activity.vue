@@ -7,11 +7,13 @@
 			</u-image>
 		</view>
 		<activecard v-for="(item,index) in list_all"  :state="true" :key=item.id :list="item" url="/pages/proposal/proposalson"></activecard>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import activecard  from "../../components/activecard/activecard.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		data() {
 			return {
@@ -45,7 +47,8 @@
 			
 		},
 		components:{
-			activecard
+			activecard,
+			wnavall
 		},
 	}
 </script>

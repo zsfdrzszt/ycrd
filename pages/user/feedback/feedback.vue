@@ -8,7 +8,7 @@
 			  <textarea class="textarea" v-model="txt" placeholder="请输入反馈意见 "></textarea>
 			  <button type="warn" size="mini" @click="goto('')" class="feedback_btn">提交</button>
 		</view>
-		
+		<wnavall></wnavall>
 	</view>
 </template>
 

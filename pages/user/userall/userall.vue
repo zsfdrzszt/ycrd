@@ -42,6 +42,7 @@
 		<view class="boxbottom">
 			<sort v-for="(item,index) in list" :key="index" :index='index' :item="item" @click="nextpage"></sort>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

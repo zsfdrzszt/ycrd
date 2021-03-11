@@ -24,11 +24,16 @@
 				<image src="../../static/double/download.jpg" mode="widthFix"></image>
 			</navigator>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
+		components:{
+			wnavall
+		},
 		data() {
 			return {
 				list:{imgUrl:'https://qiniu.jza2c.com/uploads/20190727/Fkw9oHU_XEOwLnFM5-41s8zFj5RG.jpg',name:'李鹏飞',work:'榆次区人大常委会主任',}

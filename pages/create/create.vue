@@ -28,12 +28,20 @@
 				</movable-view>               
 			</movable-area>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import perform from "../../components/perform/perform.vue"
+	import activecard from "../../components/activecard/activecard.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
+		components:{
+			wnavall,
+			activecard,
+			perform
+		},
 		data() {
 			return {
 				imgurl:"",
@@ -68,53 +76,28 @@
 				}
 				,
 				{
-					id:3,
+					id:4,
 					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
 					title:'柴永昌代表在活动室给选民进行宣讲',
 					time:'[2020年03月31日]'
 				}
 				,
 				{
-					id:3,
+					id:5,
 					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
 					title:'柴永昌代表在活动室给选民进行宣讲',
 					time:'[2020年03月31日]'
 				}
 				,
 				{
-					id:3,
+					id:6,
 					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
 					title:'柴永昌代表在活动室给选民进行宣讲',
 					time:'[2020年03月31日]'
 				}
 				,
 				{
-					id:3,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
-					time:'[2020年03月31日]'
-				},
-				{
-					id:3,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
-					time:'[2020年03月31日]'
-				},
-				{
-					id:3,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
-					time:'[2020年03月31日]'
-				},
-				
-				{
-					id:3,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
-					time:'[2020年03月31日]'
-				},
-				{
-					id:3,
+					id:7,
 					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
 					title:'柴永昌代表在活动室给选民进行宣讲',
 					time:'[2020年03月31日]'

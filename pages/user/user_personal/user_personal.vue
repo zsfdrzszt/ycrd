@@ -24,11 +24,22 @@
 			</view>
 			<button type="default" class="user_seave_btn">保存修改</button>
 		</view>
-		
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
+	export default {
+		components:{
+			wnavall
+		},
+		data(){
+			return{
+				
+			}
+		}
+		}
 </script>
 
 <style>

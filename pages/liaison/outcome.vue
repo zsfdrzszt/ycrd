@@ -9,12 +9,14 @@
 		<view class="dropdown"><wdropdown :list= "droplist" @searchdrop="searchdrop"></wdropdown></view>
 		<view class="title"><text>{{year}}年{{liason}}人大代表</text><text>“一季一星”公告栏</text></view>
 		<personal v-for="(item,index) in list" :key="index" :image = 'item.image' :quater='item.quater' :name = 'item.name' :step='item.step' :id="item.id" @nextpage="nextpage"></personal>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script> 
 	import wdropdown from "../../components/w-dropdown/w-dropdown.vue"
 	import personal from "../../components/personal/personal.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		data() {
 			return {
@@ -43,7 +45,8 @@
 		},
 		components:{
 			wdropdown,
-			personal
+			personal,
+			wnavall
 		}
 	}
 </script>

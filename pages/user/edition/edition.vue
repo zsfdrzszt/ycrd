@@ -33,6 +33,7 @@
 			   </view>
 			</navigator>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

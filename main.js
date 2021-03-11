@@ -11,3 +11,6 @@ const app = new Vue({
     ...App
 })
 app.$mount()
+
+import wnavall from "@/components/w-navall/w-navall.vue"
+Vue.component('wnavall',wnavall)

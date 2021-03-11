@@ -25,6 +25,7 @@
 			</view>
 			<image class="about_code" src="/static/user/user_aboutus_code.jpg" mode="widthFix"></image>
 		</view>
+		<wnavall></wnavall>
 	</view>
 	
 </template>

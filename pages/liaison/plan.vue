@@ -18,12 +18,14 @@
 				</view>
 			</scroll-view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import wdropdown from "../../components/w-dropdown/w-dropdown.vue"
 	import arrange from "../../components/arrange/arrange.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		data() {
 			return {
@@ -65,7 +67,8 @@
 		},
 		components:{
 			arrange,
-			wdropdown
+			wdropdown,
+			wnavall
 		}
 	}
 </script>

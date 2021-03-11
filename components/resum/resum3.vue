@@ -1,135 +1,71 @@
 <template>
 	<view>
-		<!-- type==3  上下 左右 单选 -->
+		<!-- 上左右型  type==1-单选  type==2-下拉  type==3--文字展示 -->
 		<view class="rdhdet_radrow">
-			<view class="radtitle">参加全体会议情况</view>
-			<view class="radview">
-				<view class="radleft">是否参加全体会议</view>
+			<view class="radtitle">{{uptitle}}</view>
+			<view class="radview" v-if="type==1">
+				<view class="radleft">{{downtitle}}</view>
 				<view class="radright">
-					<u-radio-group v-model="radio">
-						<u-radio v-for="(item, index) in radioList" :key="index" :name="item.name">
+					<u-radio-group v-model="radval" @change="radioGroupChange">
+						<u-radio v-for="(item, index) in list" :key="index" :name="item.name" active-color="#5FB878">
 							{{ item.name }}
 						</u-radio>
 					</u-radio-group>
 				</view>
+			</view>
+			<view class="radview" v-else-if="type==2">
+				<view class="radleft">{{downtitle}}</view>
+				<view class="radright">
+					<u-input v-model="value" type="select" @click="selshow=!selshow" :placeholder="placetext" style="text-align: right;" />
+					<u-select v-model="selshow" :list="list" @confirm="selconfirm"></u-select>
+				</view>
+			</view>
+			<view class="radview" v-else>
+				<view class="radleft">{{downtitle}}</view>
+				<view class="radright">{{value}}</view>
 			</view>
 		</view>
 	</view>
 </template>
 
 <script>
+	// 单选   type==1  uptitle-上文字   downtitle-下文字  list-单选列表   value -展示值	事件radchange发送值
+	// 下拉   type==2  uptitle-上文字   downtitle-下文字  list-下拉列表  placetext-提示文字  value -展示值  事件selconfirm发送值 
+	// 文字展示   type==3  uptitle-上文字   downtitle-下文字   value -展示值
 	export default {
+		props:['type','uptitle','downtitle','list','placetext','value'],	//type==1-单选  type==2-下拉  type==3--文字展示
 		data() {
-			const currentDate = this.getDate({
-				format: true
-			})
 			return {
-				// 下拉
-				selval: '',
-				selshow: false,
-				sellist: [{
-						value: '1',
-						label: '2020年5月29日东赵乡第十七届人民代表大会第七次会议'
-					},
-					{
-						value: '2',
-						label: '2020年5月29日东赵乡第十七届人民代表大会第七次会议'
-					}
-				],
-				// 时间
-				date: currentDate,
 				// 单选
 				radioList: [
-						{
-							name: '鲜甜',
-							disabled: false
-						},
-						{
-							name: '麻辣',
-							disabled: false
-						}
-					],
-					radio: '',
+					{
+						name: '鲜甜',
+						disabled: false
+					},
+					{
+						name: '麻辣',
+						disabled: false
+					}
+				],
+				radval: '',
+				// 下拉
+				selshow: false,
 			};
-		},
-		computed: {
-			startDate() {
-				return this.getDate('start');
-			},
-			endDate() {
-				return this.getDate('end');
-			}
 		},
 		methods: {
 			// 下拉
 			selconfirm(e) {
-				console.log(e[0].value)
-				this.selval = e[0].label
+				// console.log(e[0].value)
+				this.$emit('selconfirm',e[0])
 			},
-			// 时间选择器
-			bindDateChange: function(e) {
-				this.date = e.target.value
-			},
-			getDate(type) {
-				const date = new Date();
-				let year = date.getFullYear();
-				let month = date.getMonth() + 1;
-				let day = date.getDate();
-
-				if (type === 'start') {
-					year = year - 60;
-				} else if (type === 'end') {
-					year = year + 2;
-				}
-				month = month > 9 ? month : '0' + month;;
-				day = day > 9 ? day : '0' + day;
-				return `${year}-${month}-${day}`;
+			radioGroupChange(e){
+				this.$emit('radchange',e)
 			}
 		}
 	}
 </script>
 
 <style>
-	/* 下拉 */
-	.rdhdet_row {
-		margin: 20rpx;
-		background-color: transparent;
-		box-shadow: 1px 1px 10px #ccc;
-		font-size: 32rpx;
-	}
-
-	.rdhdet_title {
-		line-height: 60rpx;
-		padding: 0 10rpx;
-		box-sizing: border-box;
-	}
-
-	.rdhdet_view {
-		padding: 0 10rpx;
-	}
-	/* 时间 */
-	.rdhdet_rowtime {
-		display: flex;
-		margin: 20rpx;
-		background-color: transparent;
-		box-shadow: 1px 1px 10px #ccc;
-		font-size: 32rpx;
-		line-height: 80rpx;
-	}
-
-	.timetitle {
-		width: 200rpx;
-		padding: 0 10rpx;
-	}
-
-	.timeform {
-		flex: 1;
-		padding: 0 10rpx;
-	}
-	.uni-input{
-		text-align: right;
-	}
-	
 	.rdhdet_radrow{
 		margin: 20rpx;
 		background-color: transparent;

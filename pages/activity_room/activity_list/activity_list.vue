@@ -6,14 +6,17 @@
 		<view class='center_list'>
 			<activecard v-for="(item,index) in list_all"  :state="state":key=item.id :list="item" url="/pages/activity_room/activity_det/activity_det"></activecard>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	import activecard  from "../../../components/activecard/activecard.vue"
 	export default {
 		components:{
-			activecard
+			activecard,
+			wnavall
 		},
 		data(){
 			return{

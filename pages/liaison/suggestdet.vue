@@ -22,11 +22,13 @@
 		<view class="bottom">{{liason}}</view>
 		<view class="bottom">{{time}}</view>
 		<wtextsize @click="change"></wtextsize>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import wtextsize from "../../components/w-textsize/w-textsize.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		data() {
 			return {
@@ -82,7 +84,8 @@
 			}
 		},
 		components:{
-			wtextsize
+			wtextsize,
+			wnavall
 		}
 	}
 </script>

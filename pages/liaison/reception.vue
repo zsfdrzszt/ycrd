@@ -23,11 +23,13 @@
 				<view class="details" @click="showdet(item.id)" :style="item.content?{color:'#007AFF'}:''">查看详情</view>
 			</view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
 <script>
 	import wdropdown from "../../components/w-dropdown/w-dropdown.vue"
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	export default {
 		data() {
 			return {
@@ -64,7 +66,8 @@
 			}
 		},
 		components:{
-			wdropdown
+			wdropdown,
+			wnavall
 		}
 	}
 </script>

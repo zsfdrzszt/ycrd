@@ -15,6 +15,7 @@
 				<leave v-for="(item,index) in list" :list="item"></leave>
 			</navigator>
 		</scroll-view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
