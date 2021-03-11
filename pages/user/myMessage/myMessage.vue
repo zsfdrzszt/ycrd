@@ -17,25 +17,9 @@
 			<!-- 内容 -->
 			<view class="myMessage_cont_cen">
 				<!-- 全部留言 -->
-				<view class="myMessage_cont_cenitem" v-show="activetab==1">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in all" :type="true"></CenterMessage>
-				</view>
-				<!-- 已回复 -->
-				<view class="myMessage_cont_cenitem" v-show="activetab==2">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in replied" :type="false"></CenterMessage>
-				</view>
-				<!-- 未回复 -->
-				<view class="myMessage_cont_cenitem" v-show="activetab==3">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in noreply" :type="false"></CenterMessage>
-				</view>
-				<!-- 站长驳回 -->
-				<view class="myMessage_cont_cenitem" v-show="activetab==4">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in reject" :type="false"></CenterMessage>
-				</view>
-				<!-- 已通过 -->
-				<view class="myMessage_cont_cenitem" v-show="activetab==5">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in pass" :type="false"></CenterMessage>
-				</view>
+				<view class="myMessage_cont_cenitem" >
+					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in list" :type="true"></CenterMessage>
+				</view>	
 			</view>
 		</view>
 	</view>
@@ -52,70 +36,66 @@
 		data() {
 			return {
 				activetab:1,
+				list:[],
 				all:[
 					{
 						id:1,
 						name:'程广生',
 						time:'2021-03-08 16:17:59',
+						state:2,
 						status:'已回复',
 						leave:'想去参观一下映霜红桃，学习一下技术',
 						reply:'星期一到星期五，随时可以过来参观，地址：张庆乡北胡乔村。可以加微信：jzsj7788'
 					},{
 						id:2,
 						name:'李爱莲',
+						state:3,
 						time:'2021-03-08 16:17:59',
 						status:'未回复',
 						leave:'小牛线拆迁搅拌站需要办临时用地手续，何时可以帮忙办理',
 						reply:''
-					}
-				],
-				replied:[
-					{
-						id:1,
-						name:'程广生',
-						time:'2021-03-08 16:17:59',
-						status:'已回复',
-						leave:'想去参观一下映霜红桃，学习一下技术',
-						reply:'星期一到星期五，随时可以过来参观，地址：张庆乡北胡乔村。可以加微信：jzsj7788'
-					}
-				],
-				noreply:[
-					{
-						id:2,
-						name:'李爱莲',
-						time:'2021-03-08 16:17:59',
-						status:'未回复',
-						leave:'小牛线拆迁搅拌站需要办临时用地手续，何时可以帮忙办理',
-						reply:''
-					}
-				],
-				reject:[
+					},
 					{
 						id:1,
 						name:'李爱莲',
+						state:4,
 						time:'2021-03-08 16:17:59',
 						status:'站长驳回',
 						leave:'小区开展普发教育，让居民知法懂法守法。',
 						reply:'不同意'
-					}
-				],
-				pass:[
+					},
 					{
 						id:1,
 						name:'程广生',
+						state:5,
+						time:'2021-03-08 16:17:59',
+						status:'已通过',
+						leave:'排查楼宇外墙安全隐患，防止楼层建筑材料高层坠物伤人伤物',
+						reply:'好的，一会召开业委会安排。'
+					},
+					{
+						id:1,
+						name:'程广生',
+						state:5,
 						time:'2021-03-08 16:17:59',
 						status:'已通过',
 						leave:'排查楼宇外墙安全隐患，防止楼层建筑材料高层坠物伤人伤物',
 						reply:'好的，一会召开业委会安排。'
 					}
-				]
-				
-				
+				],
 			}
+		},
+		mounted() {
+			this.change(1)
 		},
 		methods: {
 			change(n){
 				this.activetab=n;
+				this.list=this.all.filter(item=>item.state==n)
+				if(n==1){
+					this.list = this.all
+				}
+				
 			}
 		}
 	}
