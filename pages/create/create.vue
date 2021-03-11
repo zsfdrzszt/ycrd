@@ -135,13 +135,6 @@
 				this.imgurl =""
 				this.scale = 1;
 			},
-			 dblclick() {
-			            if (this.scale == 10) {
-			                this.scale = 1;
-			            } else {
-			                this.scale = 10;
-			            }
-			        },
 		}
 	}
 </script>

@@ -7,8 +7,24 @@
 		</view>
 			<scroll-view scroll-y="true"  class="scroll-view " >
 				<meets v-for="(item,index) in list" :list="item" :num="index"  v-show="isActive == 1"> </meets>
-				<message v-for="(item,index) in list1" :list="item" :num="index"  v-show="isActive == 2"></message>
+				<message v-for="(item,index) in list1" :list="item" :num="index"  v-show="isActive == 2"  @magnify="magnify"></message>
 			</scroll-view>
+		
+		<view class="img_back" v-show="this.imgstate">
+			<movable-area scale-area class="movable-area "  @click="hideimg">
+				<movable-view  
+				class="movable-view"
+		        direction="all"
+		        scale="true"
+		        scale-min="1"
+		        scale-max="4"
+		        :scale-value="scale"
+				 @scale="onScale"
+		      >
+					<image :src="imgurl" class="lookimg" mode="widthFix" ></image>
+				</movable-view>               
+			</movable-area>
+		</view>
 	</view>
 </template>
 
@@ -22,6 +38,9 @@
 		},
 		data() {
 			return {
+				imgurl:"",
+				imgstate:false,
+				scale:1,
 				isActive: 1,
 				list: [{
 					txt: '2020年5月27日郭家堡乡第十七届人民代表大会第七次会议',
@@ -52,6 +71,18 @@
 		methods: {
 			changestate(n) {
 				this.isActive = n
+			},
+			changestate(n){
+				this.isActive = n
+			},
+			magnify(val){
+				this.imgstate =true,
+				this.imgurl =val
+			},
+			hideimg(){
+				this.imgstate =false
+				this.imgurl =""
+				this.scale = 1;
 			},
 		}
 	}
@@ -114,5 +145,51 @@
 		margin: 15px 10px;
 		border-radius: 8px;
 		border: 1px solid red;
+	}
+	.img_back{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		position: fixed;
+		left: 0;
+		top: 0;
+		background-color: rgba(0,0,0,.5);
+		justify-content: center;
+		align-items: center;
+	}
+	.img_back_box{
+		width: 70%;
+		height: 80%;
+	}
+	.img_back_box image{
+		width: 100%;
+	}
+	.movable-view {
+	    display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    height: 100%;
+	    width: 100%;
+	    text-align: center;
+	}
+	
+	.movable-area {
+	    height: 100%;
+	    width: 100%;
+	    position: fixed;
+	    overflow: hidden;
+	}
+	
+	.movable-view image {
+	    width: 60%;
+	}
+	.lookimg {
+	    display: block;
+	    position: fixed;
+	    left: 0;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin: auto;
 	}
 </style>

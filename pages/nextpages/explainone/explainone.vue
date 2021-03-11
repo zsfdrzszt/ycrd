@@ -56,6 +56,8 @@
 		},
 		methods: {
 			tonext(n){
+				this.zan = true
+				this.low =true
 				this.num +=n
 				if(this.num == -1){
 					this.num =0

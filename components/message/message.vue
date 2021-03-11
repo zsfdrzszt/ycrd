@@ -31,7 +31,7 @@
 			<text></text>
 		</view>
 		<view class="message_image">
-			<image :src="list.imgUrl" style="width: 30%;"  mode="widthFix"></image>
+			<image :src="list.imgUrl" style="width: 30%;"  mode="widthFix" @click="magnify(list.imgUrl)"></image>
 		</view>
 	</view>
 </template>
@@ -40,12 +40,17 @@
 	export default {
 		props:{
 			list:Object,
-			num:Number
+			num:Number,
 		},
 		data() {
 			return {
 				
 			};
+		}
+		,methods:{
+			magnify(val){
+				this.$emit("magnify",val)
+			}
 		}
 	}
 </script>

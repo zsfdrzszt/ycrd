@@ -591,6 +591,24 @@
 				"enablePullDownRefresh": false
 			}
 			
+		},
+		{
+			"path" : "pages/liaison/gkdet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
+		},
+		{
+			"path" : "pages/liaison/receptiondet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+			
 		}
     ],
 	"globalStyle": {

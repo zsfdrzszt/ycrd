@@ -1,5 +1,5 @@
 <template>
-	<navigator url="" hover-class="none">
+	<navigator url="/pages/user/examine/reply" hover-class="none">
 		<!-- 个人中心/联系常委/我的留言组件-->
 		<view class="message">
 			<view class="message_name">

@@ -27,9 +27,7 @@
 		props:['item','index'],
 		methods:{
 			nextpage(){
-				uni.navigateTo({
-					url:"/pages/general/liaison/liaison?id="+this.item.id
-				})
+				this.$emit("click",this.item.id)
 			}
 		}
 	}

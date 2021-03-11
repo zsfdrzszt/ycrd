@@ -26,21 +26,18 @@
 				</swiper-item>
 				<swiper-item class="swiper-item">
 					<scroll-view  scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
-						 3
 						 <wnewscard v-for="(item,index) in newslist"  :key="index" :list="item"></wnewscard>
 						 <text class="hint">已到达最底部</text>
 					</scroll-view>
 				</swiper-item>
 				<swiper-item class="swiper-item">
 					<scroll-view scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
-						4
 						<wnewscard v-for="(item,index) in newslist"  :key="index" :list="item"></wnewscard>
 						 <text class="hint">已到达最底部</text>
 					</scroll-view>
 				</swiper-item>
 				<swiper-item class="swiper-item">
 					<scroll-view scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
-						5
 						<view class="news" v-for="(item,index) in newslist"  :key="index" :list="item">
 							<view class="news_title">宪法</view>
 							<wnewscard :list="item"></wnewscard>
@@ -51,35 +48,30 @@
 				</swiper-item>
 				<swiper-item class="swiper-item">
 					<scroll-view scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
-						6
 						<wnewscard v-for="(item,index) in newslist"  :key="index" :list="item"></wnewscard>
 						 <text class="hint">已到达最底部</text>
 					</scroll-view>
 				</swiper-item>
 				<swiper-item class="swiper-item">
 					<scroll-view scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
-						7
 						<wnewscard v-for="(item,index) in newslist1"  :key="index" :list="item"></wnewscard>
 						 <text class="hint">已到达最底部</text>
 					</scroll-view>
 				</swiper-item>
 				<swiper-item class="swiper-item">
 					<scroll-view scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
-						8
 						<wnewscard v-for="(item,index) in newslist"  :key="index" :list="item"></wnewscard>
 						 <text class="hint">已到达最底部</text>
 					</scroll-view>
 				</swiper-item>
 				<swiper-item class="swiper-item">
 					<scroll-view scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
-						9
 						<wnewscard v-for="(item,index) in newslist"  :key="index" :list="item"></wnewscard>
 						 <text class="hint">已到达最底部</text>
 					</scroll-view>
 				</swiper-item>
 				<swiper-item class="swiper-item  ">
 					<scroll-view scroll-y style="height: 100%;width: 100%;text-align: center;" @scrolltolower="onreachBottom">
-						10
 						<view class="swiper-items">
 							 <viewvideo :list="item" v-for="(item,index) in viedolist " @click="showvideo"></viewvideo>
 						</view>
@@ -129,9 +121,9 @@
 					{titel:"榆次区第十六届人民代表大会第三次会议日程",time:"2018-04-10"}
 				],
 				newslist1:[
-					{titel:"adasdasdasda",time:"2020-1-1"},
-					{titel:"adasdasdasda",time:"2020-1-1"},
-					{titel:"adasdasdsddagre",time:"2020-1-2"}
+					{titel:"榆次区第十六届人民代表大会第五次会议日程",time:"2020-1-1"},
+					{titel:"榆次区第十六届人民代表大会第五次会议日程",time:"2020-1-1"},
+					{titel:"榆次区第十六届人民代表大会第五次会议日程",time:"2020-1-2"}
 				],
 				list1: [{
 					name: '人代会会议1'

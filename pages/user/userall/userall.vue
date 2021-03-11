@@ -40,7 +40,7 @@
 			</view>
 		</view>
 		<view class="boxbottom">
-			<sort v-for="(item,index) in list" :key="index" :index='index' :item="item"></sort>
+			<sort v-for="(item,index) in list" :key="index" :index='index' :item="item" @click="nextpage"></sort>
 		</view>
 	</view>
 </template>
@@ -83,6 +83,13 @@
 					this.list=this.liaison
 				}else{
 					this.list=this.personlist
+				}
+			},
+			nextpage(val){
+				if(this.active !=3){
+					uni.navigateTo({
+						url:"/pages/general/liaison/liaison?id="+val
+					})
 				}
 			},
 		}

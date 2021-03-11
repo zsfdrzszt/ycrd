@@ -40,10 +40,9 @@ page{
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
-	padding-bottom: 20rpx;
 }
 .scroll-view{
 	width: 100%;
-	height: 100%;
+	height: 98%;
 }
 </style>
