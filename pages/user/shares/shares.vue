@@ -40,7 +40,7 @@
 					<view class="uni-padding-wrap">
 						<view class="page-section swiper">
 							<view class="page-section-spacing">
-								<swiper class="swiper"  :duration="duration" :display-multiple-items="num">
+								<swiper class="swiper"  :duration="duration"  :display-multiple-items='this.detail.image.length>=3? "3" : this.detail.image.length'>
 									<swiper-item v-for="(items,index) in detail.image">
 										<view class="swiper-item">
 											<image class="swiper_image" :src="items" ></image>
