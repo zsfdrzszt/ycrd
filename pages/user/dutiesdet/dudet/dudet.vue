@@ -12,7 +12,6 @@
 		props:['item','type'],
 		methods:{
 			nextpage(){
-				console.log(this.type)
 				if(this.type==0){
 					uni.navigateTo({
 						url:'/pages/user/onadvise/onadvise?id='+this.item.id
