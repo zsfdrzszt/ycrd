@@ -1,5 +1,6 @@
 <template>
 	<view class="all">
+		<view class="status_bar"></view>
 		<u-image :src="topimg[number]" :lazy-load="true" mode="widthFix">
 			<u-loading slot="loading"></u-loading>
 		</u-image>

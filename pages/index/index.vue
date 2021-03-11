@@ -208,7 +208,7 @@
 				this.showWarp = !this.showWarp
 			},
 			topro(num) {
-				var url = ["/pages/uploading/uploading","/pages/ligature/ligature"]
+				var url = ["/pages/liaison/message","/pages/ligature/ligature"]
 				uni.navigateTo({
 					url: url[num]
 				})

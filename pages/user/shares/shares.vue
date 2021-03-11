@@ -1,6 +1,7 @@
 <template>
 	<view class="shares">
 		<!-- banner图 -->
+		<view class="status_bar"></view>
 		<image class="shares_image" src="/static/user/user_share_back.jpg" mode="widthFix"></image>
 		<view class="shares_cont">
 			<!-- 列表详情 -->

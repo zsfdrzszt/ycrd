@@ -1,5 +1,6 @@
 <template>
 	<view class="all">
+		<view class="status_bar"></view>
 		<view class="rdhjydet_ti">闭会期间提出的意见建议</view>
 		<resum2 :type="2" :lrtitle='"标题"' :value='titleval' :placetext='"请输入标题"' @textchange="titlechange"></resum2>
 		<resum2 :type="1" :lrtitle='"开始时间"' :value='time' @datechange="datechange"></resum2>

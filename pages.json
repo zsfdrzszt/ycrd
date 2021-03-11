@@ -4,20 +4,61 @@
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+// 入口首页
 			"path": "pages/index/index",
 			"style": {
 				"navigationStyle": "custom",
 				"scrollIndicator": "none"
 			}
-		}, {
+		}, 
+// 人大概况
+		{
+		// 人大概况
 			"path": "pages/general/general",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false,
 				"scrollIndicator": "none"
 			}
-
-		}, {
+		}, 
+		{
+			// 人大领导信息
+			"path": "pages/general/liaison/liaison",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		{
+			// 人大领导信息---人代会期间
+		    "path" : "pages/meet/meet",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    } 
+		},
+		{
+			// 人大领导信息---闭会期间
+			"path": "pages/general/close/close",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		{
+			// 人大领导信息---留言
+		    "path" : "pages/liaison/message",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    } 
+		},
+		
+// 重要发布
+		{
+			// 重要发布
 			"path": "pages/publish/publish",
 			"style": {
 				"navigationBarTitleText": "",
@@ -25,389 +66,282 @@
 				"app-plus": {
 					"titleNView": false
 				}
-
 			}
-
 		},
 		{
-			"path": "pages/uploading/uploading",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/ligature/ligature",
-			"style": {
-				"navigationStyle": "custom",
-				"scrollIndicator": "none"
-			}
-
-		}, {
-			"path": "pages/pro5/pro5",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}
-
-
-		, {
-			"path": "pages/construction/construction",
-			"style": {
-				"navigationStyle": "custom",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "components/z-list/z-list",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/relation/relation",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/text/text",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/deputy/deputy",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "components/z-dropdown/z-dropdown",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "components/z-dbzslist/z-dbzslist",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/relation/contactWay/contactWay",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/relation/contactCntent/contactCntent",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/proposal/proposal",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		},
-		{
+			// 渲染文章页
 			"path": "pages/proposal/proposalson",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
 		},
+// 自身建设
 		{
-			"path": "pages/general/liaison/liaison",
+			// 自身建设
+			"path": "pages/construction/construction",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+		}, 
+// 代表建议
+		{
+			// 代表建议
+			"path": "pages/proposal/proposal",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
-		}, {
-			"path": "pages/ligature/prolist/prolist",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/relation/relationnext/relationnext",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/relation/relationuesrs/relationuesrs",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/nextpages/explain/explain",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
 		},
-		// 活动室主
+// 双联系
 		{
-			"path": "pages/activity_room/activity_index",
+			// 双联系
+			"path": "pages/relation/relation",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
-		},
-		// 活动室概
+		}, 
 		{
-			"path": "pages/activity_room/activity_introduction/activity_introduction",
+			// 双联系---联系方式
+			"path": "pages/relation/contactWay/contactWay",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
-		},
-		// 活动室列
+		}, 
 		{
-			"path": "pages/activity_room/activity_list/activity_list",
+			// 双联系---联系内容
+			"path": "pages/relation/contactCntent/contactCntent",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
-		},
-		// 活动室详细页
+		}, 
 		{
-			"path": "pages/activity_room/activity_det/activity_det",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/nextpages/explainone/explainone",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {	//联络履职管理
-			"path": "pages/liaison/rules",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		},
-		{
-			"path": "pages/liaison/index",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
+			// 双联系---联系对象
 			"path": "pages/object/object",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
-		}, {
+		},
+		{
+			// 双联系---联系对象--组成人员
 			"path": "pages/object/form/form",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-
-		}, {
-			"path": "pages/object/number/number",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {	//联络意见建议
-			"path": "pages/liaison/suggest",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/general/close/close",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/create/create",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/user/feedback/feedback",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {
-			"path": "pages/user/about/about",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, {//联络 建议详情
-			"path": "pages/liaison/suggestdet",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, { // 联络站活动纪
-			"path": "pages/liaison/activity",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		}, { // 联络站选民接待
-			"path": "pages/liaison/reception",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
 		},
+		// {
+			// 双联系---联系对象--组成人员--双联系详请
+		// 	"path" : "pages/double/double",
+		// 	"style" :                                                                                    
+		// 	{
+		// 		"navigationBarTitleText": "",
+		// 		"enablePullDownRefresh": false
+		// 	}
+		// },
 		{
-			"path": "pages/user/edition/edition",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-
-		},
-		{
-			"path": "pages/user/edition/editiondet",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-		}      
-		 ,{
-            "path" : "pages/meet/meet",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        } ,{
-            "path" : "pages/upcontactDown/upcontactDown",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-	    ,{
-            "path" : "pages/user/recommend/recommend",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/user/myMessages/myMessages",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/user/myMessage/myMessage",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-		,{
-		    "path" : "pages/liaison/message",
+			// 双联系---联系对象--组成人员--双联系详请
+		    "path" : "pages/upcontactDown/upcontactDown",
 		    "style" :                                                                                    
 		    {
 		        "navigationBarTitleText": "",
 		        "enablePullDownRefresh": false
 		    }
 		    
-		}
-		,{		//联络 一季一
+		},
+		{
+			// 双联系---联系对象--代表安排
+			"path": "pages/object/number/number",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		{
+			// 双联系---联络站汇总
+			"path": "pages/relation/relationnext/relationnext",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		{
+			// 双联系---联络站汇总--联络站
+			"path": "pages/liaison/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		{
+			// 双联系---联络站汇总--联络站--代表阵地
+			"path": "pages/ligature/prolist/prolist",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		{ 
+			//  双联系---联络站汇总--联络站--活动纪实
+			"path": "pages/liaison/activity",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		{		
+			//双联系---联络站汇总--联络站-- 一季一星
 			"path" : "pages/liaison/outcome",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-			
-		}
-		,{	//联履职活动
+		},
+		{
+			//双联系---联络站汇总--联络站-- 一季一星--详情页
+			"path" : "pages/liaison/gkdet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{ 
+			//双联系---联络站汇总--联络站--选民接待
+			"path": "pages/liaison/reception",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			//双联系---联络站汇总--联络站--选民接待--详情页
+			"path" : "pages/liaison/receptiondet",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{	
+			//双联系---联络站汇总--联络站--意见建议
+			"path": "pages/liaison/suggest",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		{
+			//双联系---联络站汇总--联络站--意见建议---建议详情
+			"path": "pages/liaison/suggestdet",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{	
+			//双联系---联络站汇总--联络站--履职管理
+			"path": "pages/liaison/rules",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{	
+			//双联系---联络站汇总--联络站--履职活动
 			"path" : "pages/liaison/plan",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-			
 		},
-		{	//联络履职活动
-			"path" : "pages/user/duty/duty",
+		{	
+			//双联系---联络站汇总--联络站--履职活动--计划详情
+			"path" : "pages/liaison/plandet",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-			
-		},
-		{	//联络履职活动
-			"path" : "pages/user/duty/content/content",
-			"style" :                                                                                    
-			{
+		},	
+		{
+			//双联系---活动室主页
+			"path": "pages/activity_room/activity_index",
+			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-			
 		},
-		{	//履职档案
+		{
+			//双联系---活动室主页--活动室概况
+			"path": "pages/activity_room/activity_introduction/activity_introduction",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+		    // 双联系---活动室主页--活动室列表
+			"path": "pages/activity_room/activity_list/activity_list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			// 双联系---活动室主页--活动室列表--详细页
+			"path": "pages/activity_room/activity_det/activity_det",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		{
+			 // 双联系---服务岗
+			"path": "pages/relation/relationuesrs/relationuesrs",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+// 代表之声
+		{
+			// 代表之声
+			"path": "pages/deputy/deputy",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		
+		}, 
+// 代表连线
+		{ 
+			// 代表连线
+			"path": "pages/ligature/ligature",
+			"style": {
+				"navigationStyle": "custom",
+				"scrollIndicator": "none"
+			}
+		
+		}, 
+// 最新动态
+		{
+			// 最新动态-- 三零创建
+			"path": "pages/create/create",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		
+		}, 
+		{	//最新动态--最新履职
 			"path" : "pages/archives/archives",
 			"style" :                                                                                    
 			{
@@ -416,92 +350,29 @@
 			}
 			
 		},
-		{	//联络计划详情
-			"path" : "pages/liaison/plandet",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		}
-        ,{
-            "path" : "pages/user/examine/examine",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/user/examine/reply",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/user/people/people",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/user/people/answer",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        },
-		{	//个人中心首页
-				"path" : "pages/user/userindex/userindex",
-				"style" :                                                                                    
-				{
-					"navigationBarTitleText": "",
-					"enablePullDownRefresh": false
-				}
-				
-		},
-		// 排名
-		{
-			"path" : "pages/user/userall/userall",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		},
-		// 个人中心
-		{
+// 个人中心		
+		{	
+			//个人中心首页
 			"path" : "pages/user/userindex/userindex",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-			
+				
 		},
-		// 个人资料
+		
 		{
+			//个人--- 个人资料
 			"path" : "pages/user/user_personal/user_personal",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-			
 		},
-		// 通讯
 		{
+			//个人---通讯录列表
 			"path" : "pages/user/user_delegation/user_delegation_list",
 			"style" :                                                                                    
 			{
@@ -510,8 +381,8 @@
 			}
 			
 		},
-		// 通讯录下
 		{
+			// 个人---通讯录列表--通讯录
 			"path" : "pages/user/user_delegation/user_delegation",
 			"style" :                                                                                    
 			{
@@ -520,61 +391,151 @@
 			}
 			
 		},
-          // 双联系详
+		
+// 双联系
 		{
-			"path" : "pages/double/double",
+			// 双联系---联系常委
+		    "path" : "pages/user/recommend/recommend",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		},
+		{
+			// 双联系---我的留言
+		    "path" : "pages/user/myMessages/myMessages",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+			// 双联系---我的回复
+		    "path" : "pages/user/myMessage/myMessage",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    } 
+		},
+		{   
+			// 双联系---回复详情页
+		    "path" : "pages/user/examine/reply",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		},
+// 履职		
+		{	
+			//履职档案
+			"path" : "pages/user/duty/duty",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-			
+		},
+		{	
+			//履职档案列表
+			"path" : "pages/user/duty/content/content",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
 		},
 		{
-		            "path" : "pages/user/share/share",
-		            "style" :                                                                                    
-		            {
-		                "navigationBarTitleText": "",
-		                "enablePullDownRefresh": false
-		            }
-		            
-		 }
-        ,{
-            "path" : "pages/user/shareadd/shareadd",
+			// 履职档案详情
+			"path" : "pages/user/onadvise/onadvise",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			// 履职共享
+		    "path" : "pages/user/share/share",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }       
+		 },
+		 {
+			// 履职共享---详情页
+		    "path" : "pages/user/shares/shares",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }   
+		},
+		{
+			// 履职共享---添加
+		    "path" : "pages/user/shareadd/shareadd",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+			//履职排名
+			"path" : "pages/user/userall/userall",
+			"style" :                                                                                    
+			{
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		
+// 审批	
+        {
+			//审批留言
+            "path" : "pages/user/examine/examine",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
-            }
-            
-        },{
-            "path" : "pages/user/shares/shares",
+            } 
+        },
+        {
+			//代表回复
+            "path" : "pages/user/people/people",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
-            }
-            
-        }
-        ,{
-            "path" : "pages/user/shareaddu/shareaddu",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
-        }
-		,{
+            } 
+        },
+		{
+			//代表回复----代表回复详情
+		    "path" : "pages/user/people/answer",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+			// 履职
 			"path" : "pages/user/duties/duties",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
-			}
-			
-		}
-		,{
+			}	
+		},
+		{
+			// 履职--履职列表
 			"path" : "pages/user/dutiesdet/dutiesdet",
 			"style" :                                                                                    
 			{
@@ -584,35 +545,7 @@
 			
 		},
 		{
-			"path" : "pages/liaison/gkdet",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		},
-		{
-			"path" : "pages/liaison/receptiondet",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		}
-		,
-		{
-			"path" : "pages/user/onadvise/onadvise",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		}
-		,
-		{
+			// 履职--履职列表---详情一
 			"path" : "pages/user/participation/participation",
 			"style" :                                                                                    
 			{
@@ -621,7 +554,17 @@
 			}
 			
 		},
+		// {
+		// 	// 履职--履职列表---详情二
+		// 	"path" : "pages/user/onadvise/onadvise",
+		// 	"style" :                                                                                    
+		// 	{
+		// 		"navigationBarTitleText": "",
+		// 		"enablePullDownRefresh": false
+		// 	}
+		// },
 		{
+			// 履职--履职列表---详情三
 			"path" : "pages/user/resumption/resumption",
 			"style" :                                                                                    
 			{
@@ -631,6 +574,7 @@
 			
 		},
 		{
+			// 履职--履职列表---详情四
 			"path" : "pages/user/offproposal/offproposal",
 			"style" :                                                                                    
 			{
@@ -638,7 +582,93 @@
 				"enablePullDownRefresh": false
 			}
 			
+		},
+		
+// 其他
+		{
+			// 名词解释
+			"path": "pages/nextpages/explain/explain",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		
+		},
+		{
+			// 名词解释--详情
+			"path": "pages/nextpages/explainone/explainone",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		
+		}, 
+		{
+			// 意见反馈
+			"path": "pages/user/feedback/feedback",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, 
+		{
+			// 关于我们
+			"path": "pages/user/about/about",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		
+		},
+		{
+			// 版本更新
+			"path": "pages/user/edition/edition",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		
+		},
+		{
+			// 版本更新----1.0.2
+			"path": "pages/user/edition/editiondet",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		
+// -----------------------------------------------------------------
+		
+		{
+			// 页面维护
+			"path": "pages/uploading/uploading",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, 
+		
+		{
+			// 组件库
+			"path": "pages/pro5/pro5",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			// 测试页
+			"path": "pages/text/text",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
+		
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

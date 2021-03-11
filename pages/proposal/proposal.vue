@@ -22,7 +22,7 @@
 				</view>
 				<view class="textmainlist">
 					<text class="textmassage" v-show="text4list.length == 0">暂无数据</text>
-					<wtextcard v-for="(item,index) in text4list" :list="item" :key="index" v-if="1 == isActive"></wtextcard>
+					<wtextcard v-for="(item,index) in text4list" :list="item" :key="index" v-if="1 == isActive" @click="nextpage"></wtextcard>
 					<wtextcards v-for="(item,index) in text4list" :list="item" :num="index" :key="index" v-if="2== isActive"></wtextcards>
 				</view>
 			</scroll-view>
@@ -81,6 +81,11 @@
 			this.text4list= this.text4lists 
 		},
 		methods: {
+			nextpage(val){
+				uni.navigateTo({
+					url:"/pages/proposal/proposalson"+"?con="+val
+				})
+			},
 			changestate(n){
 				this.isActive = n
 				this.text4list=[]

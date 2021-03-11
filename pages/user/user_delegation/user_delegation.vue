@@ -1,5 +1,6 @@
 <template>
 	<view id="user_del_all">
+		<view class="status_bar"></view>
 		<view class="user_del">
 			<text>{{user_title_top}}</text>
 		</view>

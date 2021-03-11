@@ -1,5 +1,6 @@
 <template>
 	<view class="editiondet">
+		<view class="status_bar"></view>
 		<view class="editiondet_title">
 			[RDYC<text class="editiondet_ban">1.0.2</text>]
 		</view>

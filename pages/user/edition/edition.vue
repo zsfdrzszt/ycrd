@@ -1,5 +1,6 @@
 <template>
 	<view class="edition">
+		<view class="status_bar"></view>
 		<!-- 上方 -->
 		<view class="edition_header">
 			<view class="edition_dang">当前版本</view>

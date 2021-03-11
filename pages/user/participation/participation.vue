@@ -1,5 +1,6 @@
 <template>
 	<view class="all">
+		<view class="status_bar"></view>
 		<view class="rdhjydet_ti">人代会期间参会情况</view>
 		<resum1 :type="1" :uptitle='"会议名称 (请下拉选择 必选)"' :list='meetlist' @selconfirm='meetconfirm' :placetext='"请选择"' :value="meettext"></resum1>
 		<resum2 :type="1" :lrtitle='"开始时间"' :value='starttime' @datechange="startchange"></resum2>

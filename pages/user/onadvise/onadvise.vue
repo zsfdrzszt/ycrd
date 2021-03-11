@@ -1,5 +1,6 @@
 <template>
 	<view class="all">
+		<view class="status_bar"></view>
 		<view class="rdhjydet_ti">人代会期间提出的意见建议</view>
 		<resum2 :type="1" :lrtitle='"提出时间"' :value='presentime' @datechange="datechange"></resum2>
 		<resum2 :type="2" :lrtitle='"标题"' :value='title' :placetext='"请输入标题"' @textchange="titlechange"></resum2>

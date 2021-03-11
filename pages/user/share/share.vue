@@ -1,6 +1,7 @@
 <template>
 	<!-- 个人中心/履职共享页 -->
 	<view class="share">
+		<view class="status_bar"></view>
 		<wnavall></wnavall>
 		<!-- banner图 -->
 		<image class="share_image" src="/static/user/user_share_back.jpg" mode="widthFix"></image>

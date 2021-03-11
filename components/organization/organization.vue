@@ -1,6 +1,6 @@
 <template>
 	<view class="organization ">
-		<navigator class="organtop" url="/pages/double/double" >
+		<navigator class="organtop" url="/pages/upcontactDown/upcontactDown" >
 			<image :src="list.url" mode="widthFix" ></image>
 			<view class="organname">{{list.name}}</view>
 			<view class="details" style="width: 80px;">详情</view>
@@ -42,7 +42,7 @@
 		methods:{
 			message(){
 				uni.navigateTo({
-					url:"/pages/double/double"
+					url:"/pages/upcontactDown/upcontactDown"
 				})
 			}
 		}

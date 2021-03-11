@@ -14,11 +14,11 @@
 			nextpage(){
 				if(this.type==0){
 					uni.navigateTo({
-						url:'/pages/user/onadvise/onadvise?id='+this.item.id
+						url:'/pages/user/participation/participation?id='+this.item.id
 					})
 				}else if(this.type==1){
 					uni.navigateTo({
-						url:'/pages/user/participation/participation?id='+this.item.id
+						url:'/pages/user/onadvise/onadvise?id='+this.item.id
 					})
 				}else if(this.type==2){
 					uni.navigateTo({

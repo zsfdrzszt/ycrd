@@ -104,6 +104,9 @@
 	page{
 		width: 100%;
 		height: 100%;
+		overflow: hidden;
+		background: url(../../static/bulidimg/9ac64b3522ca589efa4391084dbc7fd.png);
+		background-size: 100% 100%;
 	}
 .archives{
 	width: 100%;

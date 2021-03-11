@@ -22,9 +22,8 @@
 		},
 		methods:{
 			topage(val){
-				uni.navigateTo({
-					url:"/pages/proposal/proposalson"+"?con="+val
-				})
+				this.$emit("click",val)
+				
 			}
 		}
 	}

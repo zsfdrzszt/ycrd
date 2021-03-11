@@ -1,6 +1,7 @@
 <template>
 	<!-- 个人中心/履职共享页添加页 -->
 	<view class="shareadd">
+		<view class="status_bar"></view>
 		<wnavall></wnavall>
 		<!-- 标题 -->
 		<resum2 :type="2" :lrtitle='"标题"' :value='title' :placetext='"请输入标题"' @textchange="titlechange"></resum2>

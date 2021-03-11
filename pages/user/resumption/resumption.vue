@@ -1,5 +1,6 @@
 <template>
 	<view class="all">
+		<view class="status_bar"></view>
 		<view class="rdhjydet_ti">闭会期间履职档案</view>
 		<resum2 :type="2" :lrtitle='"标题"' :value='titleval' :placetext='"请输入标题"' @textchange="titlechange"></resum2>
 		<resum1 :type="2" :uptitle='"工作情况"' :placetext='"请输入工作情况"' :value="contentval" @textchange="contentchange"></resum1>

@@ -114,7 +114,7 @@
 
 <style>
 	* {padding: 0;margin: 0;text-decoration: none;list-style: none;box-sizing: border-box;}
-	page{height: 100%;}
+	page{height: 100%; overflow: hidden;}
 	.suggest{width: 100%;height: 100%;background-image: url('../../static/liaison/common_suggest_bg.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;background-attachment: fixed;}
 	.suggest_cont{width: 100%;height: 100%;display: flex;flex-direction: column;}
 	/* 选项卡头部 */

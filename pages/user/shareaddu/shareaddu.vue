@@ -1,6 +1,7 @@
 <template>
 	<!--履职共享添加上传图片页 -->
 	<view class="shareaddu">
+		<view class="status_bar"></view>
 		<wnavall></wnavall>
 		<!-- 成效 -->
 		<resum2 :type="2" :lrtitle='"成效"' :value='effect' :placetext='"请输入成效"' @textchange="effectchange"></resum2>

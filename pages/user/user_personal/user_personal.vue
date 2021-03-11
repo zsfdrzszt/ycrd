@@ -1,5 +1,6 @@
 <template>
 	<view>
+<view class="status_bar"></view>
 		<view class='user_personal_top'>
 			<image src="/static/user/user_personal.jpg" mode="widthFix"></image>
 			<image src="/static/user/user_tx.jpg" mode="widthFix"></image>

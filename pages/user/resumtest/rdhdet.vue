@@ -1,5 +1,6 @@
 <template>
 	<view>
+		<view class="status_bar"></view>
 		<resum1 :type="1" :uptitle='"会议名称 (请下拉选择 必选)"' :list='sellist' @selconfirm='selconfirm' :placetext='"请选择"' :value="seltext"></resum1>
 		<resum1 :type="2" :uptitle='"办理答复情况"' :placetext='"请选择"' :value="textareaval" @textchange="textchange"></resum1>
 		<resum1 :type="3" :uptitle='"紧急程度"'  :list='radioList' :value="radioval" @radchange="radchange"></resum1>

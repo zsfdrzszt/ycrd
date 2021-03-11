@@ -1,5 +1,6 @@
 <template>
 	<view id="user_del_list_all">
+<view class="status_bar"></view>
 		<view class="user_del_list">
 			<text>代表团名录</text>
 		</view>
