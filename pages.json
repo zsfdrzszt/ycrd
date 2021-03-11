@@ -168,7 +168,7 @@
 			}
 
 		},
-		// 活动室主�
+		// 活动室主
 		{
 			"path": "pages/activity_room/activity_index",
 			"style": {
@@ -177,7 +177,7 @@
 			}
 
 		},
-		// 活动室概�
+		// 活动室概
 		{
 			"path": "pages/activity_room/activity_introduction/activity_introduction",
 			"style": {
@@ -186,7 +186,7 @@
 			}
 
 		},
-		// 活动室列�
+		// 活动室列
 		{
 			"path": "pages/activity_room/activity_list/activity_list",
 			"style": {
@@ -195,7 +195,7 @@
 			}
 
 		},
-		// 活动室详细页�
+		// 活动室详细页
 		{
 			"path": "pages/activity_room/activity_det/activity_det",
 			"style": {
@@ -210,7 +210,7 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, {	//联络�履职管理
+		}, {	//联络履职管理
 			"path": "pages/liaison/rules",
 			"style": {
 				"navigationBarTitleText": "",
@@ -246,7 +246,7 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, {	//联络� 意见建议
+		}, {	//联络意见建议
 			"path": "pages/liaison/suggest",
 			"style": {
 				"navigationBarTitleText": "",
@@ -281,14 +281,14 @@
 				"enablePullDownRefresh": false
 			}
 
-		}, {//联络� 建议详情
+		}, {//联络 建议详情
 			"path": "pages/liaison/suggestdet",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
 
-		}, { // 联络站活动纪�
+		}, { // 联络站活动纪
 			"path": "pages/liaison/activity",
 			"style": {
 				"navigationBarTitleText": "",
@@ -371,7 +371,7 @@
 		    }
 		    
 		}
-		,{		//联络� 一季一�
+		,{		//联络 一季一
 			"path" : "pages/liaison/outcome",
 			"style" :                                                                                    
 			{
@@ -380,7 +380,7 @@
 			}
 			
 		}
-		,{	//联络� 履职活动
+		,{	//联履职活动
 			"path" : "pages/liaison/plan",
 			"style" :                                                                                    
 			{
@@ -389,7 +389,7 @@
 			}
 			
 		},
-		{	//联络� 履职活动
+		{	//联络履职活动
 			"path" : "pages/user/duty/duty",
 			"style" :                                                                                    
 			{
@@ -398,7 +398,7 @@
 			}
 			
 		},
-		{	//联络� 履职活动
+		{	//联络履职活动
 			"path" : "pages/user/duty/content/content",
 			"style" :                                                                                    
 			{
@@ -416,7 +416,7 @@
 			}
 			
 		},
-		{	//联络� 计划详情
+		{	//联络计划详情
 			"path" : "pages/liaison/plandet",
 			"style" :                                                                                    
 			{
@@ -500,7 +500,7 @@
 			}
 			
 		},
-		// 通讯�
+		// 通讯
 		{
 			"path" : "pages/user/user_delegation/user_delegation_list",
 			"style" :                                                                                    
@@ -510,7 +510,7 @@
 			}
 			
 		},
-		// 通讯录下�
+		// 通讯录下
 		{
 			"path" : "pages/user/user_delegation/user_delegation",
 			"style" :                                                                                    
@@ -520,7 +520,7 @@
 			}
 			
 		},
-          // 双联系详�
+          // 双联系详
 		{
 			"path" : "pages/double/double",
 			"style" :                                                                                    
@@ -557,7 +557,7 @@
             
         }
         ,{
-            "path" : "pages/shareaddu/shareaddu",
+            "path" : "pages/user/shareaddu/shareaddu",
             "style" :                                                                                    
             {
                 "navigationBarTitleText": "",
@@ -576,15 +576,6 @@
 		}
 		,{
 			"path" : "pages/user/dutiesdet/dutiesdet",
-			"style" :                                                                                    
-			{
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false
-			}
-			
-		}
-		,{
-			"path" : "pages/user/rdhdet/rdhdet",
 			"style" :                                                                                    
 			{
 				"navigationBarTitleText": "",
