@@ -43,7 +43,7 @@
 			   {title:"联络站",content:[{name:"我的联络站",icone:"/static/user/grzl.png",url:"/pages/liaison/index"},{name:"联络站履职",icone:"/static/user/txl.png",url:"/pages/ligature/prolist/prolist"},{name:"数据统计",icone:"/static/user/qqtj.png",url:""}]},
 			   {title:"双联系",content:[{name:"联系常委",icone:"/static/user/grzl.png",url:"/pages/user/recommend/recommend"},{name:"我的留言",icone:"/static/user/txl.png",url:"/pages/user/myMessage/myMessage"},{name:"我的回复",icone:"/static/user/qqtj.png",url:"/pages/user/myMessages/myMessages"}]},
 			   {title:"履职",content:[{name:"履职档案",icone:"/static/user/grzl.png",url:"/pages/user/duty/duty"},{name:"履职共享",icone:"/static/user/txl.png",url:""},{name:"履职排名",icone:"/static/user/qqtj.png",url:"/pages/user/userall/userall"}]},
-			   {title:"审批",content:[{name:"群众留言",icone:"/static/user/grzl.png",url:"/pages/user/examine/examine"},{name:"代表回复",icone:"/static/user/txl.png",url:"/pages/user/people/people"},{name:"履职",icone:"/static/user/qqtj.png",url:""}]},
+			   {title:"审批",content:[{name:"群众留言",icone:"/static/user/grzl.png",url:"/pages/user/examine/examine"},{name:"代表回复",icone:"/static/user/txl.png",url:"/pages/user/people/people"},{name:"履职",icone:"/static/user/qqtj.png",url:"/pages/user/duties/duties"}]},
 			   {title:"其他",content:[{name:"名次解释",icone:"/static/user/grzl.png",url:"/pages/nextpages/explain/explain"},{name:"意见反馈",icone:"/static/user/txl.png",url:"/pages/user/feedback/feedback"},{name:"关于我们",icone:"/static/user/qqtj.png",url:"/pages/user/about/about"},{name:"版本更新",icone:"/static/user/qqtj.png",url:"/pages/user/edition/edition"}]}
 			   ],
 			   adimg:"/static/user/adimg.png"

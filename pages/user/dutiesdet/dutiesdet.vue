@@ -9,7 +9,7 @@
 		</view>
 		<view class="content">
 			<scroll-view :scroll-top="scrollTop" scroll-y="true" class="scroll-Y conscro"  @scroll="scroll" @scrolltolower="onReachScollBottom()">
-				<dudet v-for="(item,index) in dutylist" :key="index" :title="item.title"  :liaison="item.liaison"  :name="item.name" :time="item.time"></dudet>
+				<dudet v-for="(item,index) in dutylist" :key="index" :item="item"  :type="number"></dudet>
 				<u-loadmore :status="status" :load-text="loadText" class="loadmore" />
 				<view class="iconfont icon-dingbu goTop" :style="{'display':(flag===true? '':'none')}" @click="goTop"></view>
 			</scroll-view>
