@@ -1,6 +1,7 @@
 <template>
 	<!--履职共享添加上传图片页 -->
 	<view class="shareaddu">
+		<wnavall></wnavall>
 		<!-- 成效 -->
 		<resum2 :type="2" :lrtitle='"成效"' :value='effect' :placetext='"请输入成效"' @textchange="effectchange"></resum2>
 		<!-- 上传图片 -->
@@ -10,15 +11,17 @@
 		</view>
 		<!-- 添加 -->
 		<view class="submit_btn">
-			  <button type="default" @click="" class="submit_btn1">添加</button>
+			  <button type="default" @click="submitadd" class="submit_btn1">添加</button>
 		</view>
 	</view>
 </template>
 
 <script>
+	import wnavall from "@/components/w-navall/w-navall.vue"
 	import resum2 from "../../../components/resum/resum2.vue" //左右型
 	export default {
 		components:{
+			wnavall,
 			resum2
 		},
 		data() {
@@ -32,7 +35,15 @@
 			effectchange(val){
 				this.effect=val;
 				console.log(this.effect)
-			}
+			},
+			// 图片上传成功时回调
+			uplodesuccess(res, index, lists, name){
+				this.img_number = res.length
+			},
+			// 删除图片时的回调on-remove
+			onremove(index, lists, name){
+				this.img_number = lists.length
+			},
 		}
 	}
 </script>

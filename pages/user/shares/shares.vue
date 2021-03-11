@@ -88,7 +88,7 @@
 				</view>
 			</view>
 			<view class="shares_btn">
-				<button type="default"  class="shares_btn1" @click="">添加</button>
+				<button type="default"  class="shares_btn1" @click="add">添加</button>
 			</view>
 		</view>
 	</view>
@@ -125,7 +125,11 @@
 			}
 		},
 		methods: {
-			
+			add(){
+				uni.navigateTo({
+				    url: '/pages/user/shareaddu/shareaddu'
+				});
+			}
 		}
 	}
 </script>
