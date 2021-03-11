@@ -1,17 +1,17 @@
 <template>
 	<view class="all">
-		<view class="rdhjydet_ti">人代会期间提出的意见建议</view>
-		<resum2 :type="1" :lrtitle='"提出时间"' :value='presentime' @datechange="datechange"></resum2>
-		<resum2 :type="2" :lrtitle='"标题"' :value='title' :placetext='"请输入标题"' @textchange="titlechange"></resum2>
-		<resum1 :type="1" :uptitle='"意见建议分类 (请下拉选择 必选)"' :list='sellist' @selconfirm='selconfirm' :placetext='"请选择"' :value="seltext"></resum1>
-		<resum1 :type="2" :uptitle='"意见建议内容"' :placetext='"请输入意见建议内容"' :value="textareaval" @textchange="contentchange"></resum1>
-		<resum2 :type="2" :lrtitle='"承办单位"' :value='bank' :placetext='"请输入承办单位"' @textchange="bankchange"></resum2>
-		<resum1 :type="2" :uptitle='"办理答复情况"' :placetext='"请输入办理答复情况"' :value="reply" @textchange="replychange"></resum1>
-		<resum1 :type="3" :uptitle='"满意度"'  :list='radioList' :value="satisfy" @radchange="radchange"></resum1>
+		<view class="rdhjydet_ti">闭会期间履职档案</view>
+		<resum2 :type="2" :lrtitle='"标题"' :value='titleval' :placetext='"请输入标题"' @textchange="titlechange"></resum2>
+		<resum1 :type="2" :uptitle='"工作情况"' :placetext='"请输入工作情况"' :value="contentval" @textchange="contentchange"></resum1>
+		<resum2 :type="2" :lrtitle='"地点"' :value='positionval' :placetext='"请输入地点"' @textchange="positionchange"></resum2>
+		<resum2 :type="1" :lrtitle='"时间"' :value='time' @datechange="datechange"></resum2>
+		<resum1 :type="3" :uptitle='"紧急程度"'  :list='radioList' :value="degreeval" @radchange="degreechange"></resum1>
 		<view class="upload">
-			<view class="number">{{img_number}}/9</view>
+			<view class="pics"><view>图片</view><view  class="number">{{img_number}}/9</view></view>
 			<u-upload ref="uUpload" :action="action" :auto-upload="false" max-count="9" @on-choose-complete="uplodesuccess" @on-remove='onremove'></u-upload>
 		</view>
+		<resum1 :type="2" :uptitle='"成效"' :placetext='"请输入成效"' :value="effectval" @textchange="effectchange"></resum1>
+		<resum1 :type="2" :uptitle='"驳回意见"' :placetext='"如需驳回,请在此输入驳回理由"' :value="rejectval" @textchange="rejectchange"></resum1>
 	</view>
 </template>
 
@@ -27,52 +27,25 @@
 			return {
 				img_number:0,
 				action: 'http://www.example.com/upload',
-				satisfy:'',		//满意度
-				reply:'',	//办理答复
-				bank:'',	//承办单位
-				textareaval:'',	//建议内容
-				presentime:currentDate, // 时间
-				title:'',		//标题
-				seltext:'',		//展示下拉框值
-				selval:'',		//提交下拉框值
-				sellist:[
-					{
-						value: '1',
-						label: '市场监督'
-					},
-					{
-						value: '2',
-						label: '其它'
-					},
-					{
-						value: '3',
-						label: '财税金融'
-					},
-					{
-						value: '4',
-						label: '工信交运'
-					},
-					{
-						value: '5',
-						label: '商贸旅游'
-					}
-				],
+				rejectval:'',		// 驳回意见
+				effectval:'',		// 成效
+				degreeval:'',		// 紧急程度
+				contentval:'',		// 工作情况
+				titleval:'',		// 标题
+				positionval:'',		// 地点
+				time:currentDate,	// 时间
 				radioList:[
 					{
 						id:'1',
-						name: '满意',
+						name: '正常',
 					},
 					{
 						id:'2',
-						name: '基本满意',
+						name: '紧急',
 					},
 					{
 						id:'3',
-						name: '不满意',
-					},
-					{
-						id:'4',
-						name: '办理中',
+						name: '非常紧急',
 					}
 				]
 			}
@@ -86,37 +59,36 @@
 			onremove(index, lists, name){
 				this.img_number = lists.length
 			},
-			// 满意度
-			radchange(val){
+			// 驳回意见
+			rejectchange(val){
+				this.rejectval=val
+				console.log(this.rejectval)
+			},
+			// 成效
+			effectchange(val){
+				this.effectval=val
+				console.log(this.effectval)
+			},
+			// 紧急程度
+			degreechange(val){
 				var srr = this.radioList.filter(p=>p.name==val)
-				this.satisfy= srr[0].id
-				console.log(this.satisfy)
+				this.degreeval= srr[0].id
+				console.log(this.degreeval)
 			},
-			// 办理答复
-			replychange(val){
-				this.reply=val
-				console.log(this.reply)
+			// 地点
+			positionchange(val){
+				this.positionval=val
+				console.log(this.positionval)
 			},
-			// 承办单位
-			bankchange(val){
-				this.bank=val
-				console.log(this.bank)
-			},
-			// 建议内容
+			// 工作情况
 			contentchange(val){
-				this.textareaval=val
-				console.log(this.textareaval)
+				this.contentval=val
+				console.log(this.contentval)
 			},
 			// 标题
 			titlechange(val){
-				this.title=val
-				console.log(this.title)
-			},
-			// 下拉
-			selconfirm(value){
-				this.seltext = value.label
-				this.selval = value.value
-				console.log(this.selval)
+				this.titleval=val
+				console.log(this.titleval)
 			},
 			// 时间
 			datechange(val){
@@ -175,6 +147,13 @@
 		background-color: transparent;
 		box-shadow: 1px 1px 10px #ccc;
 		font-size: 32rpx;
+	}
+	.pics{
+		display: flex;
+		line-height: 90rpx;
+		padding: 0 20rpx;
+		justify-content: space-between;
+		align-items: center;
 	}
 	.number{
 		text-align: right;
