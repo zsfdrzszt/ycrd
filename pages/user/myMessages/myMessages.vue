@@ -15,18 +15,10 @@
 			<!-- 内容 -->
 			<view class="myMessages_cont_cen">
 				<!-- 全部留言 -->
-				<view class="myMessages_cont_cenitem" v-show="activetab==1">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in all.reply" :type="all.type"></CenterMessage>
+				<view class="myMessages_cont_cenitem">
+					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in list" :type="activetab==1?true:false"></CenterMessage>
 				</view>
-				<!-- 已回复 -->
-				<view class="myMessages_cont_cenitem" v-show="activetab==2">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in replied.reply" :type="replied.type"></CenterMessage>
-				</view>
-				<!-- 未回复-->
-				<view class="myMessages_cont_cenitem" v-show="activetab==3">
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in noreply.reply" :type="noreply.type"></CenterMessage>
-					</view>
-				</view>
+				
 			</view>
 		</view>
 	</view>
@@ -43,13 +35,13 @@
 		data() {
 			return {
 				activetab:1,
-				all:{
-					type:true,
-					reply:[
+				list:[],
+				all:[
 						{
 							id:1,
 							name:'小飞侠',
 							time:'2021-03-08 16:17:59',
+							state:2,
 							status:'已回复',
 							leave:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件',
 							reply:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言'
@@ -58,43 +50,25 @@
 							id:2,
 							name:'小飞侠1',
 							time:'2021-03-08 16:17:59',
+							state:3,
 							status:'未回复',
 							leave:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件',
 							reply:''
 						}
 					]
-				},
-				replied:{
-					type:false,
-					reply:[
-						{
-							id:1,
-							name:'小飞侠',
-							time:'2021-03-08 16:17:59',
-							status:'已回复',
-							leave:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件',
-							reply:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言'
-						},
-					],
-				},
-				noreply:{
-					type:false,
-					reply:[
-						{
-							id:1,
-							name:'小飞侠1',
-							time:'2021-03-08 16:17:59',
-							status:'未回复',
-							leave:'联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件联系常委/我的留言组件',
-							reply:''
-						}
-					]
-				}
+				
 			}
+		},
+		mounted() {
+			this.change(1)
 		},
 		methods: {
 			change(n){
 				this.activetab=n;
+				this.list=this.all.filter(item=>item.state==n)
+				if(n==1){
+					this.list = this.all;
+				}
 			}
 		}
 	}

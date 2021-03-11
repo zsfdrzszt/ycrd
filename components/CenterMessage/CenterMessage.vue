@@ -5,7 +5,7 @@
 			<view class="message_name">
 				<text class="message_leftname">{{name}}</text>
 				<text class="message_centname">{{time}}</text>
-				<text class="message_rightname" v-if="type==true">({{status}})</text>
+				<text class="message_rightname" v-if="type">({{status}})</text>
 			</view>
 			<view class="message_leave">
 				{{leave}}

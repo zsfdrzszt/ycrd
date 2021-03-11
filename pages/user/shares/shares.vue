@@ -74,7 +74,7 @@
 					<view class="uni-padding-wrap">
 					    <view class="page-section swiper">
 					        <view class="page-section-spacing">
-					            <swiper class="swiper"  :duration="duration" :display-multiple-items="num">
+					            <swiper class="swiper"  :duration="duration" :display-multiple-items='item.pic.length>=3? "3" :  item.pic.length'>
 					                <swiper-item v-for="(items,index) in item.pic">
 					                    <view class="swiper-item">
 											<image class="swiper_image" :src="items"></image>
@@ -98,7 +98,6 @@
 		data() {
 			return {
 				duration: 500,
-				num:3,
 				detail:{
 					title:'标题',
 					time:'2021年03月09日',

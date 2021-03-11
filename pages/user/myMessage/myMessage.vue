@@ -18,7 +18,7 @@
 			<view class="myMessage_cont_cen">
 				<!-- 全部留言 -->
 				<view class="myMessage_cont_cenitem" >
-					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in list" :type="true"></CenterMessage>
+					<CenterMessage :name="item.name" :time="item.time" :status="item.status" :leave="item.leave" :reply="item.reply" v-for="(item,index) in list"  :type="activetab==1?true:false"></CenterMessage>
 				</view>	
 			</view>
 		</view>
@@ -56,7 +56,7 @@
 						reply:''
 					},
 					{
-						id:1,
+						id:3,
 						name:'李爱莲',
 						state:4,
 						time:'2021-03-08 16:17:59',
@@ -65,7 +65,7 @@
 						reply:'不同意'
 					},
 					{
-						id:1,
+						id:4,
 						name:'程广生',
 						state:5,
 						time:'2021-03-08 16:17:59',
@@ -74,7 +74,7 @@
 						reply:'好的，一会召开业委会安排。'
 					},
 					{
-						id:1,
+						id:5,
 						name:'程广生',
 						state:5,
 						time:'2021-03-08 16:17:59',
@@ -93,9 +93,8 @@
 				this.activetab=n;
 				this.list=this.all.filter(item=>item.state==n)
 				if(n==1){
-					this.list = this.all
+					this.list = this.all;
 				}
-				
 			}
 		}
 	}
