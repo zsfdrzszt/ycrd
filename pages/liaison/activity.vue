@@ -19,14 +19,14 @@
 			return {
 				list_all:[{
 					id:0,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
+					img:'http://qiniu.jza2c.com/uploads/20201217/FiQkd27G4f7lfnzPGWN7zt0GJoFz.jpg',
+					title:'郭家堡乡人大代表学习十九届五中全会精神暨年终安排会',
 					time:'[2020年03月31日]'
 				},
 				{
 					id:1,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民',
+					img:'http://qiniu.jza2c.com/uploads/20210127/FgcPePGDyeIwdqfoTbvjJqDwN67y.jpg',
+					title:'同心抗疫   一线慰问暖人心',
 					time:'[2020年03月31日]'
 				},
 				{
@@ -37,8 +37,8 @@
 				},
 				{
 					id:3,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
+					img:'http://qiniu.jza2c.com/uploads/20200723/FgenXnrHIb7lS8ac7bkj3kbVCcbA.jpg',
+					title:'郭家堡乡人大代表学《民法典》',
 					time:'[2020年03月31日]'
 				}]
 			}

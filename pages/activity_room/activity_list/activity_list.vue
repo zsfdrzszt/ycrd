@@ -31,8 +31,8 @@
 				},
 				{
 					id:1,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民',
+					img:'http://qiniu.jza2c.com/uploads/20200331/FuQvUryBkCYI8ZQFFBeZr1QAUXwi.JPG',
+					title:'人大主任任光荣同安宁活动室部分党员宣讲活动',
 					time:'[2020年03月31日]'
 				},
 				{
@@ -43,8 +43,8 @@
 				},
 				{
 					id:3,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
+					img:'http://qiniu.jza2c.com/uploads/20200331/Fsai8qu0EVS6f6Bixvv5LFQo86kD.JPG',
+					title:'人大代表第一活动小组宣讲活动',
 					time:'[2020年03月31日]'
 				}]
 			}

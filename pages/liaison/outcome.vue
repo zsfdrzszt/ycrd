@@ -25,9 +25,9 @@
 				droplist:{name:"全部",list:[{content:"2019"},{content:"2020"}]},
 				list:[
 					{id:1,image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第一季度',name:'霍志明',step:'区代表'},
-					{id:2,image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第二季度',name:'霍志明',step:'区代表'},
-					{id:3,image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第二季度',name:'霍志明',step:'区代表'},
-					{id:4,image:'http://qiniu.jza2c.com/uploads/20200317/Fj12TX6qQ9mbTMzR4J86BdfiGZjm.png',quater:'第二季度',name:'霍志明',step:'区代表'}
+					{id:2,image:'http://qiniu.jza2c.com/uploads/20200528/Fu8uZww62SH4vTST90vNMhrUhmF9.jpg',quater:'第二季度',name:'王绍泰',step:'市、区、乡代表'},
+					{id:3,image:'http://qiniu.jza2c.com/uploads/20190727/FoWsvVaFBtXhv-_KgBIrGL9wAi40.jpg',quater:'第二季度',name:'何翠萍',step:'区代表'},
+					{id:4,image:'http://qiniu.jza2c.com/uploads/20190727/FubYPlg0fnOh086BGBuZYQN2ibK8.jpg',quater:'第二季度',name:'柴永昌',step:'区、乡代表'}
 				]
 			}
 		},
