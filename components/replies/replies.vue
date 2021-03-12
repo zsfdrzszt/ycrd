@@ -47,8 +47,8 @@
 		<view class="reply_item">
 			<view class="reply_name">回复</view>
 			<view class="reply_spot">:</view>
-			<view class="reply_text">
-				<textarea class="textarea" disabled="disabled">。。。</textarea>
+			<view class="administration_text">
+				<u-input v-model="fight" type="textarea" height='160' :border='true' disabled />
 			</view>
 		</view>
 	</view>
@@ -61,7 +61,7 @@
 		},
 		data() {
 			return {
-				
+				fight:'。。。'
 			};
 		},
 		methods:{
@@ -129,12 +129,11 @@
 	padding-right: 0;
 	margin-bottom: 10px;
 }
-.textarea{
+.administration_text{
 	width: 100%;
-	resize: none;
-	height: 100px;
-	padding: 5px;
+	padding: 0 10px;
 	box-sizing: border-box;
-	background: #eee;
+	padding-right: 0;
+	margin-bottom: 10px;
 }
 </style>

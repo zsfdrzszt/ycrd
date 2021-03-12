@@ -14,6 +14,7 @@
 			<u-button size="medium" :ripple="true" :custom-style="customStyle">上一步</u-button>
 			<u-button size="medium" :ripple="true" :custom-style="customStyle">提交</u-button>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

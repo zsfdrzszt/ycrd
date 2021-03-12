@@ -13,6 +13,7 @@
 			<view class="pics"><view>图片</view><view  class="number">{{img_number}}/9</view></view>
 			<u-upload ref="uUpload" :action="action" :auto-upload="false" max-count="9" @on-choose-complete="uplodesuccess" @on-remove='onremove'></u-upload>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 

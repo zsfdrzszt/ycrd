@@ -13,6 +13,7 @@
 				</u-image>
 			</navigator>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
