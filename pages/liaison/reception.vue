@@ -80,7 +80,7 @@
 		background-attachment: fixed;
 	}
 	.title{
-		font-size: 44rpx;
+		font-size: 40rpx;
 		font-weight: bold;
 		text-align: center;
 		margin: 40rpx 0;

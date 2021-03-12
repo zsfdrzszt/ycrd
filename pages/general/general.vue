@@ -154,7 +154,9 @@
 					name: "李玉",
 					job: "榆次区人大常委会副主"
 				}],
-				list2:{larder:[{name:'李鹏飞',id:'1'}],director:[{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"}],member:[{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},{name:"武跃勇"},]}
+				list2:{larder:[{name:'李鹏飞',id:'1'}],
+				director:[{name:"武跃勇"},{name:"石山爱"},{name:"李玉忠"}],
+				member:[{name:"王绍泰"},{name:"王福生"},{name:"王霞"},{name:"任光荣"},{name:"任秀花"},{name:"刘巧杰"},{name:"刘秀叶"},{name:"刘惠青"},{name:"李双喜"},{name:"李秀平"},]}
 			}
 		},
 		methods: {

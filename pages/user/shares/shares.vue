@@ -100,24 +100,24 @@
 			return {
 				duration: 500,
 				detail:{
-					title:'标题',
+					title:'关于给予养殖户政策支持的建议',
 					time:'2021年03月09日',
-					site:'地址',
-					cont:'情况',
-					way:'学习培训教育',
+					site:'榆次',
+					cont:'随着生态环保理念在各项政策中逐步体现，原有的养殖经营环境发生变化，禁养区的划设、环保政策的加码等措施对养殖行业提出了新的要求，尤其对合作社、家庭农场以及农户等养殖主体提出了更高的要求，为了适应新的政策，家庭农场以及农户的养殖设备迭代更新、环保设施加装更换的需求旺盛，养殖户在新的政策下转型也遇到一些困难。',
+					way:'对建设污水处理站、堆肥设施设备等环保设施新建、加装和更换的养殖户给予资金补贴',
 					image:['https://i04piccdn.sogoucdn.com/3a9af6a5c96568f8','https://cdn.uviewui.com/uview/swiper/1.jpg']
 				},
 				effect:[
 					{
 						id:1,
-						name:'百毒不侵',
-						results:'你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好',
+						name:'詹瑜',
+						results:'已申请公开',
 						pic:['https://cdn.uviewui.com/uview/swiper/1.jpg','https://cdn.uviewui.com/uview/swiper/2.jpg']
 					},
 					{
 						id:2,
-						name:'侯静雅',
-						results:'你好你好',
+						name:'曹新霞',
+						results:'已回复',
 						pic:['https://cdn.uviewui.com/uview/swiper/1.jpg','https://cdn.uviewui.com/uview/swiper/2.jpg','https://cdn.uviewui.com/uview/swiper/3.jpg','https://cdn.uviewui.com/uview/swiper/2.jpg']
 					}
 					

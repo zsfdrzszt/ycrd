@@ -48,12 +48,13 @@
 				imgstate:false,
 				scale:1,
 				isActive:1,
-				list8:[{statio:'北关街道',name:"张爱变",time:'2020.2.2',space:"北关街道",way:"为民服务",content:'今天我村委给全体村民发福利，大米，白面，油，村民十分高兴。',effect:"好",img:["http://qiniu.jza2c.com/onadvise/20210221/fbccac6012192161fbd34a1ce12a4138","http://qiniu.jza2c.com/onadvise/20210221/9ad3c10de9e35f985752fae663ebc3e8","http://qiniu.jza2c.com/onadvise/20210221/f9e055f2be0cc224c1d2153844897005"]},{statio:'北关街道',name:"张爱变",time:'2020.2.2',space:"北关街道",way:"为民服务",content:'今天我村委给全体村民发福利，大米，白面，油，村民十分高兴。',effect:"好",img:["http://qiniu.jza2c.com/onadvise/20210221/fbccac6012192161fbd34a1ce12a4138",]}],
+				list8:[{statio:'张庆乡',name:"刘美英",time:'2020.2.2',space:"北关街道",way:"为民服务",content:'今天我村委给全体村民发福利，大米，白面，油，村民十分高兴。',effect:"好",img:["http://qiniu.jza2c.com/onadvise/20210221/fbccac6012192161fbd34a1ce12a4138","http://qiniu.jza2c.com/onadvise/20210221/9ad3c10de9e35f985752fae663ebc3e8","http://qiniu.jza2c.com/onadvise/20210221/f9e055f2be0cc224c1d2153844897005"]},
+				{statio:'北关街道',name:"张爱变",time:'2020.2.2',space:"北关街道",way:"接待选民",content:'2月8日，北关代表小组在建东社区门面房调研出租房防疫情况。',effect:"好",img:["http://qiniu.jza2c.com/onadvise/20210222/3b4e121ee96d16a1d4e66d2378bafb3d",]}],
 				state:false,
 				list_all:[{
 					id:0,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
+					img:'http://qiniu.jza2c.com/uploads/20201120/FulajcpeQ5E9N7oIRZmKyoIsI0Q9.jpg',
+					title:'新华街道人大代表 助力“三治三零”创建、平安建设、扫黑除恶、反邪教、 铁路护路集中宣传活动',
 					time:'[2020年03月31日]'
 				},
 				{
@@ -64,40 +65,26 @@
 				},
 				{
 					id:2,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲柴永昌代表在活动室给选民进行宣讲柴永昌代表在活动室给选民进行宣讲柴永昌代表在活动室给选民进行宣讲柴永昌代表在活动室给选民进行宣讲',
+					img:'http://qiniu.jza2c.com/uploads/20201119/Fv6dZbW1Kaz2AcL5aybgNac5W3e3.jpg',
+					title:'人大代表深入使赵社服中心调研',
 					time:'[2020年03月31日]'
 				},
 				{
 					id:3,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
+					img:'http://qiniu.jza2c.com/uploads/20201119/FoF2v37tYbQvb6GLHOQVAtApFlRM.jpg',
+					title:'新华街道人大工委组织代表参加意识形态业务培训',
 					time:'[2020年03月31日]'
 				}
 				,
 				{
 					id:4,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
+					img:'http://qiniu.jza2c.com/uploads/20201119/FnxZyyKmFdvArYQ60ZKux_tjo95X.jpg',
+					title:'新建街道人大代表小组召开城市提档升级征求意见座谈会',
 					time:'[2020年03月31日]'
 				}
 				,
 				{
 					id:5,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
-					time:'[2020年03月31日]'
-				}
-				,
-				{
-					id:6,
-					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
-					title:'柴永昌代表在活动室给选民进行宣讲',
-					time:'[2020年03月31日]'
-				}
-				,
-				{
-					id:7,
 					img:'https://qiniu.jza2c.com/uploads/20200331/FvLdb3vKoryNWFHQ0-7tOAJ9c5h1.png',
 					title:'柴永昌代表在活动室给选民进行宣讲',
 					time:'[2020年03月31日]'

@@ -59,9 +59,9 @@
 				active:1,
 				list:[
 					{id:1,name:"侯粉叶",image:'https://qiniu.jza2c.com/uploads/20190727/FjAwLKCTQ8iNIIZdq5X4bt_kV04U.jpg',num:'15',sort:1},
-					{id:2,name:"侯粉叶",image:'https://qiniu.jza2c.com/uploads/20190727/FjAwLKCTQ8iNIIZdq5X4bt_kV04U.jpg',num:'14',sort:2},
-					{id:3,name:"侯粉叶",image:'https://qiniu.jza2c.com/uploads/20190727/FjAwLKCTQ8iNIIZdq5X4bt_kV04U.jpg',num:'13',sort:3},
-					{id:4,name:"侯粉叶",image:'https://qiniu.jza2c.com/uploads/20190727/FjAwLKCTQ8iNIIZdq5X4bt_kV04U.jpg',num:'12',sort:4}
+					{id:2,name:"张璟",image:'http://qiniu.jza2c.com/uploads/20190727/FqAUUlXqyKRdOJdhp1hrW5lqvf9O.jpg',num:'14',sort:2},
+					{id:3,name:"武小云",image:'http://qiniu.jza2c.com/uploads/20190729/FtjZbazCFss-PLGuap4XlfQn2Ebk.jpg',num:'13',sort:3},
+					{id:4,name:"任光荣",image:'http://qiniu.jza2c.com/uploads/20190727/FsjVraacmg6on1Ao99rogglu9RXp.jpg',num:'12',sort:4}
 				],
 				personlist:[
 					{id:1,name:"侯粉叶",image:'https://qiniu.jza2c.com/uploads/20190727/FjAwLKCTQ8iNIIZdq5X4bt_kV04U.jpg',num:'15',sort:1},
