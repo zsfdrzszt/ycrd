@@ -91,7 +91,11 @@
     },
     "h5" : {
         "sdkConfigs" : {
-            "maps" : {}
+            "maps" : {
+                "qqmap" : {
+                    "key" : "A34BZ-MABWX-XRM4F-ZUPGC-5NWLV-5MFQB"
+                }
+            }
         }
     }
 }

@@ -35,11 +35,8 @@
 				that.latitude=res.latitude
 				that.longitude=res.longitude
 		    },
-			fail: function (res) {
-		        console.log(res);
-		    },
 			complete:function (res) {
-		        console.log(111,res);
+		        console.log(res);
 		    },
 		});
 	},
