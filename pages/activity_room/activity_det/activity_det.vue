@@ -29,10 +29,10 @@
 		},
 		data(){
 			return{
-				acdet_title:'人大代表第一活动小组宣讲活动',
+				acdet_title:'人大主任任光荣同安宁活动室部分党员宣讲活动',
 				content: `
-					<p>露从今夜白，月是故乡明</p>
-					<img src="https://cdn.uviewui.com/uview/swiper/2.jpg" />
+					<img src="http://qiniu.jza2c.com/uploads/20200331/FuQvUryBkCYI8ZQFFBeZr1QAUXwi.JPG" />
+					<view>2020年3月23日人大主任任光荣同安宁活动室部分党员宣讲活动。</view>
 				`,
 				address:'郭家堡安宁活动室',
 				time:'2019年12月02日',
@@ -92,9 +92,15 @@
 		justify-content: flex-end;
 	}
 	.acitvity_det_footer>view{
+		padding-top: 15px;
 		width: 160px;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
+	}
+	.gkdet_center>view{
+		white-space: normal;
+		text-indent: 2em;
+		padding-top: 5px;
 	}
 </style>
