@@ -70,7 +70,7 @@
 		box-sizing: border-box;
 	}
 	page{
-		padding-top:30px;
+		padding-top:100px;
 		height: 100%;
 		background: url(@/static/text5/common_bg.jpg);
 		background-size:100% 100%;

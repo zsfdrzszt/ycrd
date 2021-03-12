@@ -1,6 +1,6 @@
 <template>
 	<!-- //菜单 -->
-	<view class="navmenus" >
+	<view class="navmenus" :style="{height: Height }">
 	    <view  :style="{height: navHeight }" class="navmenuheight">
 			<view class="navmenu" @click="topages(0)">首页</view>
 			<view class="navmenu" @click="topages(1)">个人中心</view>
@@ -17,6 +17,7 @@
 			return {
 				navstate : false,
 				navHeight: 0,
+				Height:"60px",
 				num :0,
 				url:["/pages/index/index","/pages/user/userindex/userindex"]
 			};
@@ -47,6 +48,7 @@
 			navshow(){
 				let num = 0
 				if(!this.navstate){
+					this.Height="300px"
 					clearInterval("time")
 					let time = setInterval(()=>{
 							num +=5
@@ -64,6 +66,7 @@
 							this.navHeight = num +"px"
 							if(num == 0){
 								clearInterval(timeout)
+								this.Height="60px"
 							}
 					},10)
 				}
@@ -79,7 +82,7 @@
 		z-index: 999;
 		bottom: 45px;
 		right: 10px;
-		height: 300px;
+		/* height: 300px; */
 	}
 	.navmenu{
 		width: 60px;

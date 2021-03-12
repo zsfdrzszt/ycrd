@@ -108,7 +108,8 @@
 				showBar:false,
 				videostate:false,
 				videourl:'',
-				viedolist:[{url:"http://qiniu.jza2c.com/uploads/20210219/Fui8_6m4QgbNuPL_mk4dfZ75GzSS.png",content:"榆次新闻",video:"http://qiniu.jza2c.com/uploads/20210219/lniLUjnuwQhMkqy-9Z8mG8kOHgAq.mp4"},{url:"http://qiniu.jza2c.com/uploads/20210219/Fui8_6m4QgbNuPL_mk4dfZ75GzSS.png",content:"榆次新闻",video:"http://qiniu.jza2c.com/uploads/20210219/lniLUjnuwQhMkqy-9Z8mG8kOHgAq.mp4"}],
+				viedolist:[{url:"http://qiniu.jza2c.com/uploads/20210219/Fui8_6m4QgbNuPL_mk4dfZ75GzSS.png",content:"榆次新闻",video:"http://qiniu.jza2c.com/uploads/20210219/lniLUjnuwQhMkqy-9Z8mG8kOHgAq.mp4"},
+							{url:"http://qiniu.jza2c.com/uploads/20210219/Fv0jXjjwbopsmJfgaX0pyaiSRugo.png",content:"人大代表之声-李明",video:"http://qiniu.jza2c.com/uploads/20210219/ltGUzPVmS7GZrJID861U6uGLP0VR.mp4"}],
 				newslist:[
 					{titel:"【关注两会】区领导与代表共同审议各项报告",time:"2020-04-28"},
 					{titel:"【关注两会】区领导参加代表团分团审议",time:"2020-04-27"},
@@ -121,9 +122,9 @@
 					{titel:"榆次区第十六届人民代表大会第三次会议日程",time:"2018-04-10"}
 				],
 				newslist1:[
-					{titel:"榆次区第十六届人民代表大会第五次会议日程",time:"2020-1-1"},
-					{titel:"榆次区第十六届人民代表大会第五次会议日程",time:"2020-1-1"},
-					{titel:"榆次区第十六届人民代表大会第五次会议日程",time:"2020-1-2"}
+					{titel:"榆次区人民代表大会常务委员会免职名单",time:"2021-02-10"},
+					{titel:"榆次区人民代表大会常务委员会任命名单",time:"2021-02-10"},
+					{titel:"榆次区人民代表大会常务委员会关于任光耀代理榆次区人民政府区长职务的决定",time:"2021-02-10"}
 				],
 				list1: [{
 					name: '人代会会议1'
