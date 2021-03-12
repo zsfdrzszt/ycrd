@@ -77,8 +77,8 @@
 	page{width: 100%;height: 100%;}
 	.share{width: 100%;height: 100%;display: flex;flex-direction: column;overflow: hidden;background-color: #F5F5F5;}
 	.share_image{width: 100%;}
-	.share_cont{flex: 1;height: 0;display: flex;flex-direction: column;overflow: hidden;padding: 0px 10px;padding-top: 10px;}
-	.share_allcont{flex: 1;overflow: auto;}
+	.share_cont{flex: 1;height: 80%;display: flex;flex-direction: column;overflow: hidden;padding: 0px 10px;padding-top: 10px;}
+	.share_allcont{height: 100%;overflow: auto;}
 	.share_btn{width: 100%;height: 70px;display: flex;justify-content: center;align-items: center;}
 	/* .share_btn1{display: block;} */
 	/* .share_btnpic{width: 100%;} */
