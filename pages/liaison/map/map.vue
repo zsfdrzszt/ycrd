@@ -1,8 +1,8 @@
 <template>
 	<view class="map">
+			<view class="status_bar"></view>
 		<map style="width: 100%; height: 100%;" :latitude="latitude" :longitude="longitude" :markers="covers">
 	     </map>
-		 <wnavall></wnavall>
 	</view>
 </template>
 
@@ -25,15 +25,22 @@
 				}]
 			}
 	},
-	mounted() {
+	onShow() {
+		var that = this
 		uni.getLocation({
-		    type: 'gcj02 ',
+		    type: 'gcj02',
 		    success: function (res) {
 		        console.log('当前位置的经度：' + res.longitude);
 		        console.log('当前位置的纬度：' + res.latitude);
-				this.latitude=res.latitude
-				this.longitude=res.longitude
-		    }
+				that.latitude=res.latitude
+				that.longitude=res.longitude
+		    },
+			fail: function (res) {
+		        console.log(res);
+		    },
+			complete:function (res) {
+		        console.log(111,res);
+		    },
 		});
 	},
 	methods: {
