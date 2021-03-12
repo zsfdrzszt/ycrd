@@ -88,5 +88,10 @@
     },
     "uniStatistics" : {
         "enable" : false
+    },
+    "h5" : {
+        "sdkConfigs" : {
+            "maps" : {}
+        }
     }
 }

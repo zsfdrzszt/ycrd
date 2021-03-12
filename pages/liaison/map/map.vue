@@ -3,7 +3,6 @@
 			<view class="status_bar"></view>
 		<map style="width: 100%; height: 100%;" :latitude="latitude" :longitude="longitude" :markers="covers">
 	     </map>
-		 <wnavall></wnavall>
 	</view>
 </template>
 
@@ -27,7 +26,6 @@
 			}
 	},
 	onShow() {
-		console.log("map")
 		var that = this
 		uni.getLocation({
 		    type: 'gcj02',
@@ -36,7 +34,13 @@
 		        console.log('当前位置的纬度：' + res.latitude);
 				that.latitude=res.latitude
 				that.longitude=res.longitude
-		    }
+		    },
+			fail: function (res) {
+		        console.log(res);
+		    },
+			complete:function (res) {
+		        console.log(111,res);
+		    },
 		});
 	},
 	methods: {

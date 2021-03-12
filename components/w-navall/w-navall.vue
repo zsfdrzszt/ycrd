@@ -22,14 +22,21 @@
 				url:["/pages/index/index","/pages/user/userindex/userindex"]
 			};
 		},
+		created() {
+			console.log("create")
+		},
+		mounted() {
+			console.log("mounted")
+		},
 		methods:{
 			topage(){
+				this.navshow()
 				uni.navigateTo({
 					url:"/pages/nextpages/explain/explain"
 				})
 			},
 			topages(val){
-				this.navstate =false
+				this.navshow()
 			if(val<0){
 				uni.navigateBack({
 					delta: 1
