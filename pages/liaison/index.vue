@@ -163,7 +163,7 @@
 				}else if(index==8){
 					// 地图导航
 					uni.navigateTo({
-						url:"/pages/liaison/map/map?id="+this.lid,
+						url:"/pages/uploading/uploading?id="+this.lid,
 					})
 					// if(this.map!=''){
 					// 	var maparr = this.map.split(',')
