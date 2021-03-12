@@ -39,7 +39,7 @@
 			this.type = 1
 			this.list=[
 					{time:'01月',title:'集中学习',space:'乡人大活动中心',name:'任光荣',content:'“向申纪兰学习，做人民好代表”工作交流会。',state:'1',attitude:'1'},
-					{time:'01月',title:'集中学习',space:'乡人大活动中心',name:'任光荣',content:'“向申纪兰学习，做人民好代表”工作交流会。',state:'1',attitude:'1'}
+					{time:'01月',title:'集中学习',space:'乡人大活动中心',name:'任光荣',content:'人大代表“防疫抗疫”全面打响阻击战。',state:'1',attitude:'1'}
 				]
 		},
 		methods: {

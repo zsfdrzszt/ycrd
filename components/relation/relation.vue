@@ -3,15 +3,15 @@
 		<view class="relation_num">序号：{{num+1}}</view>
 		<u-table class="table_mian" border-color="red" align="left">
 			<u-tr class="table_tr" >
-				<u-td width="35%">
+				<u-td width="30%">
 					<view style="width: 100%;text-align: center;">
 					专门委员会<br>工作委员会
 					</view>
 				</u-td>
-				<u-td class="tr_right">{{list.space[0]}}<br>{{list.space[1]}}</u-td>
+				<u-td class="tr_right" style="height: 71px;">{{list.space[0]}}<br>{{list.space[1]}}</u-td>
 			</u-tr>
 			<u-tr class="table_tr">
-				<u-td width="35%">
+				<u-td width="30%">
 					<view style="width: 100%;text-align: center;">
 					联系对象
 					</view>
@@ -19,7 +19,7 @@
 				<u-td class="tr_right">{{list.aim}}</u-td>
 			</u-tr>
 			<u-tr class="table_tr">
-				<u-td width="35%">
+				<u-td width="30%">
 					<view style="width: 100%;text-align: center;">
 					联系次数
 					</view>
@@ -27,7 +27,7 @@
 				<u-td>{{list.num}}</u-td>
 			</u-tr class="tr_right">
 			<u-tr class="table_tr">
-				<u-td width="35%">
+				<u-td width="30%">
 					<view style="width: 100%;text-align: center;">
 					联系内容
 					</view>
