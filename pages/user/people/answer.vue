@@ -5,10 +5,19 @@
 		<view class="answer_con">
 			<replies  :list="list" @magnify="magnify"></replies>
 		</view>
-		<view class="img_back" v-show="this.imgstate" @click="hideimg">
-			<view class="img_back_box">
-				<image :src="imgurl" mode="widthFix"></image>
-			</view>
+		<view class="img_back" v-if="this.imgstate">
+			<movable-area scale-area class="movable-area "  @click="hideimg">
+				<movable-view  
+				class="movable-view"
+		        direction="all"
+		        scale="true"
+		        scale-min="1"
+		        scale-max="4"
+		        :scale-value="scale"
+		      >
+					<image :src="imgurl" class="lookimg" mode="widthFix" ></image>
+				</movable-view>               
+			</movable-area>
 		</view>
 		<wnavall></wnavall>
 	</view>
@@ -26,17 +35,20 @@
 						imgUrl:'http://qiniu.jza2c.com/Message/20210308/f0acc70977c526397febf50016dfebf5',dai:'侯静亚'}
 			,
 			imgurl:"",
-			imgstate:false
+			imgstate:false,
+			scale:1
 			}
 		},
 		methods: {
 			magnify(val){
-				this.imgstate =true
+				this.imgstate =true,
 				this.imgurl =val
 			},
 			hideimg(){
-				this.imgstate =false
-			}
+				this.imgstate =false,
+				this.scale=1,
+				this.imgurl=""
+			},
 		}
 	}
 </script>
@@ -67,8 +79,44 @@ page{
 }
 .img_back_box{
 	width: 70%;
+	height: 80%;
 }
 .img_back_box image{
 	width: 100%;
+}
+.movable-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.movable-area {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.movable-view image {
+    width: 60%;
+}
+.lookimg {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.imagecontent {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    top: 0;
+    position: fixed;
 }
 </style>

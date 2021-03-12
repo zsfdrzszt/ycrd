@@ -8,7 +8,7 @@
 				<text>{{this.list.state!=0 ?"已是精选留言":"选为精选留言"}}</text>
 			</view>
 		</view>
-		<view class="img_back" v-show="this.imgstate">
+		<view class="img_back" v-if="this.imgstate">
 			<movable-area scale-area class="movable-area "  @click="hideimg">
 				<movable-view  
 				class="movable-view"
@@ -17,8 +17,6 @@
                 scale-min="1"
                 scale-max="4"
                 :scale-value="scale"
-				 @scale="onScale"
-				 @dblclick="dblclick"
               >
 					<image :src="imgurl" class="lookimg" mode="widthFix" ></image>
 				</movable-view>               
@@ -49,15 +47,10 @@
 				this.imgurl =val
 			},
 			hideimg(){
-				this.imgstate =false
+				this.imgstate =false,
+				this.scale=1,
+				this.imgurl=""
 			},
-			 dblclick() {
-			            if (this.scale == 10) {
-			                this.scale = 1;
-			            } else {
-			                this.scale = 10;
-			            }
-			        },
 		}
 	}
 </script>

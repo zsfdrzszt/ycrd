@@ -46,6 +46,6 @@ page{
 }
 .scroll-view{
 	width: 100%;
-	height: 98%;
+	height: 95%;
 }
 </style>
