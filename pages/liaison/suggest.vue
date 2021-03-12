@@ -15,7 +15,7 @@
 			<view class="suggest_tabcont">
 				<!-- 流程图 -->
 				<view class="tabcont_tem flow_chart" v-show="1 == active">
-					<image class="" :src="chart" mode="widthFix"></image>
+					<image class="imageitem" :src="chart" mode="widthFix"></image>
 				</view>
 				<!-- 人代会期间 -->
 				<view class="tabcont_tem attend_meeting" v-show="2 == active">
@@ -115,7 +115,7 @@
 <style>
 	* {padding: 0;margin: 0;text-decoration: none;list-style: none;box-sizing: border-box;}
 	page{height: 100%; overflow: hidden;}
-	.suggest{width: 100%;height: 100%;background-image: url('../../static/liaison/common_suggest_bg.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;background-attachment: fixed;}
+	.suggest{width: 100%;height: 100%;overflow: hidden; background-image: url('../../static/liaison/common_suggest_bg.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;background-attachment: fixed;}
 	.suggest_cont{width: 100%;height: 100%;display: flex;flex-direction: column;}
 	/* 选项卡头部 */
 	.suggest_tab{height: 40px;display: flex;border-bottom:1px solid red;}
@@ -123,12 +123,15 @@
 	.activetab{color: red;border-bottom: 1px solid red;}
 	/* 选项卡内容 */
 	.suggest_tabcont{width: 100%;flex: 1;text-align: center;overflow: auto;}
-	.tabcont_tem{width: 100%;}
-	.flow_chart image{display:block;width:90%;margin: 20px auto;}
+	.tabcont_tem{width: 100%;height: 90%;}
+	.flow_chart image{display:block;width:90%;margin: 20px auto;padding-bottom: 10px;}
 	.attend_meeting{padding: 0px 10px;padding-top: 20px;}
 	.close_meetinglist{display: flex;justify-content: center;padding-top: 15px;}
 	.dropmain:first-child{margin-right: 30px;}
 	.close_meetingtitle{padding-top: 15px;}
 	.textfourbar{font-weight: bold;font-size: 18px;}
 	.textmassage{display: block;margin-top: 50px;text-align: center;font-size: 20px;font-weight: bold;font-family: 黑体;color: red;}
+	.imageitem{
+		display: block;
+	}
 </style>

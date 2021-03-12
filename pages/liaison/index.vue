@@ -162,12 +162,15 @@
 					})
 				}else if(index==8){
 					// 地图导航
-					if(this.map!=''){
-						var maparr = this.map.split(',')
-						var m1=maparr[0]
-						var m2=maparr[1]
-						window.location.href =  "https://apis.map.qq.com/tools/routeplan/eword="+this.lianame+"&epointx=" + m2 + "&epointy=" + m1 +"?referer=web&key=JMFBZ-2X4E4-A3ZUZ-DPNQX-RYAUS-5NFL4"
-					}
+					uni.navigateTo({
+						url:"/pages/liaison/map/map?id="+this.lid,
+					})
+					// if(this.map!=''){
+					// 	var maparr = this.map.split(',')
+					// 	var m1=maparr[0]
+					// 	var m2=maparr[1]
+					// 	window.location.href =  "https://apis.map.qq.com/tools/routeplan/eword="+this.lianame+"&epointx=" + m2 + "&epointy=" + m1 +"?referer=web&key=JMFBZ-2X4E4-A3ZUZ-DPNQX-RYAUS-5NFL4"
+					// }
 				}
 			},
 			swiperclick(index){

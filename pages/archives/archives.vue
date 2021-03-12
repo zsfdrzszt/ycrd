@@ -55,8 +55,8 @@
 					查看图片
 				</view>
 			</view>
-			<view class="archives_image">
-				<image :src="list.img" mode="widthFix" style="width: 20%;"></image>
+			<view class="archives_image" >
+				<image :src="list.img" mode="widthFix" style="width: 20%;" @click="magnify()"></image>
 			</view>
 			
 			<view class="archives_footer">
@@ -74,12 +74,27 @@
 								{{list.zan}}
 								</view> 
 						</view>
-						<image src="../../static/bulidimg/hand.png" mode="widthFix" style="width: 20px;"></image>
+						<image src="../../static/bulidimg/hand.png" mode="widthFix" style="width: 20px;" ></image>
 					</view>
 				</view>
 			</view>
 		</view>
 		<wnavall></wnavall>
+		<view class="img_back" v-if="this.imgstate">
+			<movable-area scale-area class="movable-area "  @click="hideimg">
+				<movable-view  
+				class="movable-view"
+		        direction="all"
+		        scale="true"
+		        scale-min="1"
+		        scale-max="4"
+		        :scale-value="scale"
+				 @scale="onScale"
+		      >
+					<image :src="imgurl" class="lookimg" mode="widthFix" ></image>
+				</movable-view>               
+			</movable-area>
+		</view>
 	</view>
 </template>
 
@@ -91,11 +106,23 @@
 		},
 		data() {
 			return {
-				list:{name:"刘健",time:"2020-1-3",space:"地址",way:"学习教育培训",content:"内容",effect:"圆满成功",img:"http://qiniu.jza2c.com/uploads/20190727/Fkw9oHU_XEOwLnFM5-41s8zFj5RG.jpg",num:20,zan:19}
+				list:{name:"刘健",time:"2020-1-3",space:"地址",way:"学习教育培训",content:"内容",effect:"圆满成功",img:"http://qiniu.jza2c.com/uploads/20190727/Fkw9oHU_XEOwLnFM5-41s8zFj5RG.jpg",num:20,zan:19},
+				imgurl:"",
+				imgstate:false,
+				scale:1,
 			}
 		},
 		methods: {
-			
+			magnify(val){
+				this.imgstate =true,
+				this.imgurl =this.list.img,
+				console.log(val)
+			},
+			hideimg(){
+				this.imgurl =""
+				this.scale = 1;
+				this.imgstate =false
+			},
 		}
 	}
 </script>
@@ -114,6 +141,7 @@
 	margin: 0;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 .archives_content{
 	padding: 10px;
@@ -202,5 +230,42 @@
 	color: #111;
 	font-weight: bold;
 	padding-left: 5px;
+}
+.img_back{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0,0,0,.5);
+	justify-content: center;
+	align-items: center;
+}
+.img_back_box{
+	width: 70%;
+	height: 80%;
+}
+.img_back_box image{
+	width: 100%;
+}
+.movable-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.movable-area {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+.movable-view image {
+    width: 60%;
 }
 </style>

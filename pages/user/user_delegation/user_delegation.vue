@@ -11,7 +11,7 @@
 					<text>{{item.name}}</text>
 					<text>{{item.job}}</text>
 				</view>
-				<a :href='item.tel'>联系</a>
+				<text @click="tel(item.tel)">联系</text>
 			</view>
 		</view>
 		<wnavall></wnavall>
@@ -37,6 +37,13 @@
 					job:'榆次区安宁实业有限公司董事长',
 					img:'/static/user/user_tx.jpg'
 				}]
+			}
+		},
+		methods:{
+			tel(val){
+			     uni.makePhoneCall({
+			         phoneNumber: val
+			     });	
 			}
 		}
 	}
