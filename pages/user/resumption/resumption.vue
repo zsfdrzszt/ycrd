@@ -13,6 +13,7 @@
 		</view>
 		<resum1 :type="2" :uptitle='"成效"' :placetext='"请输入成效"' :value="effectval" @textchange="effectchange"></resum1>
 		<resum1 :type="2" :uptitle='"驳回意见"' :placetext='"如需驳回,请在此输入驳回理由"' :value="rejectval" @textchange="rejectchange"></resum1>
+		<wnavall></wnavall>
 	</view>
 </template>
 

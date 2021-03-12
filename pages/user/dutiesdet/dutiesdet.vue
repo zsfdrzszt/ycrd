@@ -15,6 +15,7 @@
 				<view class="iconfont icon-dingbu goTop" :style="{'display':(flag===true? '':'none')}" @click="goTop"></view>
 			</scroll-view>
 		</view>
+		<wnavall></wnavall>
 	</view>
 </template>
 
